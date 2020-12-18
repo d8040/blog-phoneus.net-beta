@@ -117,6 +117,7 @@ a {
   width:calc(100% - 300px);
 }
 
+
 /* 커스텀 */
 i {
   margin-right:7px;
@@ -159,9 +160,6 @@ i {
 .menu-bar__menu-1 ul > li {
   position:relative;
 }
-.menu-bar__menu-1 > ul ul{
-  z-index: 1;
-}
 
 .menu-bar__menu-1 > ul > li {
   width:25%;
@@ -192,6 +190,7 @@ i {
   border:10px solid black;
   border-top-width:0;
   border-radius:0 0 15px 15px;
+  z-index: 10;
 }
 
 .menu-bar__menu-1 ul > li:hover > ul {
@@ -356,13 +355,15 @@ i {
   border-top:2px solid;
   min-height: 340px;
 }
-.detail-box > div > buttom {
+.detail-box > div > bottom {
   margin:10px 5px;
 }
-.detail-box > div > buttom > ul > li:nth-child(n+3){
+.detail-box > div > bottom > ul > li:nth-child(n+3){
   display:flex;
   flex-basis:65px;
   justify-content:center;  
 }
-
+.none{
+	display:none;
+}
 /* detail page end */
