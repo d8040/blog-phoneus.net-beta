@@ -329,7 +329,7 @@ i {
 
 /* detail page start */
 .detail-box > div{
-  width: 700px;
+  width: 900px;
 }
 .title{
   font-size:2rem;
@@ -354,7 +354,7 @@ i {
   padding:10px 5px;
   border-bottom:2px solid;
   border-top:2px solid;
-  min-height: 340px;
+  min-height: 100px;
 }
 .detail-box > div > bottom {
 	margin-top: 10px;
