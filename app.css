@@ -17,8 +17,8 @@
   font-weight: 300;
   src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff');
 }
-html {
-  font-family: 'LotteMartDream', sans-serif;
+html, .tui-editor-contents {
+  font-family: 'LotteMartDream', sans-serif !important;
 }
 
 /* 노말라이즈 */
@@ -352,7 +352,7 @@ i {
   padding: 0 
 }
 .detail-box > div > contents {
-  padding:10px 5px;
+  padding:10px 30px;
   border-bottom:2px solid;
   border-top:2px solid;
   min-height: 100px;
