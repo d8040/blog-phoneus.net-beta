@@ -223,15 +223,15 @@ i {
 /* 메인화면크기 */
 
 .article-box{
-  min-height:470px;
+/*   min-height:470px; */
 }
 
 /* 페이징 */
-.page{  background:url(https://i1.daumcdn.net/deco/contents/horizontalrule/line03.gif?v=2) repeat-x scroll left;
+/* .page{  background:url(https://i1.daumcdn.net/deco/contents/horizontalrule/line03.gif?v=2) repeat-x scroll left;
   height: 0px;
   justify-content:center;
   padding-top:6px;  
-}
+} */
 .page > .page-no > a {
   padding:7px;
 }
