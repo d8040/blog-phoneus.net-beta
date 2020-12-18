@@ -357,6 +357,7 @@ i {
   min-height: 340px;
 }
 .detail-box > div > bottom {
+	margin-top: 10px;
 }
 .detail-box > div > bottom > ul > li:nth-child(n+3){
   display:flex;
