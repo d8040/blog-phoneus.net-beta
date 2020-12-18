@@ -347,6 +347,7 @@ i {
   width:100%;
 }
 .detail-box > div > info > ul > li{
+  margin:10px 5px;
   padding: 0 
 }
 .detail-box > div > contents {
@@ -356,7 +357,6 @@ i {
   min-height: 340px;
 }
 .detail-box > div > bottom {
-  margin:10px 5px;
 }
 .detail-box > div > bottom > ul > li:nth-child(n+3){
   display:flex;
