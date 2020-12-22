@@ -12,24 +12,25 @@
 <meta name="description" content="programig, coding, technology, photograph 정보공유를 위한 개인 블로그">
 
 <!-- open graph ~~ex)카톡에서 링크 공유할때 제목 설명 이미지 url 표시-->
-<meta property="og:title" content="funAndCoding::" />
 
 <!--본인의 홈페이지가 링크됐을때 대표로 제목-->
-<meta property="og:description" content="funAndCoding::" />
+<meta property="og:title" content="funAndCoding::마크다운(MarkDown)사용법 용어👍" />
 
 <!--본인의 홈페이지가 링크됐을때 설명되는 내용-->
-<meta property="og:url" content="phoneus.net">
+<meta property="og:description" content="funAndCoding::마크다운(MarkDown)사용법 용어👍" />
 
 <!--본인의 홈페이지 주소 링크-->
-<meta property="og:image" content="https://www.fiscalitaleggera.it/wp-content/uploads/2017/03/pexels-photo-265129.jpeg">
-<!--본인의 홈페이지가 링크됐을때 대표로 표시되는 이미지경로-->
+<meta property="og:url" content="phoneus.net">
 
-<meta name="robots" content="index,follow">
+<!--본인의 홈페이지가 링크됐을때 대표로 표시되는 이미지경로-->
+<meta property="og:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F6I3Gl%2FbtqQXAknUMq%2FN6o1eeA26v7yheFnfunv8K%2Fimg.jpg">
+
 <!--파싱봇의 제어? 방법임 검색 ㄱㄱ-->
+<meta name="robots" content="index,follow">
 
 <!--사이트 키워드 말그대로 어떤 키워드로 검색했을때 홈페이지가 노출되길 원하나 -->
 <meta name="keywords"
-	content="모델링 회사, 모델링 외주, 모델링, 짱큰모델링, 모델링 가격,etc...">
+	content="java, html, photograph, technical, css,js, java script, scss, cording, c">
 
 <!-- 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
 <title>fun and coding</title>
@@ -90,10 +91,595 @@
 
 
 <div class="total-box flex flex-dr-c">
+	<nav class="side-menu flex">
+		<ul class="menu-btn">
+			<div class="line line--1"></div>
+			<div class="line line--2"></div>
+			<div class="line line--3"></div>
+		</ul>
+		<ul class="nav-links">
+			<li class="link"><a href="index.html" class="flex"><i
+					class="fas fa-home"></i></a></li>
+			<li class="link"><a href="#" class="flex"><span>board</span></a>
+				<ul class="link"><li><a href="article_list_source code_1.html" class="flex flex-jc-c flex-ai-c "><span>source code</span></a></li><li><a href="article_list_MySQL_1.html" class="flex flex-jc-c flex-ai-c "><span>MySQL</span></a></li><li><a href="article_list_html&CSS_1.html" class="flex flex-jc-c flex-ai-c "><span>html&CSS</span></a></li><li><a href="article_list_java_1.html" class="flex flex-jc-c flex-ai-c "><span>java</span></a></li>
+				</ul></li>
+			<li class="link"><a href="#" class="flex"><span>link</span></a></li>
+			<li class="link"><a href="#" class="flex"><span>about</span></a></li>
+		</ul>
+	</nav>
 	<div class="head-bar flex flex-jc-c flex-ai-c">
-		<nav class="side-menu flex">
-			<li><a href=""><i class="fas fa-bars"></i></a></li>
+		<div class="flex flex-jc-c flex-g-1">
+			<nav class="menu-box visible-md-up">
+				<ul class="flex flex-ai-c">
+					<li><a href="index.html" class="flex"><i
+							class="fas fa-home"></i></a></li>
+					<li class="flex"><a href="#" class="flex"><span>board</span></a>
+						<ul class=""><li><a href="article_list_source code_1.html" class="flex flex-jc-c flex-ai-c "><span>source code</span></a></li><li><a href="article_list_MySQL_1.html" class="flex flex-jc-c flex-ai-c "><span>MySQL</span></a></li><li><a href="article_list_html&CSS_1.html" class="flex flex-jc-c flex-ai-c "><span>html&CSS</span></a></li><li><a href="article_list_java_1.html" class="flex flex-jc-c flex-ai-c "><span>java</span></a></li>
+						</ul></li>
+					<li><a href="#" class="flex"><span>link</span></a></li>
+					<li><a href="#" class="flex"><span>about</span></a></li>
+				</ul>
+			</nav>
+		</div>
+		<nav class="search-box">
+			<search class="flex flex-jc-end"> <span class="flex">
+				<div class="search">
+					<input type="text" placeholder=" ">
+					<div>
+						<svg>
+                <use xlink:href="#path">
+                  </svg>
+					</div>
+				</div> <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+              <symbol xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 160 28" id="path">
+                <path
+						d="M32.9418651,-20.6880772 C37.9418651,-20.6880772 40.9418651,-16.6880772 40.9418651,-12.6880772 C40.9418651,-8.68807717 37.9418651,-4.68807717 32.9418651,-4.68807717 C27.9418651,-4.68807717 24.9418651,-8.68807717 24.9418651,-12.6880772 C24.9418651,-16.6880772 27.9418651,-20.6880772 32.9418651,-20.6880772 L32.9418651,-29.870624 C32.9418651,-30.3676803 33.3448089,-30.770624 33.8418651,-30.770624 C34.08056,-30.770624 34.3094785,-30.6758029 34.4782612,-30.5070201 L141.371843,76.386562"
+						transform="translate(83.156854, 22.171573) rotate(-225.000000) translate(-83.156854, -22.171573)"></path>
+              </symbol>
+            </svg>
+			</span> </search>
 		</nav>
+		<link rel="stylesheet" href="app.css" />
+	</div><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--사이트 저작권자-->
+<meta name="author" content="D.K">
+
+<!--사이트 설명-->
+<meta name="description" content="programig, coding, technology, photograph 정보공유를 위한 개인 블로그">
+
+<!-- open graph ~~ex)카톡에서 링크 공유할때 제목 설명 이미지 url 표시-->
+
+<!--본인의 홈페이지가 링크됐을때 대표로 제목-->
+<meta property="og:title" content="funAndCoding::자바: 아스키코드, 유니코드를 문자나 숫자로 변환하기" />
+
+<!--본인의 홈페이지가 링크됐을때 설명되는 내용-->
+<meta property="og:description" content="funAndCoding::자바: 아스키코드, 유니코드를 문자나 숫자로 변환하기" />
+
+<!--본인의 홈페이지 주소 링크-->
+<meta property="og:url" content="phoneus.net">
+
+<!--본인의 홈페이지가 링크됐을때 대표로 표시되는 이미지경로-->
+<meta property="og:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F6I3Gl%2FbtqQXAknUMq%2FN6o1eeA26v7yheFnfunv8K%2Fimg.jpg">
+
+<!--파싱봇의 제어? 방법임 검색 ㄱㄱ-->
+<meta name="robots" content="index,follow">
+
+<!--사이트 키워드 말그대로 어떤 키워드로 검색했을때 홈페이지가 노출되길 원하나 -->
+<meta name="keywords"
+	content="java, html, photograph, technical, css,js, java script, scss, cording, c">
+
+<!-- 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+<title>fun and coding</title>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-
+ scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+<link rel="canonical" href="http://phoneus.net" />
+
+<!-- Scroll-Out link -->
+<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+<!-- 폰트어썸 불러오기 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+<!-- 구글 소유권확인 링크 -->
+<meta name="google-site-verification"
+	content="2B8YNq9Ajz0kCyWZv7u3PaPi-ugB7q0dJIda2B_Ii58" />
+
+<!-- JQUERY link -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- font awesome link -->
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
+
+<!-- Splitting link -->
+<link rel="stylesheet"
+	href="https://unpkg.com/splitting/dist/splitting.css" />
+<link rel="stylesheet"
+	href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async
+	src="https://www.googletagmanager.com/gtag/js?id=G-PGF4TS961N"></script>
+
+<!-- Google adsense -->
+<script data-ad-client="ca-pub-5184039387564779" async
+	src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+
+	gtag('config', 'G-PGF4TS961N');
+</script>
+
+
+</head>
+
+
+<div class="total-box flex flex-dr-c">
+	<nav class="side-menu flex">
+		<ul class="menu-btn">
+			<div class="line line--1"></div>
+			<div class="line line--2"></div>
+			<div class="line line--3"></div>
+		</ul>
+		<ul class="nav-links">
+			<li class="link"><a href="index.html" class="flex"><i
+					class="fas fa-home"></i></a></li>
+			<li class="link"><a href="#" class="flex"><span>board</span></a>
+				<ul class="link"><li><a href="article_list_source code_1.html" class="flex flex-jc-c flex-ai-c "><span>source code</span></a></li><li><a href="article_list_MySQL_1.html" class="flex flex-jc-c flex-ai-c "><span>MySQL</span></a></li><li><a href="article_list_html&CSS_1.html" class="flex flex-jc-c flex-ai-c "><span>html&CSS</span></a></li><li><a href="article_list_java_1.html" class="flex flex-jc-c flex-ai-c "><span>java</span></a></li>
+				</ul></li>
+			<li class="link"><a href="#" class="flex"><span>link</span></a></li>
+			<li class="link"><a href="#" class="flex"><span>about</span></a></li>
+		</ul>
+	</nav>
+	<div class="head-bar flex flex-jc-c flex-ai-c">
+		<div class="flex flex-jc-c flex-g-1">
+			<nav class="menu-box visible-md-up">
+				<ul class="flex flex-ai-c">
+					<li><a href="index.html" class="flex"><i
+							class="fas fa-home"></i></a></li>
+					<li class="flex"><a href="#" class="flex"><span>board</span></a>
+						<ul class=""><li><a href="article_list_source code_1.html" class="flex flex-jc-c flex-ai-c "><span>source code</span></a></li><li><a href="article_list_MySQL_1.html" class="flex flex-jc-c flex-ai-c "><span>MySQL</span></a></li><li><a href="article_list_html&CSS_1.html" class="flex flex-jc-c flex-ai-c "><span>html&CSS</span></a></li><li><a href="article_list_java_1.html" class="flex flex-jc-c flex-ai-c "><span>java</span></a></li>
+						</ul></li>
+					<li><a href="#" class="flex"><span>link</span></a></li>
+					<li><a href="#" class="flex"><span>about</span></a></li>
+				</ul>
+			</nav>
+		</div>
+		<nav class="search-box">
+			<search class="flex flex-jc-end"> <span class="flex">
+				<div class="search">
+					<input type="text" placeholder=" ">
+					<div>
+						<svg>
+                <use xlink:href="#path">
+                  </svg>
+					</div>
+				</div> <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+              <symbol xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 160 28" id="path">
+                <path
+						d="M32.9418651,-20.6880772 C37.9418651,-20.6880772 40.9418651,-16.6880772 40.9418651,-12.6880772 C40.9418651,-8.68807717 37.9418651,-4.68807717 32.9418651,-4.68807717 C27.9418651,-4.68807717 24.9418651,-8.68807717 24.9418651,-12.6880772 C24.9418651,-16.6880772 27.9418651,-20.6880772 32.9418651,-20.6880772 L32.9418651,-29.870624 C32.9418651,-30.3676803 33.3448089,-30.770624 33.8418651,-30.770624 C34.08056,-30.770624 34.3094785,-30.6758029 34.4782612,-30.5070201 L141.371843,76.386562"
+						transform="translate(83.156854, 22.171573) rotate(-225.000000) translate(-83.156854, -22.171573)"></path>
+              </symbol>
+            </svg>
+			</span> </search>
+		</nav>
+		<link rel="stylesheet" href="app.css" />
+	</div><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--사이트 저작권자-->
+<meta name="author" content="D.K">
+
+<!--사이트 설명-->
+<meta name="description" content="programig, coding, technology, photograph 정보공유를 위한 개인 블로그">
+
+<!-- open graph ~~ex)카톡에서 링크 공유할때 제목 설명 이미지 url 표시-->
+
+<!--본인의 홈페이지가 링크됐을때 대표로 제목-->
+<meta property="og:title" content="funAndCoding::Java - split, substring으로 문자열을 자르기 & 분리하기" />
+
+<!--본인의 홈페이지가 링크됐을때 설명되는 내용-->
+<meta property="og:description" content="funAndCoding::Java - split, substring으로 문자열을 자르기 & 분리하기" />
+
+<!--본인의 홈페이지 주소 링크-->
+<meta property="og:url" content="phoneus.net">
+
+<!--본인의 홈페이지가 링크됐을때 대표로 표시되는 이미지경로-->
+<meta property="og:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F6I3Gl%2FbtqQXAknUMq%2FN6o1eeA26v7yheFnfunv8K%2Fimg.jpg">
+
+<!--파싱봇의 제어? 방법임 검색 ㄱㄱ-->
+<meta name="robots" content="index,follow">
+
+<!--사이트 키워드 말그대로 어떤 키워드로 검색했을때 홈페이지가 노출되길 원하나 -->
+<meta name="keywords"
+	content="java, html, photograph, technical, css,js, java script, scss, cording, c">
+
+<!-- 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+<title>fun and coding</title>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-
+ scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+<link rel="canonical" href="http://phoneus.net" />
+
+<!-- Scroll-Out link -->
+<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+<!-- 폰트어썸 불러오기 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+<!-- 구글 소유권확인 링크 -->
+<meta name="google-site-verification"
+	content="2B8YNq9Ajz0kCyWZv7u3PaPi-ugB7q0dJIda2B_Ii58" />
+
+<!-- JQUERY link -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- font awesome link -->
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
+
+<!-- Splitting link -->
+<link rel="stylesheet"
+	href="https://unpkg.com/splitting/dist/splitting.css" />
+<link rel="stylesheet"
+	href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async
+	src="https://www.googletagmanager.com/gtag/js?id=G-PGF4TS961N"></script>
+
+<!-- Google adsense -->
+<script data-ad-client="ca-pub-5184039387564779" async
+	src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+
+	gtag('config', 'G-PGF4TS961N');
+</script>
+
+
+</head>
+
+
+<div class="total-box flex flex-dr-c">
+	<nav class="side-menu flex">
+		<ul class="menu-btn">
+			<div class="line line--1"></div>
+			<div class="line line--2"></div>
+			<div class="line line--3"></div>
+		</ul>
+		<ul class="nav-links">
+			<li class="link"><a href="index.html" class="flex"><i
+					class="fas fa-home"></i></a></li>
+			<li class="link"><a href="#" class="flex"><span>board</span></a>
+				<ul class="link"><li><a href="article_list_source code_1.html" class="flex flex-jc-c flex-ai-c "><span>source code</span></a></li><li><a href="article_list_MySQL_1.html" class="flex flex-jc-c flex-ai-c "><span>MySQL</span></a></li><li><a href="article_list_html&CSS_1.html" class="flex flex-jc-c flex-ai-c "><span>html&CSS</span></a></li><li><a href="article_list_java_1.html" class="flex flex-jc-c flex-ai-c "><span>java</span></a></li>
+				</ul></li>
+			<li class="link"><a href="#" class="flex"><span>link</span></a></li>
+			<li class="link"><a href="#" class="flex"><span>about</span></a></li>
+		</ul>
+	</nav>
+	<div class="head-bar flex flex-jc-c flex-ai-c">
+		<div class="flex flex-jc-c flex-g-1">
+			<nav class="menu-box visible-md-up">
+				<ul class="flex flex-ai-c">
+					<li><a href="index.html" class="flex"><i
+							class="fas fa-home"></i></a></li>
+					<li class="flex"><a href="#" class="flex"><span>board</span></a>
+						<ul class=""><li><a href="article_list_source code_1.html" class="flex flex-jc-c flex-ai-c "><span>source code</span></a></li><li><a href="article_list_MySQL_1.html" class="flex flex-jc-c flex-ai-c "><span>MySQL</span></a></li><li><a href="article_list_html&CSS_1.html" class="flex flex-jc-c flex-ai-c "><span>html&CSS</span></a></li><li><a href="article_list_java_1.html" class="flex flex-jc-c flex-ai-c "><span>java</span></a></li>
+						</ul></li>
+					<li><a href="#" class="flex"><span>link</span></a></li>
+					<li><a href="#" class="flex"><span>about</span></a></li>
+				</ul>
+			</nav>
+		</div>
+		<nav class="search-box">
+			<search class="flex flex-jc-end"> <span class="flex">
+				<div class="search">
+					<input type="text" placeholder=" ">
+					<div>
+						<svg>
+                <use xlink:href="#path">
+                  </svg>
+					</div>
+				</div> <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+              <symbol xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 160 28" id="path">
+                <path
+						d="M32.9418651,-20.6880772 C37.9418651,-20.6880772 40.9418651,-16.6880772 40.9418651,-12.6880772 C40.9418651,-8.68807717 37.9418651,-4.68807717 32.9418651,-4.68807717 C27.9418651,-4.68807717 24.9418651,-8.68807717 24.9418651,-12.6880772 C24.9418651,-16.6880772 27.9418651,-20.6880772 32.9418651,-20.6880772 L32.9418651,-29.870624 C32.9418651,-30.3676803 33.3448089,-30.770624 33.8418651,-30.770624 C34.08056,-30.770624 34.3094785,-30.6758029 34.4782612,-30.5070201 L141.371843,76.386562"
+						transform="translate(83.156854, 22.171573) rotate(-225.000000) translate(-83.156854, -22.171573)"></path>
+              </symbol>
+            </svg>
+			</span> </search>
+		</nav>
+		<link rel="stylesheet" href="app.css" />
+	</div><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--사이트 저작권자-->
+<meta name="author" content="D.K">
+
+<!--사이트 설명-->
+<meta name="description" content="programig, coding, technology, photograph 정보공유를 위한 개인 블로그">
+
+<!-- open graph ~~ex)카톡에서 링크 공유할때 제목 설명 이미지 url 표시-->
+
+<!--본인의 홈페이지가 링크됐을때 대표로 제목-->
+<meta property="og:title" content="funAndCoding::예외처리 try catch" />
+
+<!--본인의 홈페이지가 링크됐을때 설명되는 내용-->
+<meta property="og:description" content="funAndCoding::예외처리 try catch" />
+
+<!--본인의 홈페이지 주소 링크-->
+<meta property="og:url" content="phoneus.net">
+
+<!--본인의 홈페이지가 링크됐을때 대표로 표시되는 이미지경로-->
+<meta property="og:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F6I3Gl%2FbtqQXAknUMq%2FN6o1eeA26v7yheFnfunv8K%2Fimg.jpg">
+
+<!--파싱봇의 제어? 방법임 검색 ㄱㄱ-->
+<meta name="robots" content="index,follow">
+
+<!--사이트 키워드 말그대로 어떤 키워드로 검색했을때 홈페이지가 노출되길 원하나 -->
+<meta name="keywords"
+	content="java, html, photograph, technical, css,js, java script, scss, cording, c">
+
+<!-- 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+<title>fun and coding</title>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-
+ scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+<link rel="canonical" href="http://phoneus.net" />
+
+<!-- Scroll-Out link -->
+<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+<!-- 폰트어썸 불러오기 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+<!-- 구글 소유권확인 링크 -->
+<meta name="google-site-verification"
+	content="2B8YNq9Ajz0kCyWZv7u3PaPi-ugB7q0dJIda2B_Ii58" />
+
+<!-- JQUERY link -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- font awesome link -->
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
+
+<!-- Splitting link -->
+<link rel="stylesheet"
+	href="https://unpkg.com/splitting/dist/splitting.css" />
+<link rel="stylesheet"
+	href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async
+	src="https://www.googletagmanager.com/gtag/js?id=G-PGF4TS961N"></script>
+
+<!-- Google adsense -->
+<script data-ad-client="ca-pub-5184039387564779" async
+	src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+
+	gtag('config', 'G-PGF4TS961N');
+</script>
+
+
+</head>
+
+
+<div class="total-box flex flex-dr-c">
+	<nav class="side-menu flex">
+		<ul class="menu-btn">
+			<div class="line line--1"></div>
+			<div class="line line--2"></div>
+			<div class="line line--3"></div>
+		</ul>
+		<ul class="nav-links">
+			<li class="link"><a href="index.html" class="flex"><i
+					class="fas fa-home"></i></a></li>
+			<li class="link"><a href="#" class="flex"><span>board</span></a>
+				<ul class="link"><li><a href="article_list_source code_1.html" class="flex flex-jc-c flex-ai-c "><span>source code</span></a></li><li><a href="article_list_MySQL_1.html" class="flex flex-jc-c flex-ai-c "><span>MySQL</span></a></li><li><a href="article_list_html&CSS_1.html" class="flex flex-jc-c flex-ai-c "><span>html&CSS</span></a></li><li><a href="article_list_java_1.html" class="flex flex-jc-c flex-ai-c "><span>java</span></a></li>
+				</ul></li>
+			<li class="link"><a href="#" class="flex"><span>link</span></a></li>
+			<li class="link"><a href="#" class="flex"><span>about</span></a></li>
+		</ul>
+	</nav>
+	<div class="head-bar flex flex-jc-c flex-ai-c">
+		<div class="flex flex-jc-c flex-g-1">
+			<nav class="menu-box visible-md-up">
+				<ul class="flex flex-ai-c">
+					<li><a href="index.html" class="flex"><i
+							class="fas fa-home"></i></a></li>
+					<li class="flex"><a href="#" class="flex"><span>board</span></a>
+						<ul class=""><li><a href="article_list_source code_1.html" class="flex flex-jc-c flex-ai-c "><span>source code</span></a></li><li><a href="article_list_MySQL_1.html" class="flex flex-jc-c flex-ai-c "><span>MySQL</span></a></li><li><a href="article_list_html&CSS_1.html" class="flex flex-jc-c flex-ai-c "><span>html&CSS</span></a></li><li><a href="article_list_java_1.html" class="flex flex-jc-c flex-ai-c "><span>java</span></a></li>
+						</ul></li>
+					<li><a href="#" class="flex"><span>link</span></a></li>
+					<li><a href="#" class="flex"><span>about</span></a></li>
+				</ul>
+			</nav>
+		</div>
+		<nav class="search-box">
+			<search class="flex flex-jc-end"> <span class="flex">
+				<div class="search">
+					<input type="text" placeholder=" ">
+					<div>
+						<svg>
+                <use xlink:href="#path">
+                  </svg>
+					</div>
+				</div> <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+              <symbol xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 160 28" id="path">
+                <path
+						d="M32.9418651,-20.6880772 C37.9418651,-20.6880772 40.9418651,-16.6880772 40.9418651,-12.6880772 C40.9418651,-8.68807717 37.9418651,-4.68807717 32.9418651,-4.68807717 C27.9418651,-4.68807717 24.9418651,-8.68807717 24.9418651,-12.6880772 C24.9418651,-16.6880772 27.9418651,-20.6880772 32.9418651,-20.6880772 L32.9418651,-29.870624 C32.9418651,-30.3676803 33.3448089,-30.770624 33.8418651,-30.770624 C34.08056,-30.770624 34.3094785,-30.6758029 34.4782612,-30.5070201 L141.371843,76.386562"
+						transform="translate(83.156854, 22.171573) rotate(-225.000000) translate(-83.156854, -22.171573)"></path>
+              </symbol>
+            </svg>
+			</span> </search>
+		</nav>
+		<link rel="stylesheet" href="app.css" />
+	</div><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--사이트 저작권자-->
+<meta name="author" content="D.K">
+
+<!--사이트 설명-->
+<meta name="description" content="programig, coding, technology, photograph 정보공유를 위한 개인 블로그">
+
+<!-- open graph ~~ex)카톡에서 링크 공유할때 제목 설명 이미지 url 표시-->
+
+<!--본인의 홈페이지가 링크됐을때 대표로 제목-->
+<meta property="og:title" content="funAndCoding::java: 재귀함수 정리" />
+
+<!--본인의 홈페이지가 링크됐을때 설명되는 내용-->
+<meta property="og:description" content="funAndCoding::java: 재귀함수 정리" />
+
+<!--본인의 홈페이지 주소 링크-->
+<meta property="og:url" content="phoneus.net">
+
+<!--본인의 홈페이지가 링크됐을때 대표로 표시되는 이미지경로-->
+<meta property="og:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F6I3Gl%2FbtqQXAknUMq%2FN6o1eeA26v7yheFnfunv8K%2Fimg.jpg">
+
+<!--파싱봇의 제어? 방법임 검색 ㄱㄱ-->
+<meta name="robots" content="index,follow">
+
+<!--사이트 키워드 말그대로 어떤 키워드로 검색했을때 홈페이지가 노출되길 원하나 -->
+<meta name="keywords"
+	content="java, html, photograph, technical, css,js, java script, scss, cording, c">
+
+<!-- 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+<title>fun and coding</title>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-
+ scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+<link rel="canonical" href="http://phoneus.net" />
+
+<!-- Scroll-Out link -->
+<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+<!-- 폰트어썸 불러오기 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+<!-- 구글 소유권확인 링크 -->
+<meta name="google-site-verification"
+	content="2B8YNq9Ajz0kCyWZv7u3PaPi-ugB7q0dJIda2B_Ii58" />
+
+<!-- JQUERY link -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- font awesome link -->
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
+
+<!-- Splitting link -->
+<link rel="stylesheet"
+	href="https://unpkg.com/splitting/dist/splitting.css" />
+<link rel="stylesheet"
+	href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async
+	src="https://www.googletagmanager.com/gtag/js?id=G-PGF4TS961N"></script>
+
+<!-- Google adsense -->
+<script data-ad-client="ca-pub-5184039387564779" async
+	src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+
+	gtag('config', 'G-PGF4TS961N');
+</script>
+
+
+</head>
+
+
+<div class="total-box flex flex-dr-c">
+	<nav class="side-menu flex">
+		<ul class="menu-btn">
+			<div class="line line--1"></div>
+			<div class="line line--2"></div>
+			<div class="line line--3"></div>
+		</ul>
+		<ul class="nav-links">
+			<li class="link"><a href="index.html" class="flex"><i
+					class="fas fa-home"></i></a></li>
+			<li class="link"><a href="#" class="flex"><span>board</span></a>
+				<ul class="link"><li><a href="article_list_source code_1.html" class="flex flex-jc-c flex-ai-c "><span>source code</span></a></li><li><a href="article_list_MySQL_1.html" class="flex flex-jc-c flex-ai-c "><span>MySQL</span></a></li><li><a href="article_list_html&CSS_1.html" class="flex flex-jc-c flex-ai-c "><span>html&CSS</span></a></li><li><a href="article_list_java_1.html" class="flex flex-jc-c flex-ai-c "><span>java</span></a></li>
+				</ul></li>
+			<li class="link"><a href="#" class="flex"><span>link</span></a></li>
+			<li class="link"><a href="#" class="flex"><span>about</span></a></li>
+		</ul>
+	</nav>
+	<div class="head-bar flex flex-jc-c flex-ai-c">
 		<div class="flex flex-jc-c flex-g-1">
 			<nav class="menu-box visible-md-up">
 				<ul class="flex flex-ai-c">
@@ -144,7 +730,7 @@
 				</div>
 			</div>
 			<main class="article-box">
-			<div class="flex"><div class=article-list__cell-id>15</div><div class=article-list__cell-writer>D.K</div><div class=article-list__cell-title><a href="java15.html" class=hover-underline>마크다운(MarkDown)사용법 용어</a><nav><div class=article-list__cell-writer1>D.K</div><div class=article-list__cell-reg-date1>20/12/21</div></nav></div><div class=article-list__cell-reg-date>20/12/21</div><div class=article-list__cell-rcm>564</div></div><div class="flex"><div class=article-list__cell-id>12</div><div class=article-list__cell-writer>D.K</div><div class=article-list__cell-title><a href="java12.html" class=hover-underline>자바: 아스키코드, 유니코드를 문자나 숫자로 변환하기</a><nav><div class=article-list__cell-writer1>D.K</div><div class=article-list__cell-reg-date1>20/12/20</div></nav></div><div class=article-list__cell-reg-date>20/12/20</div><div class=article-list__cell-rcm>56</div></div><div class="flex"><div class=article-list__cell-id>11</div><div class=article-list__cell-writer>D.K</div><div class=article-list__cell-title><a href="java11.html" class=hover-underline>Java - split, substring으로 문자열을....</a><nav><div class=article-list__cell-writer1>D.K</div><div class=article-list__cell-reg-date1>20/12/20</div></nav></div><div class=article-list__cell-reg-date>20/12/20</div><div class=article-list__cell-rcm>21</div></div><div class="flex"><div class=article-list__cell-id>9</div><div class=article-list__cell-writer>D.K</div><div class=article-list__cell-title><a href="java9.html" class=hover-underline>예외처리 try catch</a><nav><div class=article-list__cell-writer1>D.K</div><div class=article-list__cell-reg-date1>20/12/20</div></nav></div><div class=article-list__cell-reg-date>20/12/20</div><div class=article-list__cell-rcm>54</div></div><div class="flex"><div class=article-list__cell-id>7</div><div class=article-list__cell-writer>D.K</div><div class=article-list__cell-title><a href="java7.html" class=hover-underline>java: 재귀함수 정리</a><nav><div class=article-list__cell-writer1>D.K</div><div class=article-list__cell-reg-date1>20/12/20</div></nav></div><div class=article-list__cell-reg-date>20/12/20</div><div class=article-list__cell-rcm>56</div></div>
+			<div class="flex"><div class=article-list__cell-id>15</div><div class=article-list__cell-writer>D.K</div><div class=article-list__cell-title><a href="java15.html" class=hover-underline>마크다운(MarkDown)사용법 용어👍</a><nav><div class=article-list__cell-writer1>D.K</div><div class=article-list__cell-reg-date1>20/12/21</div></nav></div><div class=article-list__cell-reg-date>20/12/21</div><div class=article-list__cell-rcm>564</div></div><div class="flex"><div class=article-list__cell-id>12</div><div class=article-list__cell-writer>D.K</div><div class=article-list__cell-title><a href="java12.html" class=hover-underline>자바: 아스키코드, 유니코드를 문자나 숫자로 변환하기</a><nav><div class=article-list__cell-writer1>D.K</div><div class=article-list__cell-reg-date1>20/12/20</div></nav></div><div class=article-list__cell-reg-date>20/12/20</div><div class=article-list__cell-rcm>56</div></div><div class="flex"><div class=article-list__cell-id>11</div><div class=article-list__cell-writer>D.K</div><div class=article-list__cell-title><a href="java11.html" class=hover-underline>Java - split, substring으로 문자열을....</a><nav><div class=article-list__cell-writer1>D.K</div><div class=article-list__cell-reg-date1>20/12/20</div></nav></div><div class=article-list__cell-reg-date>20/12/20</div><div class=article-list__cell-rcm>21</div></div><div class="flex"><div class=article-list__cell-id>9</div><div class=article-list__cell-writer>D.K</div><div class=article-list__cell-title><a href="java9.html" class=hover-underline>예외처리 try catch</a><nav><div class=article-list__cell-writer1>D.K</div><div class=article-list__cell-reg-date1>20/12/20</div></nav></div><div class=article-list__cell-reg-date>20/12/20</div><div class=article-list__cell-rcm>54</div></div><div class="flex"><div class=article-list__cell-id>7</div><div class=article-list__cell-writer>D.K</div><div class=article-list__cell-title><a href="java7.html" class=hover-underline>java: 재귀함수 정리</a><nav><div class=article-list__cell-writer1>D.K</div><div class=article-list__cell-reg-date1>20/12/20</div></nav></div><div class=article-list__cell-reg-date>20/12/20</div><div class=article-list__cell-rcm>56</div></div>
 			</main>
 		</div>
 	</div>
