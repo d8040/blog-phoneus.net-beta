@@ -78,20 +78,6 @@
 <script data-ad-client="ca-pub-5184039387564779" async
 	src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-<!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
-
-<!-- 토스트 UI 에디터, 자바스크립트 코어 -->
-<script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
-
-<!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
-<!-- 토스트 UI 에디터, CSS 코어 -->
-<link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
-
-<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
-<script src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
 <script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag() {
@@ -156,18 +142,20 @@
 		</nav>
 		<link rel="stylesheet" href="app.css" />
 	</div>
+<!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
+
 <!-- 토스트 UI 에디터, 자바스크립트 코어 -->
-<script
-	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+<script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
 
 <!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
 <!-- 토스트 UI 에디터, CSS 코어 -->
-<link rel="stylesheet"
-	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+<link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
 
+<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
+<script src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
 <main class="flex flex-jc-c flex-g-1">
 
 	<detail class="detail-box flex-jc-c flex">
@@ -179,6 +167,8 @@
 		</div>
 		<subject class="title">
 		<ul class="">
+
+
 			<li><a href="#">파비콘 설명 적용 방법👌</a></li>
 		</ul>
 		</subject>
@@ -191,7 +181,8 @@
 		</info>
 		<contents class="contents">
 		<ul class="flex">
-			<il class="article-detail__body"> 파비콘에 대해 궁금했던 내용들을 정리했습니다.
+			<script type="text/x-template">
+파비콘에 대해 궁금했던 내용들을 정리했습니다.
 
 ![](https://t1.daumcdn.net/cfile/tistory/2176FD36555471FE2D)
 
@@ -215,7 +206,7 @@ CMS의 경우에는 테마(theme) 혹은 이미지(image) 디렉토리를 이용
 
 Html
 
-```
+```html
 <link rel="shortcut icon" href="/path/to/favicon.ico">
 
 ```
@@ -228,7 +219,7 @@ IE에서는 `rel="shortcut icon"`처럼 rel 속성에 두가지 값을 모두 �
 
 Html
 
-```
+```html
 <!-- IE6-10 -->
 <link rel="shortcut icon" href="path/to/favicon.ico">
  
@@ -241,7 +232,7 @@ type 속성의 값은 IE에서만 ICO 파일에 대한 서버의 MIME 값에 영
 
 Html
 
-```
+```html
 <!-- Still works in IE6+ -->
 <link rel="shortcut icon" href="path/to/favicon.ico" type="image/vnd.microsoft.icon">
  
@@ -280,7 +271,7 @@ iOS 2.0 이상과 Android 2.1 이상에서는 터치(Touch) 아이콘 지정이 
 
 Html
 
-```
+```html
 <link rel="apple-touch-icon-precomposed" href="path/to/favicon-152.png">
 
 ```
@@ -293,7 +284,7 @@ apple-touch-icon에 대해 좀 더 완벽하게 대응하고 싶다면 아래와
 
 Html
 
-```
+```html
 <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
 <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/path/to/favicon-152.png">
 
@@ -318,7 +309,7 @@ Html
 
 Html
 
-```
+```html
 <link rel="icon" href="/path/to/favicon-32.png" sizes="32x32">
 
 ```
@@ -329,7 +320,7 @@ IE10 매트로는 타일(tile) 아이콘이 추가되었는데(apple-touch-icon�
 
 Html
 
-```
+```html
 <meta name="msapplication-TileColor" content="#FFFFFF">
 <meta name="msapplication-TileImage" content="/path/to/favicon-144.png">
 
@@ -345,7 +336,7 @@ favicion.ico > favicon.png
 
 Html
 
-```
+```html
 <!-- Chrome, Safari, IE -->
 <link rel="shortcut icon" href="path/to/favicon.ico">
  
@@ -358,7 +349,7 @@ ICO 파비콘은 multiple sizes를 지원하기에 하나의 ICO 파일에 여�
 
 Html
 
-```
+```html
 <link rel="icon" href="favicon-16.png" sizes="16x16">
 <link rel="icon" href="favicon-32.png" sizes="32x32">
 <link rel="icon" href="favicon-48.png" sizes="48x48">
@@ -421,7 +412,7 @@ PNG 파비콘을 사용시에 브라우저는 어떠한 파비콘을 사용할�
     
     Html
     
-    ```
+    ```html
     <link rel="shortcut icon" href="http://www.yoursite.com/favicon.ico?v=2">
     <link rel="icon" sizes="16x16 32x32" href="/favicon.ico?v=2">
     
@@ -441,7 +432,9 @@ PNG 파비콘을 사용시에 브라우저는 어떠한 파비콘을 사용할�
 ### 참고문헌 및 관련링크.
 
 1.  [favicon-cheat-sheet](https://github.com/audreyr/favicon-cheat-sheet)
-2.  [understand-the-favicon](http://www.jonathantneal.com/blog/understand-the-favicon/) </il>
+2.  [understand-the-favicon](http://www.jonathantneal.com/blog/understand-the-favicon/)
+			</script>
+			<il class="article-detail__body toast-ui-viewer"> </il>
 		</ul>
 		</contents>
 		<bottom>

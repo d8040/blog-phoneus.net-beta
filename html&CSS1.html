@@ -78,20 +78,6 @@
 <script data-ad-client="ca-pub-5184039387564779" async
 	src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-<!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
-
-<!-- 토스트 UI 에디터, 자바스크립트 코어 -->
-<script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
-
-<!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
-<!-- 토스트 UI 에디터, CSS 코어 -->
-<link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
-
-<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
-<script src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
 <script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag() {
@@ -156,18 +142,20 @@
 		</nav>
 		<link rel="stylesheet" href="app.css" />
 	</div>
+<!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
+
 <!-- 토스트 UI 에디터, 자바스크립트 코어 -->
-<script
-	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+<script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
 
 <!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
 <!-- 토스트 UI 에디터, CSS 코어 -->
-<link rel="stylesheet"
-	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+<link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
 
+<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
+<script src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
 <main class="flex flex-jc-c flex-g-1">
 
 	<detail class="detail-box flex-jc-c flex">
@@ -179,6 +167,8 @@
 		</div>
 		<subject class="title">
 		<ul class="">
+
+
 			<li><a href="#">SCSS(Sacc)정리👍</a></li>
 		</ul>
 		</subject>
@@ -191,7 +181,8 @@
 		</info>
 		<contents class="contents">
 		<ul class="flex">
-			<il class="article-detail__body"> CSS는 상대적으로 배우기 쉽고 재미있습니다.  
+			<script type="text/x-template">
+CSS는 상대적으로 배우기 쉽고 재미있습니다.  
 웹 개발 초심자에게는 이만큼 접근하기 좋은 게 없죠.
 
 CSS는 분명 쉽고 재밌지만, 작업이 고도화될수록 불편함도 같이 커집니다.  
@@ -946,7 +937,7 @@ $color-active: blue !default;
 
 다음은 Bootstrap 코드([\_variables.scss](https://github.com/twbs/bootstrap/blob/v4-dev/scss/_variables.scss))의 일부입니다.
 
-<script src="https://gist.github.com/ParkYoungWoong/3c1c1c326a38753161e06e78c8264b3d.js"></script>
+<<!--REPLACE:script--> src="https://gist.github.com/ParkYoungWoong/3c1c1c326a38753161e06e78c8264b3d.js"></<!--REPLACE:script-->>
 
 <table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip=""><tbody><tr><td id="file-_variables-scss-L1" class="blob-num js-line-number" data-line-number="1">&nbsp;</td><td id="file-_variables-scss-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">//</span> stylelint-disable</span></td></tr><tr><td id="file-_variables-scss-L2" class="blob-num js-line-number" data-line-number="2">&nbsp;</td><td id="file-_variables-scss-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-v">$white</span>: <span class="pl-c1">#fff</span> <span class="pl-k">!default</span>;</td></tr><tr><td id="file-_variables-scss-L3" class="blob-num js-line-number" data-line-number="3">&nbsp;</td><td id="file-_variables-scss-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-v">$gray-100</span>: <span class="pl-c1">#f8f9fa</span> <span class="pl-k">!default</span>;</td></tr><tr><td id="file-_variables-scss-L4" class="blob-num js-line-number" data-line-number="4">&nbsp;</td><td id="file-_variables-scss-LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-v">$gray-200</span>: <span class="pl-c1">#e9ecef</span> <span class="pl-k">!default</span>;</td></tr><tr><td id="file-_variables-scss-L5" class="blob-num js-line-number" data-line-number="5">&nbsp;</td><td id="file-_variables-scss-LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-v">$gray-300</span>: <span class="pl-c1">#dee2e6</span> <span class="pl-k">!default</span>;</td></tr><tr><td id="file-_variables-scss-L6" class="blob-num js-line-number" data-line-number="6">&nbsp;</td><td id="file-_variables-scss-LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-v">$gray-400</span>: <span class="pl-c1">#ced4da</span> <span class="pl-k">!default</span>;</td></tr><tr><td id="file-_variables-scss-L7" class="blob-num js-line-number" data-line-number="7">&nbsp;</td><td id="file-_variables-scss-LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-v">$gray-500</span>: <span class="pl-c1">#adb5bd</span> <span class="pl-k">!default</span>;</td></tr><tr><td id="file-_variables-scss-L8" class="blob-num js-line-number" data-line-number="8">&nbsp;</td><td id="file-_variables-scss-LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-v">$gray-600</span>: <span class="pl-c1">#6c757d</span> <span class="pl-k">!default</span>;</td></tr><tr><td id="file-_variables-scss-L9" class="blob-num js-line-number" data-line-number="9">&nbsp;</td><td id="file-_variables-scss-LC9" class="blob-code blob-code-inner js-file-line"><span class="pl-v">$gray-700</span>: <span class="pl-c1">#495057</span> <span class="pl-k">!default</span>;</td></tr><tr><td id="file-_variables-scss-L10" class="blob-num js-line-number" data-line-number="10">&nbsp;</td><td id="file-_variables-scss-LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-v">$gray-800</span>: <span class="pl-c1">#343a40</span> <span class="pl-k">!default</span>;</td></tr><tr><td id="file-_variables-scss-L11" class="blob-num js-line-number" data-line-number="11">&nbsp;</td><td id="file-_variables-scss-LC11" class="blob-code blob-code-inner js-file-line"><span class="pl-v">$gray-900</span>: <span class="pl-c1">#212529</span> <span class="pl-k">!default</span>;</td></tr><tr><td id="file-_variables-scss-L12" class="blob-num js-line-number" data-line-number="12">&nbsp;</td><td id="file-_variables-scss-LC12" class="blob-code blob-code-inner js-file-line"><span class="pl-v">$black</span>: <span class="pl-c1">#000</span> <span class="pl-k">!default</span>;</td></tr></tbody></table>
 
@@ -2500,7 +2491,9 @@ Sass에서 기본적으로 제공하는 내장 함수에는 많은 종류가 있
 [http://sass-lang.com/documentation](http://sass-lang.com/documentation)  
 [https://www.sitepoint.com/sass-basics-operators/](https://www.sitepoint.com/sass-basics-operators/)  
 [https://sass-guidelin.es/ko/](https://sass-guidelin.es/ko/)  
-[http://www.thesassway.com/](http://www.thesassway.com/) </il>
+[http://www.thesassway.com/](http://www.thesassway.com/)
+			</script>
+			<il class="article-detail__body toast-ui-viewer"> </il>
 		</ul>
 		</contents>
 		<bottom>

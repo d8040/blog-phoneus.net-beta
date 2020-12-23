@@ -78,20 +78,6 @@
 <script data-ad-client="ca-pub-5184039387564779" async
 	src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-<!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
-
-<!-- 토스트 UI 에디터, 자바스크립트 코어 -->
-<script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
-
-<!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
-<!-- 토스트 UI 에디터, CSS 코어 -->
-<link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
-
-<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
-<script src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
 <script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag() {
@@ -156,18 +142,20 @@
 		</nav>
 		<link rel="stylesheet" href="app.css" />
 	</div>
+<!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
+
 <!-- 토스트 UI 에디터, 자바스크립트 코어 -->
-<script
-	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+<script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
 
 <!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
 <!-- 토스트 UI 에디터, CSS 코어 -->
-<link rel="stylesheet"
-	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+<link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
 
+<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
+<script src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
 <main class="flex flex-jc-c flex-g-1">
 
 	<detail class="detail-box flex-jc-c flex">
@@ -179,6 +167,8 @@
 		</div>
 		<subject class="title">
 		<ul class="">
+
+
 			<li><a href="#">스크롤 화살표, 회전 배너효과</a></li>
 		</ul>
 		</subject>
@@ -191,7 +181,8 @@
 		</info>
 		<contents class="contents">
 		<ul class="flex">
-			<il class="article-detail__body"> 전체적으로 메인페이지를 만들 때는 내비게이션 바를 만들 때보다 더 쉬웠던 것 같다. 적용하기에 어려운 부분은 애니메이션처럼 움직이는 부분이었고 나머지는 할만했다. ✌🏻
+			<script type="text/x-template">
+전체적으로 메인페이지를 만들 때는 내비게이션 바를 만들 때보다 더 쉬웠던 것 같다. 적용하기에 어려운 부분은 애니메이션처럼 움직이는 부분이었고 나머지는 할만했다. ✌🏻
 
 # Background Image 🖼
 
@@ -210,7 +201,7 @@
  
  ```
  <div class="describeMyself">
-   <ul class="descriptionList">
+   <ul class="de<!--REPLACE:script-->ionList">
      <li>n Ambitious</li>
      <li>Promising</li>
      <li>Creative</li>
@@ -223,7 +214,7 @@
  -   첫 번째와 마지막 리스트가 같은 이유는 애니메이션의 연속성을 위해 넣어야 한다.
  CSS
  
- ```
+ ```css
  .describeMyself {
    margin: 14px 3px;
    display: inline-block;
@@ -239,7 +230,7 @@
  -   `overflow: hidden;`를 이용해 범위를 벗어난 부분은 안 보이도록 해준다.
  -   `z-index` 배경 이미지를 덮어주는 부분과 구분해주기 위해서 추가했다.
  
- ```
+ ```css
  @keyframes rolling {
    0% {
      margin-top: : 0;
@@ -259,15 +250,15 @@
  -   구글링한 결과 `keyframs`를 사용하여 애니메이션 효과를 줄 수 있었다.
  -   리스트 아이템이 4개이므로 4단계로 나누어서 %를 지정해주고, 해당 %마다 `margin-top`으로 움직일 방향과 움직일 범위를 지정해주었다.
  
- ```
- .descriptionList {
+ ```css
+ .de<!--REPLACE:script-->ionList {
    padding-left: 0;
    margin:0;
    animation-name: rolling;
    animation-duration: 6s;
    animation-iteration-count: infinite;
  }
- .descriptionList li {
+ .de<!--REPLACE:script-->ionList li {
    list-style: none;
    line-height: 1.5em;
    display: flex;
@@ -292,7 +283,7 @@
 
  Html
  
- ```
+ ```html
  <div class="arrow-down">
    <a href="#about">
      <span></span>
@@ -307,7 +298,7 @@
 
  CSS
  
- ```
+ ```css
  .arrow-down span{
    display: block;
    width: 1.5em;
@@ -322,8 +313,8 @@
  
  -   투명한 정사각형 상자를 만들어서 테두리를 아래와 오른쪽에만 만들어준다.
  -   `transfomr: rotate(45deg);` 시계방향으로 45도 틀어주면 아래를 향하는 화살표 모양이 된다!
- 
- ```
+ 
+ ```css
  @keyframes animate-arrows{
    0%{
      opacity: 0;
@@ -342,7 +333,7 @@
  -   LED의 숨쉬기모드(?) 처럼 화살표가 번쩍번쩍하는 느낌을 주기 위해 투명도를 0과 1 사이에서 왔다 갔다 하게 설정
  -   `translate`를 이용하여 화살표가 움직일 거리를 정해준다.
  
- ```
+ ```css
  .arrow-down span:nth-child(1){
    animation-delay: -0.2s;
  }
@@ -362,7 +353,9 @@
 
 갓글,,갓튜브 고맙습니다,,🙇🏻‍♂️
 
-다음은 About Page를 리뷰해봐야겠다. 👋🏻 </il>
+다음은 About Page를 리뷰해봐야겠다. 👋🏻
+			</script>
+			<il class="article-detail__body toast-ui-viewer"> </il>
 		</ul>
 		</contents>
 		<bottom>
