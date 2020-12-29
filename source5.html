@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!--사이트 저작권자-->
 <meta name="author" content="D.K">
@@ -34,7 +31,7 @@
 	content="java, html, photograph, technical, css,js, java script, scss, cording, c">
 
 <!-- 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
-<title>fun and coding</title>
+<title>CSS: CSS 스크롤 화살표 표기</title>
 
 <link rel="canonical" href="http://phoneus.net" />
 
@@ -699,10 +696,10 @@ a span::after {
 ![마우스 × 애니메이션](http://rwdb.kr/images/2019/190605_10.gif)
 
 이곳은 마우스 스크롤을 격려하는 애니메이션을 더해 보면 한 것으로, 구현은 CSS를 다음과 같이 설명합니다.
-
+```
 `CSS`
 
-```
+```css
 a {
   padding-top: 60px;
 }
@@ -789,12 +786,11 @@ a span::before {
 			/**
 			 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
 			 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-			/*
 			var disqus_config = function () {
-			this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-			this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+			this.page.url = '{{fileName}}';  // Replace PAGE_URL with your page's canonical URL variable
+			this.page.identifier = '{5}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 			};
-			 */
+			 
 			(function() { // DON'T EDIT BELOW THIS LINE
 				var d = document, s = d.createElement('script');
 				s.src = 'https://dkey.disqus.com/embed.js';
@@ -821,3 +817,4 @@ a span::before {
 <script src="app.js"></script>
 
 </div>
+<!-- </body> . <script id="dsq-count-scr" src="//dkey.disqus.com/count.js" async></script> -->
