@@ -12,7 +12,8 @@ $.get(
 				regDate: row.regDate,
 				writer: row.extra_writer,
 				title: row.title,
-				body: row.body
+				body: row.body,
+				rcmCount: row.rcmCount
 			};
 
 			articleList.push(article);
