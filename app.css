@@ -867,7 +867,8 @@ html {
   --article-list__cell-reg-date__width:150px;
   --article-list__cell-writer__width:120px;
   --article-list__cell-rcm__width:60px;
-  --article-list__cell-title__width:calc(100% - var(--article-list__cell-id__width) - var(--article-list__cell-reg-date__width) - var(--article-list__cell-writer__width) - var(--article-list__cell-rcm__width));
+  --article-list__cell-hit__width:60px;
+  --article-list__cell-title__width:calc(100% - var(--article-list__cell-id__width) - var(--article-list__cell-reg-date__width) - var(--article-list__cell-writer__width) - var(--article-list__cell-rcm__width) - var(--article-list__cell-hit__width));
 }
 .total-box{  
   height:100vh;
@@ -926,7 +927,9 @@ html {
 .article-list__cell-rcm {
   width:var(--article-list__cell-rcm__width);
 }
-
+.article-list__cell-hit {
+  width:var(--article-list__cell-hit__width);
+}
 .article-list__cell-title {
   width:var(--article-list__cell-title__width);
 }
