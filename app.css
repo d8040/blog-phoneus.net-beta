@@ -1024,7 +1024,7 @@ html {
   .adsbygoogle{
   	height: 90px; 
   	width: 700px; 
-  	z-index: 10px;
+  	z-index: 1;
   }
   .article-detail__body{
     width:auto;
@@ -1054,7 +1054,7 @@ html {
       .adsbygoogle{
   	height: 60px!important;  
   	width: 400px!important; 
-  	z-index: 10px!important;
+  	z-index: 1!important;
   }
     .detail-box .title{
       font-size: 22px!important;
@@ -1074,7 +1074,7 @@ html {
           .adsbygoogle{
   	height: 60px!important;  
   	width: 300px!important; 
-  	z-index: 10px!important;
+  	z-index: 1!important;
   }
     .detail-box .title{
       font-size: 22px!important;
@@ -1094,7 +1094,7 @@ html {
           .adsbygoogle{
   	height: 60px!important;  
   	width: 300px!important; 
-  	z-index: 10px!important;
+  	z-index: 1!important;
   }
     .detail-box .title{
       font-size: 22px!important;
