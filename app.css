@@ -1024,6 +1024,7 @@ html {
   .adsbygoogle{
   	height: 90px; 
   	width: 700px; 
+  	z-index: 10px;
   }
   .article-detail__body{
     width:auto;
@@ -1053,6 +1054,7 @@ html {
       .adsbygoogle{
   	height: 60px;  
   	width: 400px; 
+  	z-index: 10px;
   }
     .detail-box .title{
       font-size: 22px!important;
@@ -1072,6 +1074,7 @@ html {
           .adsbygoogle{
   	height: 60px;  
   	width: 300px; 
+  	z-index: 10px;
   }
     .detail-box .title{
       font-size: 22px!important;
@@ -1091,6 +1094,7 @@ html {
           .adsbygoogle{
   	height: 60px;  
   	width: 300px; 
+  	z-index: 10px;
   }
     .detail-box .title{
       font-size: 22px!important;
