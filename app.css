@@ -865,7 +865,7 @@ html {
 .adsbygoogle{
   z-index: 1!important;
   padding: 5px 5px!important;
-  margin: 20px 0!important;
+  margin: 20px auto!important;
   }
 /* 광고 끝 */
 
