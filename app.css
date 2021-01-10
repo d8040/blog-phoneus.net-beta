@@ -1021,7 +1021,9 @@ html {
   .con-min-width {
     min-width: 739px;
   }
-
+  .adsbygoogle{
+  	height: 90px;  
+  }
   .article-detail__body{
     width:auto;
   }
@@ -1047,6 +1049,9 @@ html {
     .con-min-width {
       min-width: 400px;
     }
+      .adsbygoogle{
+  	height: 60px;  
+  }
     .detail-box .title{
       font-size: 22px!important;
     }
@@ -1062,6 +1067,9 @@ html {
     .con-min-width {
       min-width: 340px!important;
     }
+          .adsbygoogle{
+  	height: 60px;  
+  }
     .detail-box .title{
       font-size: 22px!important;
     }
@@ -1077,6 +1085,9 @@ html {
     .con-min-width {
       min-width: 300px!important;
     }
+          .adsbygoogle{
+  	height: 60px;  
+  }
     .detail-box .title{
       font-size: 22px!important;
     }
