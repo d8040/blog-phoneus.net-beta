@@ -1027,6 +1027,7 @@ html {
   	height: 90px; 
   	width: 700px; 
   	z-index: 1;
+  	display: inline-block!important;
   }
   .article-detail__body{
     width:auto;
@@ -1057,6 +1058,7 @@ html {
   	height: 60px!important;  
   	width: 400px!important; 
   	z-index: 1!important;
+  	display: inline-block!important;
   }
     .detail-box .title{
       font-size: 22px!important;
@@ -1077,6 +1079,7 @@ html {
   	height: 60px!important;  
   	width: 300px!important; 
   	z-index: 1!important;
+  	display: inline-block!important;
   }
     .detail-box .title{
       font-size: 22px!important;
@@ -1097,6 +1100,7 @@ html {
   	height: 60px!important;  
   	width: 300px!important; 
   	z-index: 1!important;
+  	display: inline-block!important;
   }
     .detail-box .title{
       font-size: 22px!important;
