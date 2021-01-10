@@ -264,7 +264,7 @@ body{
   white-space:nowrap; /*줄바꿈 방지*/
   left:0;
   right:0;
-/*   transform:translate(-50%); */
+  /*   transform:translate(-50%); */
   background-color:RGBA(34,34,34,1);
   z-index:100;
 }
@@ -340,7 +340,7 @@ body{
   padding-top: 20px;
   padding-bottom:20px;
   font-size:20px;
-/*   color: #D6D6D6; */
+  /*   color: #D6D6D6; */
 }
 .menu-box > ul > li li a{
   padding-left: 20px;
@@ -364,7 +364,7 @@ body{
   white-space:nowrap; /*줄바꿈 방지*/
   left: 0;
   right:0;
-/*   transform:translate(-50%); */
+  /*   transform:translate(-50%); */
   background-color:RGBA(34,34,34,0.9);
   z-index:100;
 }
@@ -638,7 +638,7 @@ naming span:nth-of-type(10) {
   left: 0;
   width: 100%;
   height: 100%;
-/*   max-width: 35em; */
+  /*   max-width: 35em; */
   display: grid;
   grid-template-rows: 1fr 1fr;
   color: white;
@@ -678,16 +678,16 @@ naming span:nth-of-type(10) {
   color:black;
 }
 .content > .paragraph {
-/*   grid-row: 2 / 3; */
+  /*   grid-row: 2 / 3; */
   line-height: 1.5;  
   z-index: 10 !important;
   margin:0;
 }
 
 /* .subheading {
-  font-size: 1.25em;
-  font-weight: 600;
-  margin-bottom: 0.5em;
+font-size: 1.25em;
+font-weight: 600;
+margin-bottom: 0.5em;
 } */
 /* ---------------------------------- */
 .figure {
@@ -866,7 +866,7 @@ html {
   z-index: 1!important;
   padding: 5px 5px!important;
   margin: 20px auto!important;
-  }
+}
 /* 광고 끝 */
 
 /* 게시물 리스트 */
@@ -1023,10 +1023,10 @@ html {
     min-width: 739px;
   }
   .adsbygoogle{
-  	height: 90px; 
-  	width: 700px; 
-  	z-index: 1;
-  	display:inline-block!important;
+/*     height: 90px!important;  */
+    width: 700px!important; 
+    z-index: 1!important;
+    display:inline-block!important;
   }
   .article-detail__body{
     width:auto;
@@ -1053,54 +1053,12 @@ html {
     .con-min-width {
       min-width: 400px!important;
     }
-      .adsbygoogle{
-  	height: 60px!important;  
-  	width: 400px!important; 
-  	z-index: 1!important;
-  	display:inline-block!important;
-  }
-    .detail-box .title{
-      font-size: 22px!important;
+    .adsbygoogle{
+/*       height: 60px!important;   */
+      width: 400px!important; 
+      z-index: 1!important;
+      display:inline-block!important;
     }
-    .information > ul  li, bottom > ul li{
-      font-size: 12px!important;
-    }
-   .content > .header > .header__box{
-  width:350px;
-      justify-content:center;
-    }
-  }
-  @media(max-width:376px){
-    .con-min-width {
-      min-width: 340px!important;
-    }
-          .adsbygoogle{
-  	height: 60px!important;  
-  	width: 300px!important; 
-  	z-index: 1!important;
-  	display:inline-block!important;
-  }
-    .detail-box .title{
-      font-size: 22px!important;
-    }
-    .information > ul  li, bottom > ul li{
-      font-size: 12px!important;
-    }
-   .content > .header > .header__box{
-  width:3400px;
-      justify-content:center;
-    }
-  }
-  @media(max-width:320px){
-    .con-min-width {
-      min-width: 300px!important;
-    }
-          .adsbygoogle{
-  	height: 60px!important;  
-  	width: 300px!important; 
-  	z-index: 1!important;
-  	display:inline-block!important;
-  }
     .detail-box .title{
       font-size: 22px!important;
     }
@@ -1108,7 +1066,49 @@ html {
       font-size: 12px!important;
     }
     .content > .header > .header__box{
-  width:300px; 
+      width:350px;
+      justify-content:center;
+    }
+  }
+  @media(max-width:376px){
+    .con-min-width {
+      min-width: 340px!important;
+    }
+    .adsbygoogle{
+/*       height: 60px!important;   */
+      width: 300px!important; 
+      z-index: 1!important;
+      display:inline-block!important;
+    }
+    .detail-box .title{
+      font-size: 22px!important;
+    }
+    .information > ul  li, bottom > ul li{
+      font-size: 12px!important;
+    }
+    .content > .header > .header__box{
+      width:3400px;
+      justify-content:center;
+    }
+  }
+  @media(max-width:320px){
+    .con-min-width {
+      min-width: 300px!important;
+    }
+    .adsbygoogle{
+/*       height: 60px!important;   */
+      width: 300px!important; 
+      z-index: 1!important;
+      display:inline-block!important;
+    }
+    .detail-box .title{
+      font-size: 22px!important;
+    }
+    .information > ul  li, bottom > ul li{
+      font-size: 12px!important;
+    }
+    .content > .header > .header__box{
+      width:300px; 
       justify-content:center;
     }
   }
