@@ -1051,11 +1051,11 @@ html {
   }
   @media(max-width:426px){
     .con-min-width {
-      min-width: 400px!important;
+      min-width: 390px!important;
     }
     .adsbygoogle{
 /*       height: 60px!important;   */
-      width: 400px!important; 
+      width: 390px!important; 
       z-index: 1!important;
       display:inline-block!important;
     }
@@ -1093,7 +1093,7 @@ html {
   }
   @media(max-width:320px){
     .con-min-width {
-      min-width: 300px!important;
+      min-width: 285px!important;
     }
     .adsbygoogle{
 /*       height: 60px!important;   */
