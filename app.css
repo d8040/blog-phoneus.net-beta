@@ -93,7 +93,12 @@ a {
 .bl-r{
   border: 2px solid red;
 }
-
+.bl-b{
+  border: 2px solid blue;
+}
+.bl-g{
+  border: 2px solid green;
+}
 .color-white {
   color:white;
 }
@@ -855,6 +860,12 @@ html {
   color:red;
 }
 /* 페이징끝 */
+
+/* 광고시작 */
+.adsense{
+  width:300px;
+}
+/* 광고 끝 */
 
 /* 게시물 리스트 */
 
