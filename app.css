@@ -1022,7 +1022,8 @@ html {
     min-width: 739px;
   }
   .adsbygoogle{
-  	height: 90px;  
+  	height: 90px; 
+  	width: 700px; 
   }
   .article-detail__body{
     width:auto;
@@ -1051,6 +1052,7 @@ html {
     }
       .adsbygoogle{
   	height: 60px;  
+  	width: 400px; 
   }
     .detail-box .title{
       font-size: 22px!important;
@@ -1069,6 +1071,7 @@ html {
     }
           .adsbygoogle{
   	height: 60px;  
+  	width: 300px; 
   }
     .detail-box .title{
       font-size: 22px!important;
@@ -1087,6 +1090,7 @@ html {
     }
           .adsbygoogle{
   	height: 60px;  
+  	width: 300px; 
   }
     .detail-box .title{
       font-size: 22px!important;
