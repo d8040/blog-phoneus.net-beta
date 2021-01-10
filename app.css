@@ -862,10 +862,11 @@ html {
 /* 페이징끝 */
 
 /* 광고시작 */
-.adsense{
-  width:auto;
-  height:auto;
-}
+.adsbygoogle{
+  	height: auto!important;  
+  	width: auto!important; 
+  	z-index: 1!important;
+  }
 /* 광고 끝 */
 
 /* 게시물 리스트 */
@@ -1103,7 +1104,7 @@ html {
       font-size: 12px!important;
     }
     .content > .header > .header__box{
-  width:300px;
+  width:300px; 
       justify-content:center;
     }
   }
