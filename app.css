@@ -863,10 +863,9 @@ html {
 
 /* 광고시작 */
 .adsbygoogle{
-  	height: auto!important;  
-  	width: auto!important; 
   	z-index: 1!important;
-  	padding: 5px 5px;
+  	padding: 5px 5px!important;
+  margin: 20px 0;
   }
 /* 광고 끝 */
 
@@ -1027,7 +1026,6 @@ html {
   	height: 90px; 
   	width: 700px; 
   	z-index: 1;
-  	display: inline-block!important;
   }
   .article-detail__body{
     width:auto;
@@ -1058,7 +1056,6 @@ html {
   	height: 60px!important;  
   	width: 400px!important; 
   	z-index: 1!important;
-  	display: inline-block!important;
   }
     .detail-box .title{
       font-size: 22px!important;
@@ -1079,7 +1076,6 @@ html {
   	height: 60px!important;  
   	width: 300px!important; 
   	z-index: 1!important;
-  	display: inline-block!important;
   }
     .detail-box .title{
       font-size: 22px!important;
@@ -1100,7 +1096,6 @@ html {
   	height: 60px!important;  
   	width: 300px!important; 
   	z-index: 1!important;
-  	display: inline-block!important;
   }
     .detail-box .title{
       font-size: 22px!important;
