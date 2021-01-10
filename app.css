@@ -863,7 +863,8 @@ html {
 
 /* 광고시작 */
 .adsense{
-  width:300px;
+  width:auto;
+  height:auto;
 }
 /* 광고 끝 */
 
