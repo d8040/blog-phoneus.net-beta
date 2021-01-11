@@ -963,8 +963,8 @@ html {
 /* detail page start */
 .detail-box>div{
   max-width:850px;
-  padding-left: 2%;
-  padding-right: 2%; 
+  margin-left: 2%;
+  margin-right: 2%; 
 }
 .article-detail__body{  
   width:100%;
