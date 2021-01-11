@@ -1076,7 +1076,7 @@ html {
     }
     .adsbygoogle{
 /*       height: 60px!important;   */
-      width: 300px!important; 
+      width: 340px!important; 
       z-index: 1!important;
       display:inline-block!important;
     }
@@ -1087,7 +1087,7 @@ html {
       font-size: 12px!important;
     }
     .content > .header > .header__box{
-      width:3400px;
+      width:340px;
       justify-content:center;
     }
   }
@@ -1097,7 +1097,7 @@ html {
     }
     .adsbygoogle{
 /*       height: 60px!important;   */
-      width: 300px!important; 
+      width: 285px!important; 
       z-index: 1!important;
       display:inline-block!important;
     }
