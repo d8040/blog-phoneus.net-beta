@@ -12,7 +12,7 @@
 <meta name="keywords" content="fun and coding, dk, java, html, photograph, technical, css,js, java script, scss, cording, c" />
 <meta name="copyright" content="fun and coding" />
 <meta name="pubdate" content="2020-12-18" />
-<meta name="lastmod" content="2021-01-11 22:15:25" />
+<meta name="lastmod" content="2021-01-14 10:32:16" />
 <meta name ="content-language" content="kr">
 <meta name ="content-language" content="en">
 
@@ -23,7 +23,7 @@
 <meta property="og:description" content="fun and coding::Java - split, substring으로 문자열을 자르기 & 분리하기" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:image:alt" content="fun and coding" />
-<meta property="og:updated_time" content="2021-01-11 22:15:25"/>
+<meta property="og:updated_time" content="2021-01-14 10:32:16"/>
 <meta property="og:pubdate" content="2020-12-18" />
 <meta property="og:url" content="http://blog.phoneus.net" />
 <meta property="og:image"
@@ -65,8 +65,8 @@
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
 
-<!-- vue 불러오기 -->
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<!-- 개발버전, 도움되는 콘솔 경고를 포함. -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 <!-- 폰트어썸 불러오기 -->
 <link rel="stylesheet"
@@ -128,7 +128,7 @@
         data-ad-client="ca-pub-5184039387564779">
 </amp-auto-ads>
 
-<div class="total-box flex flex-dr-c" id="article-list-wrap">
+<div class="total-box flex flex-dr-c" id="article-list-wrap" v-cloak>
 	<nav class="side-menu flex">
 		<ul class="menu-btn">
 			<div class="line line--1"></div>
@@ -258,7 +258,7 @@
 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- 디스플레이 수평형 -->
 <ins class="adsbygoogle"
-     style="display:flex"
+     style="display:flex; text-align:center;"
      data-ad-client="ca-pub-5184039387564779"
      data-ad-slot="7231618995"
      data-ad-format="auto"
