@@ -8,7 +8,7 @@
 <!-- META -->
 <link rel="canonical" href="http://blog.phoneus.net" />
 <meta name="subject" content="fun and coding, dk, java, html, photograph, technical, css,js, java script, scss, cording, c, programig, coding, technology, photograph 정보공유를 위한 개인 블로그" />
-<meta name="title" content="fun and coding::Main Page" />
+<meta name="title" content="fun and coding::java(자바):codeup(코드업)[1083 : [기초-종합] 3 6 9 게임의 왕이 되자!" />
 <meta name="keywords" content="fun and coding, dk, java, html, photograph, technical, css,js, java script, scss, cording, c" />
 <meta name="copyright" content="fun and coding" />
 <meta name="pubdate" content="2020-12-18" />
@@ -19,8 +19,8 @@
 <!-- OPENGRAPH -->
 <meta property="og:site_name" content="fun and coding" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="fun and coding::Main Page" />
-<meta property="og:description" content="fun and coding::Technology for java, html, photograph, technical, css,js, java script, scss, cording, c" />
+<meta property="og:title" content="fun and coding::java(자바):codeup(코드업)[1083 : [기초-종합] 3 6 9 게임의 왕이 되자!" />
+<meta property="og:description" content="fun and coding::java(자바):codeup(코드업)[1083 : [기초-종합] 3 6 9 게임의 왕이 되자!" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:image:alt" content="fun and coding" />
 <meta property="og:updated_time" content="2021-01-21 00:04:58" />
@@ -31,7 +31,7 @@
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="fun and coding" />
 <meta itemprop="name" content="fun and coding" />
-<meta itemprop="description" content="fun and coding::Technology for java, html, photograph, technical, css,js, java script, scss, cording, c" />
+<meta itemprop="description" content="fun and coding::java(자바):codeup(코드업)[1083 : [기초-종합] 3 6 9 게임의 왕이 되자!" />
 <meta itemprop="image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F6I3Gl%2FbtqQXAknUMq%2FN6o1eeA26v7yheFnfunv8K%2Fimg.jpg" />
 
 <!--사이트 저작권자-->
@@ -44,7 +44,7 @@
 <meta name="robots" content="index,follow">
 
 <!-- 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
-<title>fun and coding</title>
+<title>java(자바):codeup(코드업)[1083 : [기초-종합] 3 6 9 게임의 왕이 되자!</title>
 
 <link rel="canonical" href="http://blog.phoneus.net" />
 
@@ -176,47 +176,190 @@
 			</div>
 		</nav>
 		<link rel="stylesheet" href="app.css" />
-	</div>
-<main class="flex flex-g-1 flex-ai-c flex-dr-c">
-	<div class="title-bar con-min-width">
-		<h1 class="con">
-			<i class="fas fa-search"></i> Search Page
-		</h1>
-	</div>
-	<section class="section-1">
-		<div class="flex flex-jc-c">
-			<div class="article-list con-min-width">
-				<div class="header">
-					<div class="article-list__title flex flex">
-						<div class="article-list__cell-id">번호</div>
-						<div class="article-list__cell-writer">작성자</div>
-						<div class="article-list__cell-title">제목</div>
-						<div class="article-list__cell-reg-date">등록일</div>
-						<div class="article-list__cell-rcm">추천</div>
-						<div class="article-list__cell-hit">조회</div>
-					</div>
-				</div>
-				<div class="main article-box">
-					<div class="flex" v-for="article in filtered">
-						<div class="article-list__cell-id">{{article.id}}</div>
-						<div class="article-list__cell-writer">{{article.writer}}</div>
-						<div class="article-list__cell-title">
-							<a :href="'article_detail_' + article.id + '.html'" target="_blank" class="hover-underline">{{article.title}}</a>
-							<nav>
-								<div class=article-list__cell-writer1>{{article.writer}}</div>
-								<div class=article-list__cell-reg-date1>{{article.regDate}}</div>
-							</nav>
-						</div>
-						<div class="article-list__cell-reg-date">{{article.regDate}}</div>
-						<div class=article-list__cell-rcm>{{article.rcmCount}}</div>
-						<div class=article-list__cell-hit>{{article.hit}}</div>
-					</div>
-				</div>
+	</div><!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
+
+<!-- 토스트 UI 에디터, 자바스크립트 코어 -->
+<script
+	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+
+<!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
+<!-- 토스트 UI 에디터, CSS 코어 -->
+<link rel="stylesheet"
+	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+
+<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
+<script
+	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
+
+<main class="flex flex-jc-c flex-g-1">
+
+	<detail class="detail-box con-min-width flex-jc-c flex">
+	<div class="flex flex-dr-c">
+		<div class="title-bar">
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:flex; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5184039387564779"
+     data-full-width-responsive="false"
+     data-ad-slot="2170864000"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			<div class="">
+				<a href="article_list_CodeUp_1.html">board > CodeUp > </a>
 			</div>
 		</div>
-	</section>	
-<script src="article_search.js" defer></script>
-</main><footer class="footer-bar flex">
+		<subject class="title">
+		<ul class="">
+
+
+			<li>
+				java(자바):codeup(코드업)[1083 : [기초-종합] 3 6 9 게임의 왕이 되자!
+			</li>
+		</ul>
+		</subject>
+		<info class="information">
+		<ul class="flex flex-dr-r">
+			<li class="flex-g-1">
+				작성자: D.K
+			</li>
+			<li>
+				조회수: 0
+			</li>
+			<li>
+				작성일: 2021-01-20 22:44:20
+			</li>
+		</ul>
+		</info>
+		<contents class="contents con-min-width">
+		<ul class="flex">
+			<script type="text/x-template">
+3 6 9 게임을 하던 영일이는 3 6 9 게임에서 잦은 실수로 계속해서 벌칙을 받게 되었다.  
+3 6 9 게임의 왕이 되기 위한 마스터 프로그램을 작성해 보자.  
+  
+참고  
+중첩의 원리  
+반복 실행 구조 안에 선택 실행 구조를 자유롭게 중첩할 수 있다.  
+  
+예시  
+int i;  
+for(i=1; i<=100; i++) //1부터 100까지 반복  
+{  
+  if(i%3==0 || i%5==0) printf("%d ", i); //3또는 5의 배수인 경우 그 수 출력  
+}  
+  
+\*\* 3 6 9 게임은?  
+여러 사람이 순서를 정해 순서대로 수를 부르는 게임이다.  
+만약 3, 6, 9 가 들어간 수를 자신이 불러야 하는 상황이면, 대신 "박수" 를 쳐야 한다.  
+33까지 진행했다면? "짝짝"과 같이 박수를 두 번 치는 형태도 있다.  
+  
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F7VAyM%2FbtqRptRRGe8%2FFIkF9wkWO71W6F5Uh5HMfK%2Fimg.png)
+
+**입력**
+
+10 보다 작은 정수 1개가 입력된다.  
+(1 ~ 9)  
+  
+  
+
+**출력**
+
+1 부터 그 수까지 순서대로 공백을 두고 수를 출력하는데,  
+3 또는 6 또는 9인 경우 그 수 대신 영문 대문자 X 를 출력한다.  
+  
+  
+
+**입력 예시**   예시 복사
+
+9
+
+**출력 예시**
+
+1 2 X 4 5 X 7 8 X
+
+```java
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in); 
+		int a = sc.nextInt();
+		String b = "X";
+		for (int i = 1; i <=a; i++) {
+			
+			if (i == 3 ||i == 6 ||i == 9  ) {
+				System.out.print(b+" ");
+			}else {
+				System.out.print(i+" ");	
+			}
+		}
+	}
+}
+```
+			</script>
+			<il class="article-detail__body toast-ui-viewer"> </il>
+		</ul>			
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:flex; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-5184039387564779"
+     data-full-width-responsive="false"
+     data-ad-slot="2170864000"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		</contents>
+		<bottom>
+		<ul class="flex">
+			<li>추천수: 0</li>
+			<li class="flex-g-1"></li>
+			<li class="hover-underline ">
+				<a class="${article-detail__link-prev-article-class}"
+					href="article_detail_24.html">&lt; 이전글</a>
+			</li>
+			<li class="hover-underline">
+				<a href="article_list_CodeUp_1.html">목록</a>
+			</li>
+			<li class="hover-underline ">
+				<a class="${article-detail__link-next-article-class}"
+					href="article_detail_22.html"> 다음글 &gt;</a>
+			</li>
+		</ul>
+		</bottom>
+		<div id="disqus_thread"></div>
+		<script>
+		var disqus_config = function () {
+		this.page.url = 'https://blog.phoneus.net/article_detail_23.html';
+		this.page.identifier = 'article_detail_23.html';
+		};		
+		(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = 'https://dkey.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+	</script>
+		<noscript>
+			Please enable JavaScript to view the
+			<a href="https://disqus.com/?ref_noscript">comments powered by
+				Disqus.</a>
+		</noscript>
+	</div>
+	</detail>
+</main>
+
+<script src="toastUi.js"></script><footer class="footer-bar flex">
 	<div class="con flex flex-ai-c flex-jc-c">
 		<img src="img/copyright.png" alt="">
 		<div class="bottom-bar__site-info flex">copyright 2017.DK.All Rights reserved</div>
