@@ -1,3 +1,4 @@
+
 const articleList = [];
 
 $.get(
@@ -13,7 +14,8 @@ $.get(
 				writer: row.extra_writer,
 				title: row.title,
 				body: row.body,
-				rcmCount: row.rcmCount
+				rcmCount: row.rcmCount,
+				hit: row.hit
 			};
 
 			articleList.push(article);
@@ -26,7 +28,12 @@ const articleListBoxVue = new Vue({
 	el: "#article-list-wrap",
 	data: {
 		articleList: articleList,
-		searchKeyword: ''
+		searchKeyword: ""
+	},
+	mounted: function() {
+		if ( new URL(location.href).searchParams.get('inputKeyword') ) {
+			this.searchKeyword = new URL(location.href).searchParams.get('inputKeyword');
+		}
 	},
 	methods: {
 		searchKeywordInputed: _.debounce(function(e) {
@@ -55,4 +62,4 @@ const articleListBoxVue = new Vue({
 			});
 		}
 	}
-}); 
+});
