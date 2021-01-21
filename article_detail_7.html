@@ -10,96 +10,10 @@
 <meta property="og:site_name" content="fun and coding" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="fun and coding::java: 재귀함수 정리" />
-<meta property="og:description" content="fun and coding::래 범위의 문제에서 더 작은 범위의 하위 문제를 먼저 해결함으로써 원래 문제를 해결해 나가는 방식입니다. 일반 반복문을 통해 구현 가능한 기능은 재귀 함수를 통해 구현이 가능하며 반대로 재귀 함수로 구현 한 기능을 반복문으로 구현이 가능합니다.
-
-재귀 함수는 함수 내에서 자기 자신을 계속 호출하는 방식이기 때문에 함수 안에 반드시 종료 구간이 되는 Base Case를 생각하며 코드를 구현해야 합니다. 아래 샘플 예제를 한 번 보겠습니다.
-
-java
-```java
-public class Recursion_Test
-{
-    public static void main(String[] args)
-    {
-        Function();
-    }
- 
-    public static void Function()
-    {
-        System.out.println("반갑습니다");
- 
-        Function();
-    }
-}
-
-```
-
-▼ Function이라는 Method를 정의하였습니다. 해당 함수의 기능은 "반갑습니다"를 호출하고 다시 자기 자신을 호출하고 있습니다. 해당 소스에서 문제는 자기 자신을 호출만 하고있지 함수 영역이 종료되는 구간이 없기 때문에 "반갑습니다"가 계속 출력되는 무한 루프에 빠지게 됩니다.
-
-java
-```java
-public class Recursion_Test3
-{
-    public static void main(String[] args)
-    {
-        Function(5);
-    }
- 
-    public static void Function(int num)
-    {
-        if(num == 0)
-        {
-            return;
-        }
-        else
-        {
-            System.out.println("반갑습니다");
-             Function(num - 1);
-        }
-    }
-}
-
-```
-
-▼ 함수를 살짝 수정해보겠습니다. Function Method는 매개변수 num을 받고 if 구문에 의해 분기가 되고 있습니다. 매개변수 값이 0일 경우 return을 하고0이 아닐 경우 "반갑습니다"를 출력하고 num - 1에 해당하는 값을 매개변수로 전달하고 있습니다. 여기서 num 값이 0일 경우 return을 하게 되는 구문이 이 재귀 함수의  Base Case 구간이 됩니다. 해당 재귀 함수의 호출을 그림으로 보면 아래와 같습니다.
-
-![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile4.uf.tistory.com%2Fimage%2F99FDDF4C5CA4311809DFD6)
-
-▼ 매개변수 num의 값이 0 일 때 함수가 return이 됩니다. 결과적으로 출력물은 총 5번이 출력이 됩니다.
-
-**2\. 1 부터 n까지 합 구하기.**
-
-위에서 배운 재귀 알고리즘을 적용하여 1부터 n까지 합을 구하는 함수를 구현해보도록 하겠습니다. 아래 소스를 참조 바랍니다. 
-
-java
-```java
-public class Recursion_Test2
-{
-    public static void main(String[] args)
-    {
-        System.out.println("1부터 5까지의 합은 : " + Function(5));
-    }
- 
-    public static int Function(int num)
-    {
-        if(num == 1)
-        {
-            return 1;
-        }
-        else
-        {
-            return num + Function(num -1);
-        }
-    }
-}
-
-```
-
-▼ num이 1이면 그냥 1을 return을 하고 함수가 종료됩니다. 1이 아닐 경우 현재 num 값에 Funtion(num-1) 결과로 리턴되는 값을 더하여 리턴을 하게 됩니다. 풀이를 해보자면 5 + 1~4까지의 합이 되는 셈입니다. 매개변수 값이 4가 넘어가게 되는 경우에는 4 + 1~3까지의 합이 되는 거죠. 
-
-![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile5.uf.tistory.com%2Fimage%2F99967F3F5CA4343F0268B0)" />
+<meta property="og:description" content="fun and coding::래 범위의 문제에서 더 작은 범위의 " />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:image:alt" content="fun and coding" />
-<meta property="og:updated_time" content="2021-01-21 17:20:06" />
+<meta property="og:updated_time" content="2021-01-21 17:29:35" />
 <meta property="og:pubdate" content="2020-12-18" />
 <meta property="og:url" content="http://blog.phoneus.net/blog.phoneus.net/article_detail_7.html" />
 <meta property="og:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F6I3Gl%2FbtqQXAknUMq%2FN6o1eeA26v7yheFnfunv8K%2Fimg.jpg">
@@ -111,100 +25,14 @@ public class Recursion_Test2
 <meta name="keywords" content="fun and coding, dk, java, html, photograph, technical, css,js, java script, scss, cording, c" />
 <meta name="copyright" content="fun and coding" />
 <meta name="pubdate" content="2020-12-18" />
-<meta name="lastmod" content="2021-01-21 17:20:06" />
+<meta name="lastmod" content="2021-01-21 17:29:35" />
 <meta name="content-language" content="kr">
 <meta name="content-language" content="en">
 
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="fun and coding" />
 <meta itemprop="name" content="fun and coding" />
-<meta itemprop="description" content="fun and coding::래 범위의 문제에서 더 작은 범위의 하위 문제를 먼저 해결함으로써 원래 문제를 해결해 나가는 방식입니다. 일반 반복문을 통해 구현 가능한 기능은 재귀 함수를 통해 구현이 가능하며 반대로 재귀 함수로 구현 한 기능을 반복문으로 구현이 가능합니다.
-
-재귀 함수는 함수 내에서 자기 자신을 계속 호출하는 방식이기 때문에 함수 안에 반드시 종료 구간이 되는 Base Case를 생각하며 코드를 구현해야 합니다. 아래 샘플 예제를 한 번 보겠습니다.
-
-java
-```java
-public class Recursion_Test
-{
-    public static void main(String[] args)
-    {
-        Function();
-    }
- 
-    public static void Function()
-    {
-        System.out.println("반갑습니다");
- 
-        Function();
-    }
-}
-
-```
-
-▼ Function이라는 Method를 정의하였습니다. 해당 함수의 기능은 "반갑습니다"를 호출하고 다시 자기 자신을 호출하고 있습니다. 해당 소스에서 문제는 자기 자신을 호출만 하고있지 함수 영역이 종료되는 구간이 없기 때문에 "반갑습니다"가 계속 출력되는 무한 루프에 빠지게 됩니다.
-
-java
-```java
-public class Recursion_Test3
-{
-    public static void main(String[] args)
-    {
-        Function(5);
-    }
- 
-    public static void Function(int num)
-    {
-        if(num == 0)
-        {
-            return;
-        }
-        else
-        {
-            System.out.println("반갑습니다");
-             Function(num - 1);
-        }
-    }
-}
-
-```
-
-▼ 함수를 살짝 수정해보겠습니다. Function Method는 매개변수 num을 받고 if 구문에 의해 분기가 되고 있습니다. 매개변수 값이 0일 경우 return을 하고0이 아닐 경우 "반갑습니다"를 출력하고 num - 1에 해당하는 값을 매개변수로 전달하고 있습니다. 여기서 num 값이 0일 경우 return을 하게 되는 구문이 이 재귀 함수의  Base Case 구간이 됩니다. 해당 재귀 함수의 호출을 그림으로 보면 아래와 같습니다.
-
-![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile4.uf.tistory.com%2Fimage%2F99FDDF4C5CA4311809DFD6)
-
-▼ 매개변수 num의 값이 0 일 때 함수가 return이 됩니다. 결과적으로 출력물은 총 5번이 출력이 됩니다.
-
-**2\. 1 부터 n까지 합 구하기.**
-
-위에서 배운 재귀 알고리즘을 적용하여 1부터 n까지 합을 구하는 함수를 구현해보도록 하겠습니다. 아래 소스를 참조 바랍니다. 
-
-java
-```java
-public class Recursion_Test2
-{
-    public static void main(String[] args)
-    {
-        System.out.println("1부터 5까지의 합은 : " + Function(5));
-    }
- 
-    public static int Function(int num)
-    {
-        if(num == 1)
-        {
-            return 1;
-        }
-        else
-        {
-            return num + Function(num -1);
-        }
-    }
-}
-
-```
-
-▼ num이 1이면 그냥 1을 return을 하고 함수가 종료됩니다. 1이 아닐 경우 현재 num 값에 Funtion(num-1) 결과로 리턴되는 값을 더하여 리턴을 하게 됩니다. 풀이를 해보자면 5 + 1~4까지의 합이 되는 셈입니다. 매개변수 값이 4가 넘어가게 되는 경우에는 4 + 1~3까지의 합이 되는 거죠. 
-
-![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile5.uf.tistory.com%2Fimage%2F99967F3F5CA4343F0268B0)" />
+<meta itemprop="description" content="fun and coding::래 범위의 문제에서 더 작은 범위의 " />
 <meta itemprop="image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F6I3Gl%2FbtqQXAknUMq%2FN6o1eeA26v7yheFnfunv8K%2Fimg.jpg" />
 
 <!--사이트 저작권자-->
