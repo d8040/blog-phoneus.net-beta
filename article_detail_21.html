@@ -10,12 +10,55 @@
 <meta property="og:site_name" content="fun and coding" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="fun and coding::java(자바):codeup(코드업)[1079 : [기초-종합] 원하는 문자가 입력될 때까지 반복 출력하기 ]" />
-<meta property="og:description" content="fun and coding::java(자바):codeup(코드업)[1079 : [기초-종합] 원하는 문자가 입력될 때까지 반복 출력하기 ]" />
+<meta property="og:description" content="fun and coding::'q'가 입력될 때까지 입력한 문자를 계속 출력하는 프로그램을 작성해보자.  
+  
+
+![](https://blog.kakaocdn.net/dn/PytQl/btqRrPGBk83/MvikbnmsefEQ8xUwnln8Ik/img.png)
+
+**입력**
+
+문자들이 1개씩 계속해서 입력된다.  
+  
+  
+
+**출력**
+
+'q'가 입력될 때까지 입력된 문자를 줄을 바꿔 한 줄씩 출력한다.  
+  
+  
+
+**입력 예시**   예시 복사
+
+x b k d l q g a c
+
+**출력 예시**
+
+x b k d l q
+
+```java
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in); 
+		
+		String[] a = sc.nextLine().split(" ");
+		
+		for (int i = 0 ; i < a.length; i++) {
+			String b = a[i];
+			System.out.println(b);
+			if (b.equals("q")) {
+				break;
+			}
+		}
+	}
+}
+```" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:image:alt" content="fun and coding" />
-<meta property="og:updated_time" content="2021-01-21 10:15:15" />
+<meta property="og:updated_time" content="2021-01-21 17:13:11" />
 <meta property="og:pubdate" content="2020-12-18" />
-<meta property="og:url" content="http://blog.phoneus.net" />
+<meta property="og:url" content="http://blog.phoneus.net/blog.phoneus.net/article_detail_21.html" />
 <meta property="og:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F6I3Gl%2FbtqQXAknUMq%2FN6o1eeA26v7yheFnfunv8K%2Fimg.jpg">
 
 <!-- META *반드시* head 태그의 처음-->
@@ -25,14 +68,57 @@
 <meta name="keywords" content="fun and coding, dk, java, html, photograph, technical, css,js, java script, scss, cording, c" />
 <meta name="copyright" content="fun and coding" />
 <meta name="pubdate" content="2020-12-18" />
-<meta name="lastmod" content="2021-01-21 10:15:15" />
+<meta name="lastmod" content="2021-01-21 17:13:11" />
 <meta name="content-language" content="kr">
 <meta name="content-language" content="en">
 
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="fun and coding" />
 <meta itemprop="name" content="fun and coding" />
-<meta itemprop="description" content="fun and coding::java(자바):codeup(코드업)[1079 : [기초-종합] 원하는 문자가 입력될 때까지 반복 출력하기 ]" />
+<meta itemprop="description" content="fun and coding::'q'가 입력될 때까지 입력한 문자를 계속 출력하는 프로그램을 작성해보자.  
+  
+
+![](https://blog.kakaocdn.net/dn/PytQl/btqRrPGBk83/MvikbnmsefEQ8xUwnln8Ik/img.png)
+
+**입력**
+
+문자들이 1개씩 계속해서 입력된다.  
+  
+  
+
+**출력**
+
+'q'가 입력될 때까지 입력된 문자를 줄을 바꿔 한 줄씩 출력한다.  
+  
+  
+
+**입력 예시**   예시 복사
+
+x b k d l q g a c
+
+**출력 예시**
+
+x b k d l q
+
+```java
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in); 
+		
+		String[] a = sc.nextLine().split(" ");
+		
+		for (int i = 0 ; i < a.length; i++) {
+			String b = a[i];
+			System.out.println(b);
+			if (b.equals("q")) {
+				break;
+			}
+		}
+	}
+}
+```" />
 <meta itemprop="image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F6I3Gl%2FbtqQXAknUMq%2FN6o1eeA26v7yheFnfunv8K%2Fimg.jpg" />
 
 <!--사이트 저작권자-->

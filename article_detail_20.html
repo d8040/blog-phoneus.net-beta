@@ -10,12 +10,70 @@
 <meta property="og:site_name" content="fun and coding" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="fun and coding::java(자바): codeup(코드업) [1078 : [기초-종합] 짝수 합 구하기(설명)]" />
-<meta property="og:description" content="fun and coding::java(자바): codeup(코드업) [1078 : [기초-종합] 짝수 합 구하기(설명)]" />
+<meta property="og:description" content="fun and coding::정수(1 ~ 100) 1개를 입력받아 1부터 그 수까지 짝수의 합을 구해보자.  
+  
+  
+참고  
+while( ) {...}, do {...} while( );, for(...; ...; ...) {...} 등의 반복문은 형태만 다르  
+고, 똑같은 성능을 발휘한다. 필요에 따라 편리한 것으로 골라 사용하면 된다.  
+  
+예시  
+//아래의 예는 홀수일 경우만 더해 그 결과를 출력한다.  
+int sum=0;  
+int i, n;  
+scanf("%d", &n);  
+for(i=1; i<=n; i++)  
+{  
+  if(i%2==1) sum=sum+i;  
+}  
+  
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FUDPoE%2FbtqRqRScNf2%2F1nuHwhkE0Eio0CjL8PSGT1%2Fimg.png)
+
+**입력**
+
+정수 1개가 입력된다.  
+(0 ~ 100)  
+  
+  
+
+**출력**
+
+1부터 입력된 수까지 짝수의 합을 출력한다.  
+  
+  
+
+**입력 예시**   예시 복사
+
+5
+
+**출력 예시**
+
+6
+
+```java
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in); 
+		
+		int a = sc.nextInt();
+		int b = 0;
+		for (int i = 1; i <= a; i++ ) {
+			if ( i % 2 == 0) {
+				b= b + i;
+			}		
+		}
+		System.out.println(b);
+	}
+}
+```" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:image:alt" content="fun and coding" />
-<meta property="og:updated_time" content="2021-01-21 10:15:15" />
+<meta property="og:updated_time" content="2021-01-21 17:13:11" />
 <meta property="og:pubdate" content="2020-12-18" />
-<meta property="og:url" content="http://blog.phoneus.net" />
+<meta property="og:url" content="http://blog.phoneus.net/blog.phoneus.net/article_detail_20.html" />
 <meta property="og:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F6I3Gl%2FbtqQXAknUMq%2FN6o1eeA26v7yheFnfunv8K%2Fimg.jpg">
 
 <!-- META *반드시* head 태그의 처음-->
@@ -25,14 +83,72 @@
 <meta name="keywords" content="fun and coding, dk, java, html, photograph, technical, css,js, java script, scss, cording, c" />
 <meta name="copyright" content="fun and coding" />
 <meta name="pubdate" content="2020-12-18" />
-<meta name="lastmod" content="2021-01-21 10:15:15" />
+<meta name="lastmod" content="2021-01-21 17:13:11" />
 <meta name="content-language" content="kr">
 <meta name="content-language" content="en">
 
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="fun and coding" />
 <meta itemprop="name" content="fun and coding" />
-<meta itemprop="description" content="fun and coding::java(자바): codeup(코드업) [1078 : [기초-종합] 짝수 합 구하기(설명)]" />
+<meta itemprop="description" content="fun and coding::정수(1 ~ 100) 1개를 입력받아 1부터 그 수까지 짝수의 합을 구해보자.  
+  
+  
+참고  
+while( ) {...}, do {...} while( );, for(...; ...; ...) {...} 등의 반복문은 형태만 다르  
+고, 똑같은 성능을 발휘한다. 필요에 따라 편리한 것으로 골라 사용하면 된다.  
+  
+예시  
+//아래의 예는 홀수일 경우만 더해 그 결과를 출력한다.  
+int sum=0;  
+int i, n;  
+scanf("%d", &n);  
+for(i=1; i<=n; i++)  
+{  
+  if(i%2==1) sum=sum+i;  
+}  
+  
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FUDPoE%2FbtqRqRScNf2%2F1nuHwhkE0Eio0CjL8PSGT1%2Fimg.png)
+
+**입력**
+
+정수 1개가 입력된다.  
+(0 ~ 100)  
+  
+  
+
+**출력**
+
+1부터 입력된 수까지 짝수의 합을 출력한다.  
+  
+  
+
+**입력 예시**   예시 복사
+
+5
+
+**출력 예시**
+
+6
+
+```java
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in); 
+		
+		int a = sc.nextInt();
+		int b = 0;
+		for (int i = 1; i <= a; i++ ) {
+			if ( i % 2 == 0) {
+				b= b + i;
+			}		
+		}
+		System.out.println(b);
+	}
+}
+```" />
 <meta itemprop="image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F6I3Gl%2FbtqQXAknUMq%2FN6o1eeA26v7yheFnfunv8K%2Fimg.jpg" />
 
 <!--사이트 저작권자-->
