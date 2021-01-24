@@ -870,6 +870,14 @@ html {
   z-index: 1!important;
   margin: 20px auto!important;
 }
+.googleAdVertical{
+  height: 600px;
+  width: 160px;
+  position: relative;
+  top:200px;
+  position:fixed;
+  margin-left: -180px;
+}
 /* 광고 끝 */
 
 /* 게시물 리스트 */
@@ -1051,6 +1059,9 @@ html {
   .visible-md-up {
     display:none;
   }
+  .googleAdVertical{
+  	display: none!important;
+  }
   .con-min-width {
     min-width: 739px;
   }
@@ -1088,6 +1099,9 @@ html {
     .con-max-width {
       max-width: 390px!important;
     }
+    .googleAdVertical{
+ 	  display: none!important;
+	}
     .adsbygoogle{
 /*       height: 60px!important;   */
       width: 390px!important; 
@@ -1112,6 +1126,9 @@ html {
     .con-max-width {
       max-width: 340px!important;
     }
+    .googleAdVertical{
+ 	  display: none!important;
+	}
     .adsbygoogle{
 /*       height: 60px!important;   */
       width: 340px!important; 
@@ -1136,6 +1153,9 @@ html {
     .con-max-width {
       max-width: 285px!important;
     }
+    .googleAdVertical{
+ 	  display: none!important;
+	}
     .adsbygoogle{
 /*       height: 60px!important;   */
       width: 285px!important; 
