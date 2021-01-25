@@ -1069,7 +1069,15 @@ html {
   width:100%;
 }
 /* toastUi plugin 끝 */
+@media ( max-width:1025px ) {
+  .googleAdVertical__left{
+    display: none!important;
+  }
+  .googleAdVertical__right{
+    display: none!important;
+  }
 
+	}
 @media ( max-width:769px ) {
   .side-menu{
     display:flex;
