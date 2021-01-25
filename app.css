@@ -999,7 +999,7 @@ html {
   padding-right:2%; */
 }
 .lang-java{
-	overflow: scroll;
+	overflow: auto!important;
 }
 .detail-box .title{
   padding: 10px 0;
