@@ -868,23 +868,32 @@ html {
 /* 광고시작 */
 .adsbygoogle{
   z-index: 1!important;
-  margin: 20px auto!important;
+/*   margin: 20px auto!important; */
 }
+.googleAdHorizontal__top{
+  height:130px;
+/*   width:auto; */
+}
+.googleAdHorizontal__bottom{
+  margin-top:20px;
+  }
 .googleAdVertical__left{
   height: 600px;
   width: 160px;
-  top:200px;
   position:fixed;
-  margin-left: -180px;
+  margin:auto 0;
+  margin-left:-180px;
+  top:0;
+  bottom: 0;  
 }
 .googleAdVertical__right{
   height: 600px;
   width: 160px;
-  top:200px;
   position:fixed;
-  justify-content:flex-start;
-  margin-left: 920px;
-
+  margin:auto 0;
+  margin-left:920px;
+  top:0;
+  bottom: 0; 
 }
 /* 광고 끝 */
 
@@ -1059,15 +1068,7 @@ html {
   width:100%;
 }
 /* toastUi plugin 끝 */
-@media ( max-width:1025px ) {
-	.googleAdVertical__left{
-    display: none!important;
-  }
-	.googleAdVertical__right{
-    display: none!important;
-  }
 
-}
 @media ( max-width:769px ) {
   .side-menu{
     display:flex;
@@ -1075,10 +1076,7 @@ html {
   .visible-md-up {
     display:none;
   }
-	.googleAdVertical__left{
-    display: none!important;
-  }
-	.googleAdVertical__right{
+  .googleAdVertical{
     display: none!important;
   }
   .con-min-width {
@@ -1118,12 +1116,9 @@ html {
     .con-max-width {
       max-width: 390px!important;
     }
-	.googleAdVertical__left{
-    display: none!important;
-  }
-	.googleAdVertical__right{
-    display: none!important;
-  }
+    .googleAdVertical{
+      display: none!important;
+    }
     .adsbygoogle{
       /*       height: 60px!important;   */
       width: 390px!important; 
@@ -1148,12 +1143,9 @@ html {
     .con-max-width {
       max-width: 340px!important;
     }
-	.googleAdVertical__left{
-    display: none!important;
-  }
-	.googleAdVertical__right{
-    display: none!important;
-  }
+    .googleAdVertical{
+      display: none!important;
+    }
     .adsbygoogle{
       /*       height: 60px!important;   */
       width: 340px!important; 
@@ -1178,12 +1170,9 @@ html {
     .con-max-width {
       max-width: 285px!important;
     }
-	.googleAdVertical__left{
-    display: none!important;
-  }
-	.googleAdVertical__right{
-    display: none!important;
-  }
+    .googleAdVertical{
+      display: none!important;
+    }
     .adsbygoogle{
       /*       height: 60px!important;   */
       width: 285px!important; 
