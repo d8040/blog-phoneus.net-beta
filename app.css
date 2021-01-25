@@ -872,7 +872,6 @@ html {
 }
 .googleAdHorizontal__top{
   height:130px!important;
-/*   width:auto; */
 }
 .googleAdHorizontal__bottom{
   margin-top:20px;
@@ -999,7 +998,9 @@ html {
   /*   padding-left:2%;
   padding-right:2%; */
 }
-
+.lang-java{
+	overflow: scroll;
+}
 .detail-box .title{
   padding: 10px 0;
   font-size:2rem;
@@ -1076,7 +1077,10 @@ html {
   .visible-md-up {
     display:none;
   }
-  .googleAdVertical{
+  .googleAdVertical__left{
+    display: none!important;
+  }
+  .googleAdVertical__right{
     display: none!important;
   }
   .con-min-width {
@@ -1116,9 +1120,12 @@ html {
     .con-max-width {
       max-width: 390px!important;
     }
-    .googleAdVertical{
-      display: none!important;
-    }
+    .googleAdVertical__left{
+    display: none!important;
+  }
+  .googleAdVertical__right{
+    display: none!important;
+  }
     .adsbygoogle{
       /*       height: 60px!important;   */
       width: 390px!important; 
@@ -1143,9 +1150,12 @@ html {
     .con-max-width {
       max-width: 340px!important;
     }
-    .googleAdVertical{
-      display: none!important;
-    }
+    .googleAdVertical__left{
+    display: none!important;
+  }
+  .googleAdVertical__right{
+    display: none!important;
+  }
     .adsbygoogle{
       /*       height: 60px!important;   */
       width: 340px!important; 
@@ -1170,9 +1180,9 @@ html {
     .con-max-width {
       max-width: 285px!important;
     }
-    .googleAdVertical{
-      display: none!important;
-    }
+    .googleAdVertical__left, .googleAdVerticla__right{
+    display: none!important;
+  }
     .adsbygoogle{
       /*       height: 60px!important;   */
       width: 285px!important; 
