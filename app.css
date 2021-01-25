@@ -435,6 +435,12 @@ font-weight:bold;
 } 
 /* menu-box end*/
 
+/* vue 시작 */
+[v-cloak]{
+	display: none;
+}
+/* vue 끝 */
+
 /* search-box start*/
 .searchKeyword {
   display: table;
@@ -1042,8 +1048,6 @@ html {
 /* detail page end */
 
 /* toastUi plugin 시작 */
-
-
 .toast-ui-youtube-plugin-wrap {
   max-width:750px;
   margin-left:auto;
