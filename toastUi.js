@@ -53,7 +53,7 @@ function ArticleDetail__Body__init() {
 	      el: node,
 	      previewStyle: 'vertical',
 	      initialValue: initialValue,
-	      height:'auto',
+	      height: '800px', 
 	      plugins: [toastui.Editor.plugin.codeSyntaxHighlight, youtubePlugin, codepenPlugin]
 	    });
 	  });
