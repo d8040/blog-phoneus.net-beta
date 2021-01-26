@@ -1019,12 +1019,12 @@ html {
   margin-top: 65px;
   max-width:1200px;
   width:100%;
-  height: 200px;
+  min-height: 90px;
 }
 .markdown__googleAdHorizontal__bottom{
   max-width:1200px;
   width:100%;
-  height: 200px;
+  min-height: 90px;
 }
 /* 마크다운 페이지 끝 */
 
