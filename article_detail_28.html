@@ -6,10 +6,11 @@
 
 <!-- 메타태그정보 //-->
 <!-- OPENGRAPH -->
-<meta property="og:title" content="fun and coding::css 박스 안 넘치는 글 자르기" />
+<meta property="og:title" content="fun and coding::Google Analytics API 사용 (조회수 적용 및 오류 수정)" />
 <meta property="og:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F6I3Gl%2FbtqQXAknUMq%2FN6o1eeA26v7yheFnfunv8K%2Fimg.jpg">
-<meta property="og:description" content="고정된 너비만을 제공하는 레이아웃에서는 서버단에서 화면에 출력할 글자수를" />
-<meta property="og:url" content="blog.phoneus.net/article_detail_17.html" />
+<meta property="og:description" content="#  Google Analyitics API 사용 (ga4) 예제
+<b" />
+<meta property="og:url" content="blog.phoneus.net/article_detail_28.html" />
 <meta property="og:site_name" content="fun and coding" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="ko_KR" />
@@ -18,9 +19,9 @@
 <meta property="og:pubdate" content="2020-12-18" />
 
 <!-- META *반드시* head 태그의 처음-->
-<link rel="canonical" href="blog.phoneus.net/article_detail_17.html" />
+<link rel="canonical" href="blog.phoneus.net/article_detail_28.html" />
 <meta name="subject" content="fun and coding, dk, java, html, photograph, technical, css,js, java script, scss, cording, c, programig, coding, technology, photograph 정보공유를 위한 개인 블로그" />
-<meta name="title" content="fun and coding::css 박스 안 넘치는 글 자르기" />
+<meta name="title" content="fun and coding::Google Analytics API 사용 (조회수 적용 및 오류 수정)" />
 <meta name="keywords" content="fun and coding, dk, java, html, photograph, technical, css,js, java script, scss, cording, c" />
 <meta name="copyright" content="fun and coding" />
 <meta name="pubdate" content="2020-12-18" />
@@ -31,7 +32,8 @@
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="fun and coding" />
 <meta itemprop="name" content="fun and coding" />
-<meta itemprop="description" content="고정된 너비만을 제공하는 레이아웃에서는 서버단에서 화면에 출력할 글자수를" />
+<meta itemprop="description" content="#  Google Analyitics API 사용 (ga4) 예제
+<b" />
 <meta itemprop="image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F6I3Gl%2FbtqQXAknUMq%2FN6o1eeA26v7yheFnfunv8K%2Fimg.jpg" />
 
 <!--사이트 저작권자-->
@@ -44,7 +46,7 @@
 <meta name="robots" content="index,follow">
 
 <!-- 메타 태그 -->
-<title>css 박스 안 넘치는 글 자르기</title>
+<title>Google Analytics API 사용 (조회수 적용 및 오류 수정)</title>
 
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-
  scale=1.0,maximum-scale=1.0,user-scalable=no">
@@ -230,7 +232,7 @@
 </script>
 </section>
 			<div class="">
-				<a href="article_list_html&CSS_1.html">board > html&CSS > </a>
+				<a href="article_list_java_1.html">board > java > </a>
 			</div>
 		</div>
 		<subject class="title">
@@ -238,7 +240,7 @@
 
 
 			<li>
-				css 박스 안 넘치는 글 자르기
+				Google Analytics API 사용 (조회수 적용 및 오류 수정)
 			</li>
 		</ul>
 		</subject>
@@ -248,225 +250,225 @@
 				작성자: D.K
 			</li>
 			<li>
-				조회수: 74
+				조회수: 0
 			</li>
 			<li>
-				작성일: 2020-12-23 19:40:28
+				작성일: 2021-01-27 22:40:40
 			</li>
 		</ul>
 		</info>
 		<contents class="contents con-min-width">
 		<ul class="flex">
 			<script type="text/x-template">
-고정된 너비만을 제공하는 레이아웃에서는 서버단에서 화면에 출력할 글자수를 미리 가늠하며 디자인하기가 수월합니다. 레이아웃이 유동적인 너비를 가지거나 서버 스크립트쪽에 접근할 수 없어 글자수를 제어하기 곤란할 경우에는 아래에서 설명하는 방법들이 추천됩니다.
+#  Google Analyitics API 사용 (ga4) 예제
+<br>
+<br>
+##  api적용
+- Analytics에 가입을 완료 했다는 가정하에 하단 링크에 접속하면 적용 예제를 보고 따라 할 수 있다.
+   링크 : [https://developers.google.com/analytics/devguides/reporting/data/v1/quickstart-client-libraries](https://developers.google.com/analytics/devguides/reporting/data/v1/quickstart-client-libraries)
+---
+<br>
+<br>
+### 절차 설명 
+---
+- 3단계 환경 변수까지 등록을 완료 후 클라이언트 라이브러리를 설치
+- maven을 사용 하고 있다면 아래에 소스코드를 porm.xml 파일에 추가
+<br>
+```xml
+<dependency>
+  <groupId>com.google.analytics</groupId>
+  <artifactId>google-analytics-data</artifactId>
+  <version>0.1.0</version>
+</dependency>
+```
+<br>
+<br>
+이후 아래에 소스코드를 통해 city별 접속자수(activeUsers)를 2020.03.31 ~ 현재 까지 알아 볼수 있으며 
+API에서 지원하는 [API Dimensions & Metrics](https://developers.google.com/analytics/devguides/reporting/data/v1/api-schema)는 링크를 통해 참고 할 수 있고 
+몇 가지 변수 변경을 통해 내 사이트에 통계값을 ga4로 부터 받아 값을 표현 할 수 있다
+<br>
+```java
+import com.google.analytics.data.v1alpha.AlphaAnalyticsDataClient;
+import com.google.analytics.data.v1alpha.DateRange;
+import com.google.analytics.data.v1alpha.Dimension;
+import com.google.analytics.data.v1alpha.Entity;
+import com.google.analytics.data.v1alpha.Metric;
+import com.google.analytics.data.v1alpha.Row;
+import com.google.analytics.data.v1alpha.RunReportRequest;
+import com.google.analytics.data.v1alpha.RunReportResponse;
 
-### 한 줄 단위로 글자 자르기
+public class QuickstartSample {
 
-처음으로 적용해 볼 것은 한 줄, 혹은 여러 줄에 걸쳐 출력되고 있는 글자들을 지정된 너비에 맞게
+  // This is an example snippet that calls the Google Analytics Data API and runs a simple report
+  // on the provided GA4 property id.
+  static void sampleRunReport(String ga4PropertyId) throws Exception {
+    // Instantiates a client using default credentials.
+    // See https://cloud.google.com/docs/authentication/production for more information
+    // about managing credentials.
+    try (AlphaAnalyticsDataClient analyticsData = AlphaAnalyticsDataClient.create()) {
+      RunReportRequest request = RunReportRequest.newBuilder()
+          .setEntity(Entity.newBuilder().setPropertyId(ga4PropertyId))
+          .addDimensions(
+              Dimension.newBuilder().setName("city"))
+          .addMetrics(Metric.newBuilder().setName("activeUsers"))
+          .addDateRanges(
+              DateRange.newBuilder().setStartDate("2020-03-31").setEndDate("today")).build();
 
-**한 줄 단위로**
+      // Make the request
+      RunReportResponse response = analyticsData.runReport(request);
 
-자르는 법이다. 이는 여러가지 CSS 속성들을 조합하여 조건을 맞추는 일부터 시작된다.
+      System.out.println("Report result:");
+      for (Row row : response.getRowsList()) {
+        System.out.printf("%s, %s%n", row.getDimensionValues(0).getValue(),
+            row.getMetricValues(0).getValue());
+      }
+    }
+  }
 
-#### 출력될 너비 조정하기
-
-CSS로 글자 자르기를 위해서는 글자가 출력될 너비가 필요하다. 기본적으로  **display** 속성의 `inline` 값과 같이 요소의 너비를 가질 수 없는 경우에는 이를 너비를 가질 수 있게 변경해야 한다.
-
-CSS
-
-```css
-.target {
-    display: block;
+  public static void main(String... args) throws Exception {
+    // TODO(developer): Replace this variable with your GA4 property ID before running the sample.
+    String ga4PropertyId = "GA4 PROPERTY ID";
+    sampleRunReport(ga4PropertyId);
+  }
 }
-
 ```
 
-  
+---
+<br>
+<br>
 
-요소를 `block` 값으로 변경했기에 자동적으로 요소의 너비는 부모 너비의 100%를 차지하도록 변경된다. 만약 `inline-block` 과 같이 콘텐츠에 따라 유동적인 너비를 가진다면 직접 요소의 너비를 설정해야 한다. 즉, 일정한 고정된 너비를 가지는 것이 전제 조건이다.
-
-CSS
-
-```css
-.target {
-    display: inline-block;
-    width: 200px;
-}
-
+### 실제 블로그 적용 테스트 예시
+### - <span style="color:red">문제 발생</span>
+위 소스코드에서 현 블로그에 조회수를 적용하기 위해 아래와 같이 몇가지 변경을 진행 하고 실행을 하였지만 몇 가지 <u style="color:red">문제</u>가 보였습니다.
+출력값을 보면 이상한 점이 제 블로그에 페이지는 30개가 넘게 구성이 되어 있는데 출력은 10개만 받아오는것을 확인
+<br>
+변경값:
+```java
+.addDimensions(Dimension.newBuilder().setName("pagePath"))  //블로그 페이별 값을 받아 오기 위해 pagePath 값 적용
+.addMetrics(Metric.newBuilder().setName("activeUsers"))     //새로운 접속자를 검색 return
+.addDateRanges(DateRange.newBuilder().setStartDate("2020-12-18").setEndDate("today")).build(); //블로그 게시일로 seStartData를 변경
 ```
-
-#### 줄바꿈을 없애기
-
-너비가 지정된 요소라도 글자수가 해당 너비를 넘어서게 되면 자동으로 줄바꿈이 이루어진다. 이 것은 [white-space] 속성을 `nowrap` 으로 설정하여 방지할 수 있다.
-
-CSS
-
-```css
-.target {
-    display: inline-block;
-    width: 200px;
-    white-space: nowrap;
-}
-
+<br>
+출력값:
 ```
-
-
-
-#### 넘치는 부분을 감추기
-
-CSS에서 요소를 넘치는 부분을 처리하는 것은 [overflow] 속성이 담당한다. 대상 요소의 overflow 속성을 `hidden` 으로 설정하여 넘치는 부분을 화면에서 숨긴다.
-
-CSS
-
-```css
-.target {
-    display: inline-block;
-    width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
+Report result:
+/, 101
+/article_list_html&CSS_1.html, 41
+/article_list_java_1.html, 41
+/article_list_source%20code_1.html, 39
+/article_list_MySQL_1.html, 38
+/index.html, 38
+/article_detail_12.html, 22
+/article_list_CodeUp_1.html, 18
+/article_detail_13.html, 16
+/article_detail_16.html, 16
 ```
+<br>
+<br>
 
+### - <span style="color:red">문제 해결</span>
+API 사이트 검색 결과 [페이지 지정](https://developers.google.com/analytics/devguides/reporting/data/v1/basics#pagination)에 대한 "limit"이 기본 최대10 행을 포함한다고 되어 있는것을 발견 했습니다.
+limit을 해제 하기 위해서는 " limit": -1 를 사용해 보든 행에 값을 블러올수 있으며
+limit과 offset을 지정 해줄수도 있었으나 아직 페이지수가 많은 것이 아니므로 unlimit으로 지정하여 문제를 해결하기로 결정 하고 아래와 같은 소스코드 진행
 
+<br>
 
-#### 숨긴 부분 처리
-
-위에서 설정한 속성들과 속성값으로 인해 숨겨지게 되는 부분을 처리하는 방식은 [text-overflow]속성이 담당하며, `ellipsis` 를 설정하면 말줄임표(...)가 숨겨지는 영역의 끝에 생성된다(오우~ 굿!).
-
-CSS
-
-```css
-.target {
-    display: inline-block;
-    width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
+변경값:
+```java
+.setEntity(Entity.newBuilder().setPropertyId(ga4PropertyId))
+					.addDimensions(Dimension.newBuilder().setName("pagePath"))
+					.addMetrics(Metric.newBuilder().setName("screenPageViews"))     //조회값을 사용자 수에서 조횟수로 변경하기 위해 변경적용
+					.addDateRanges(DateRange.newBuilder().setStartDate("2020-12-01").setEndDate("today"))
+					.setLimit(-1).build();                                          //리밋 해제를 위해 적용
 ```
+<br>
 
-
-이상의 내용은 출력될 글자수를 서버단에서 적은 수로 제한하지 않은 경우에는 유동적인 너비에 충분히 대응된다. 다만, 한 줄로 레이아웃이 제한된다는 것에 유념해야 한다.
-
-### 여러 줄 단위로 글자 자르기
-
-다음으로 적용해 볼 것은 여러 줄에 걸쳐 출력되고 있는 글자들을 지정된 너비와 높이에 맞게
-
-**여러 줄 단위로**
-
-자르는 법이다. 이는 위에서 다룬 내용의 반복과 추가적인 설정이 필요하다.
-
-#### 한 줄 출력의 해제 및 재설정
-
-위의 한 줄 자르기에서 `white-space` 속성을 이용해서 여러 줄에 걸쳐 출력되는 글자를 한 줄로 출력되게 했었다. 이를 해제하여 다시 여러 줄로 표현되게 해야 한다.
-
-CSS
-
-```css
-.target {
-    /* 한 줄 자르기 */
-    display: inline-block;
-    width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-    /* 여러 줄 자르기 추가 스타일 */
-    white-space: normal;
-}
-
+출력값:
 ```
-
-
-
-#### 줄 높이의 추가
-
-여러 줄을 출력하기 위해서는 요소의 줄 높이의 설정이 필수다. 이 줄 높이가 기준이 되어 보여주고 싶은 줄의 행수 만큼 요소의 높이를 설정하게 된다.
-
-CSS
-
-```css
-.target {
-    /* 한 줄 자르기 */
-    display: inline-block;
-    width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-    /* 여러 줄 자르기 추가 스타일 */
-    white-space: normal;
-    line-height: 1.2;
-}
-
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dc9d231c-5140-feb4-5119-0aef193e4a8c, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dca14b7d-cb2b-000c-ccfc-abf3f0c773f9, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dca6f0f0-b3ea-0d8a-4bdc-bfeecc82cada, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dca7c03a-2012-9733-21a5-2b2c8910003d, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dca9d6a4-10a0-8fbd-57cb-8716e3a087d1, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dcb08f9b-f712-45bc-f996-9b4ba176ff34, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dcb4493b-fac3-25fc-3ddd-692aa99514d0, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dcb5407f-9d67-c32a-fd14-64ec3e6ae831, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dcbdd1a2-ecc6-5ff5-1907-432d8e237e52, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dcf4f620-4000-bae0-85fb-8e1e3cbdf93c, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dcf94706-1dba-db04-08d0-7b73756cf825, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dd1e0a24-80c9-2161-b62c-de2f050a22dc, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dd25bd2e-f7b3-0773-f753-b95795834460, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dd27f52e-b974-527d-d87e-d5615b3974f6, 1
+/index.html?dummy:aldjslfjasldjfasdlkfjalsdjfla, 1
+/index.html?dummy:alksdjflajsdlfj, 1
+/index.html?dummy:alksjdlfkajsdlkfjaldsjf, 1
+/index.html?dummy:asldkjf;lkajsd;lfkja;sdlkjf;alsdjflajsd;lfjasdlkjf, 1
+/index.html?dummy:asldkjf;lkajsd;lfkja;sdlkjf;alsdjflajsd;lfjasdlkjfasdflkjasdjf;lkajsdflkjasdkl;fj, 1
+...
+...
+...
 ```
+<br>
+<br>
 
-#### 요소 높이의 추가
-
-위에서 설정한 줄 높이를 기준으로 요소의 높이를 설정한다. 즉, 2줄을 보여주고 싶다면 높이를 줄 높이의 2배로 설정하고 3줄을 보여주고 싶다면 줄 높이의 3배로 설정하면 된다.
-
-CSS
-
-```css
-.target {
-    /* 한 줄 자르기 */
-    display: inline-block;
-    width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-    /* 여러 줄 자르기 추가 스타일 */
-    white-space: normal;
-    line-height: 1.2;
-    height: 3.6em;
-}
-
+모든 페이지에 조회수가 조회되지만 여기에서 또 다른 문제에 국면합니다.
+출력값을 보면 검색을 위해 입력된 문자열이 포함된 페이지도 1페이지로 표현되고 
+이외에 깃에 정적블로그 업로드 후 빠른 확인을 위해 입력했던 
+dummy값도 한 페이지로 표현이 되어 쓰레기 값이 너무 쌓이는 문제가 또 발생했습니다.
+해결을 위해 저는 출력에 사용되는 반복문에 IF문을 추가 하여 
+"article"을 포함한 페이지(실제 제가 필요한 조회수는 상세 페이지만 필요하기에 지정)를 검색 후 "?"가 포함된 조회수를 제거 해주는 과정을 아래와 같이 추가 했습니다.
+```java
+try (AlphaAnalyticsDataClient analyticsData = AlphaAnalyticsDataClient.create()) {
+			RunReportRequest request = RunReportRequest.newBuilder()
+					.setEntity(Entity.newBuilder().setPropertyId(ga4PropertyId))
+					.addDimensions(Dimension.newBuilder().setName("pagePath"))
+					.addMetrics(Metric.newBuilder().setName("screenPageViews"))
+					.addDateRanges(DateRange.newBuilder().setStartDate("2020-12-01").setEndDate("today"))
+					.setLimit(-1).build();
+			
+			// Make the request
+			RunReportResponse response = analyticsData.runReport(request);
+			
+			System.out.println("Report result:");
+			
+			for (Row row : response.getRowsList()) {
+			    if(row.getDimensionValues(0).getValue().contains("article")) {      //article을 포함한 페이지 검색
+				if(!row.getDimensionValues(0).getValue().contains("?")) {           // ? 를 포함한 페이지 제외
+				    System.out.printf("%s, %s%n",row.getDimensionValues(0).getValue(), row.getMetricValues(0).getValue());
+				}				
+			    }
+			}
 ```
-
-  
-
-`height` 대신에 `max-height` 를 설정해서 최대치만 제한해도 된다.
-
-#### 숨긴 부분 처리 추가
-
-위의 설정으로 여러 줄을 출력하고 글자를 자를 수 있지만 `text-overflow` 속성으로 숨긴 부분에 대한 처리가 되질 않는다. 여러 줄에 걸친 숨긴 처리는 현재 웹킷 계열의 브라우저에서만 지원하는 속성으로 아래와 같다.
-
-CSS
-
-```css
-.target {
-    /* 한 줄 자르기 */
-    display: inline-block;
-    width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-    /* 여러 줄 자르기 추가 스타일 */
-    white-space: normal;
-    line-height: 1.2;
-    height: 3.6em;
-    text-align: left;
-    word-wrap: break-word;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-}
-
+<br>
+출력값:
 ```
+Report result:
+/article_list_java_1.html, 690
+/article_list_source%20code_1.html, 411
+/article_list_html&CSS_1.html, 384
+/article_list_MySQL_1.html, 285
+/article_detail_27.html, 256
+/article_detail_12.html, 200
+/article_list_CodeUp_1.html, 176
+/article_detail_13.html, 110
+/article_detail_9.html, 110
+/article_detail_7.html, 109
+/article_list_JSP%20dev.%20log_1.html, 109
+/article_detail_11.html, 95
+/article_search.html, 93
+/article_detail_14.html, 79
+/article_detail_17.html, 74
+...계속
+```
+<br>
+<br>
+실제로 제가 출력하고 싶은 조회수만을 받아오는 매서드를 완성하고 정상적으로 출력하는 것을 확인 후 적용을 완료 하였습니다.
+아직 자바를 배운지 얼마 되지 않아 api 적용도 힘들고 많은 검색과 시간이 필요하지만 
+하나씩 배워가면서 완료된 결과를 보면 뿌듯함이 밀려옵니다.
+혹시나 저와 동일한 문제를 격고 있으신 분들을 위해 포스팅을 진행 했지만 
+저도 초보입장이라 설명이 부족 할 수 있어 혹시 이해 안가는 부분이 있다면 댓글로 문의 주시면 아는한도 내에서 답변 드리겠습니다.
 
-
--   `text-align: left` : 글자 정렬이 양쪽 정렬이면 말 줄임표가 숨겨질 수 있으니 좌측 정렬로
--   `word-wrap: break-word` : 잘라버릴 글자를 단어 단위로
--   `display: -webkit-box` : 여백 삽입과 같이 유연한 높이 증가를 위해 플렉스 박스형태로 변환
--   `-webkit-line-clamp: 3` : 보여줄 줄 갯수
--   `-webkit-box-orient: vertical` : 플렉스 박스의 방향 설정
-
-다시 말하자면, 크롬이나 오페라, 사파리 같은 웹킷 계열의 브라우저는 여러 줄의 글자를 자르는 자신만의 방법을 제공하고 있기에 높이나 줄 높이 설정이 필요치 않는다. 다만 크로스브라우징을 위해서 필요할 뿐이다.
-
+모두들 코시국 파이팅 하시고 즐코딩 하세요😉 
 			</script>
 			<il class="article-detail__body toast-ui-viewer"> </il>
 		</ul>
@@ -488,23 +490,23 @@ CSS
 			<li>추천수: 0</li>
 			<li class="flex-g-1"></li>
 			<li class="hover-underline ">
-				<a class="${article-detail__link-prev-article-class}"
-					href="article_detail_26.html">&lt; 이전글</a>
+				<a class="none"
+					href="${article-detail__link-prev-article}">&lt; 이전글</a>
 			</li>
 			<li class="hover-underline">
-				<a href="article_list_html&CSS_1.html">목록</a>
+				<a href="article_list_java_1.html">목록</a>
 			</li>
 			<li class="hover-underline ">
 				<a class="${article-detail__link-next-article-class}"
-					href="article_detail_16.html"> 다음글 &gt;</a>
+					href="article_detail_12.html"> 다음글 &gt;</a>
 			</li>
 		</ul>
 		</bottom>
 		<div id="disqus_thread"></div>
 		<script>
 		var disqus_config = function () {
-		this.page.url = 'https://blog.phoneus.net/article_detail_17.html';
-		this.page.identifier = 'article_detail_17.html';
+		this.page.url = 'https://blog.phoneus.net/article_detail_28.html';
+		this.page.identifier = 'article_detail_28.html';
 		};		
 		(function() { // DON'T EDIT BELOW THIS LINE
 			var d = document, s = d.createElement('script');
