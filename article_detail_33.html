@@ -6,12 +6,14 @@
 
 <!-- 메타태그정보 //-->
 <!-- OPENGRAPH -->
-<meta property="og:title" content="fun and coding::SQL 소수점 반올림, 버림, 내림" />
+<meta property="og:title" content="fun and coding::💻JSP 개발일지(5):: attr 추가 및 각종 경고문구 등 추가" />
 <meta property="og:image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F6I3Gl%2FbtqQXAknUMq%2FN6o1eeA26v7yheFnfunv8K%2Fimg.jpg">
-<meta property="og:description" content="**1\. 반올림 ( 자르기 포함 )**
+<meta property="og:description" content="JSP 구현 확인
+===
 
-**함수 : ROUND (" />
-<meta property="og:url" content="blog.phoneus.net/article_detail_13.html" />
+```youtube
+T9lLI29P2i" />
+<meta property="og:url" content="blog.phoneus.net/article_detail_33.html" />
 <meta property="og:site_name" content="fun and coding" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="ko_KR" />
@@ -20,9 +22,9 @@
 <meta property="og:pubdate" content="2020-12-18" />
 
 <!-- META *반드시* head 태그의 처음-->
-<link rel="canonical" href="blog.phoneus.net/article_detail_13.html" />
+<link rel="canonical" href="blog.phoneus.net/article_detail_33.html" />
 <meta name="subject" content="fun and coding, dk, java, html, photograph, technical, css,js, java script, scss, cording, c, programig, coding, technology, photograph 정보공유를 위한 개인 블로그" />
-<meta name="title" content="fun and coding::SQL 소수점 반올림, 버림, 내림" />
+<meta name="title" content="fun and coding::💻JSP 개발일지(5):: attr 추가 및 각종 경고문구 등 추가" />
 <meta name="keywords" content="fun and coding, dk, java, html, photograph, technical, css,js, java script, scss, cording, c" />
 <meta name="copyright" content="fun and coding" />
 <meta name="pubdate" content="2020-12-18" />
@@ -33,9 +35,11 @@
 <!-- GOOGLE+ -->
 <meta itemprop="headline" content="fun and coding" />
 <meta itemprop="name" content="fun and coding" />
-<meta itemprop="description" content="**1\. 반올림 ( 자르기 포함 )**
+<meta itemprop="description" content="JSP 구현 확인
+===
 
-**함수 : ROUND (" />
+```youtube
+T9lLI29P2i" />
 <meta itemprop="image" content="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F6I3Gl%2FbtqQXAknUMq%2FN6o1eeA26v7yheFnfunv8K%2Fimg.jpg" />
 
 <!--사이트 저작권자-->
@@ -48,7 +52,7 @@
 <meta name="robots" content="index,follow">
 
 <!-- 메타 태그 -->
-<title>SQL 소수점 반올림, 버림, 내림</title>
+<title>💻JSP 개발일지(5):: attr 추가 및 각종 경고문구 등 추가</title>
 
 <!-- 반응형 사이트 적용 메타 -->
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
@@ -234,7 +238,7 @@
 </script>
 </section>
 			<div class="">
-				<a href="article_list_MySQL_1.html">board > MySQL > </a>
+				<a href="article_list_JSP dev. log_1.html">board > JSP dev. log > </a>
 			</div>
 		</div>
 		<subject class="title">
@@ -242,7 +246,7 @@
 
 
 			<li>
-				SQL 소수점 반올림, 버림, 내림
+				💻JSP 개발일지(5):: attr 추가 및 각종 경고문구 등 추가
 			</li>
 		</ul>
 		</subject>
@@ -252,101 +256,103 @@
 				작성자: D.K
 			</li>
 			<li>
-				조회수: 112
+				조회수: 0
 			</li>
 			<li>
-				작성일: 2020-12-21 00:11:30
+				작성일: 2021-02-07 13:29:20
 			</li>
 		</ul>
 		</info>
 		<contents class="contents con-min-width">
 		<ul class="flex">
 			<script type="text/x-template">
-**1\. 반올림 ( 자르기 포함 )**
+JSP 구현 확인
+===
 
-**함수 : ROUND ( numeric\_expression, length\[, function\])**
-
-**1) 반올림**
-
-```slq
-----------------------------------------------  
--- 반올림  
-----------------------------------------------  
-  
-SELECT ROUND(12.35393,2)   
---> 결과값 : 12.35000  
-  
-SELECT ROUND(12.35593,2)   
---> 결과값 : 12.36000  
-  
-SELECT ROUND(12.35393,-1)   
---> 결과값 : 10.00000  
-  
-SELECT ROUND(15.35393,-1)   
---> 결과값 : 20.00000  
-  
-SELECT ROUND(12.35393,0)   
---> 결과값 : 12.00000  
+```youtube
+T9lLI29P2i0
 ```
 
-**2) 자르기**
+### - 금일 완료 리스트✔️
+<br>
+- [x] 서버 등록
+- [x] 컨택스트패스 제거:8080/dkJspCommunity
+- [x] 홈페이지 SSL 적용
+- [x] 게시물 좋아요, 싫어요 기능 구현
+  - 로그인 후 이용가능
+  - 아이디당 좋아요 또는 싫어요 한번만 가능
+  - 한번 클릭 시 추가 후 채워진 엄지 업/다운
+  - 한번 더 클릭 시 삭제 후 비어 있는 엄지 업/다운
+- [x] 댓글 추가, 삭제 기능 구현
+  - 로그인 후 이용가능
+  - 본인 만 삭제 가능(삭제 버튼 없어짐)
+- [x] 대댓글 추가, 삭제 기능 구현
+  - 로그인 후 이용가능
+- [x] 댓글, 대댓글 리스팅
+  - 댓글과 대댓글 배경색 및 꺽인 화살표로 구분
+---
 
-```slq
-----------------------------------------------  
--- 자르기  
-----------------------------------------------  
-  
-Select Round(98.65, 1, 1)  
---> 결과값 : 98.60  
-  
-Select Round(98.65, 0, 1)  
---> 결과값 : 98.00  
-  
-Select Round(98.65, -1, 1)  
---> 결과값 : 90.00  
-```
+### - 당장 할일 리스트✔️	
 
-**2\. 올림**
+<br>
+- [ ] 디자인 정리
+- [ ] 로그인, 로그아웃 시 그 전 페이지로 새로고침 이동
+- [ ] 게시물 리스트에 댓글 수 표시
+- [ ] 게시물 리스트에 좋아요, 싫어요  수 표시
+- [ ] 댓글 좋아요, 싫어요
+---
 
-**함수 : CEILING ( numeric\_expression )**
+<br>
+### - 추후 할일 리스트✔️
+<br>
+- [ ] 내 글에 새 댓글 알림
+- [ ] 내 댓글에 추가 댓글 알림
+- [ ] 댓글멘션
+- [ ] 게시물 블라인드
+- [ ] 태그
+- [ ] 댓글, ajax화
+- [ ] 파일업로드
+- [ ] 회원인증
+- [ ] 관리자페이지
+- [ ] 1:1 쪽지
+- [ ] 화상통화
+- [ ] 녹음
+- [ ] 신고
 
-**<예>**
+<br>
+---
+### - 그 동안 완료리스트✔️
+<br>
+- 프레임워크 기초   👌
+- 로그인/로그아웃   👌
+- 회원가입   👌
+- 게시글 CRUD   👌
+- 인터셉터   👌
+- 로그인/로그아웃 상태 관련 권한체크   👌
+- 게시물 수정/삭제 관련 권한체크   👌
+- 비밀번호 암호화   👌
+- 아이디찾기   👌
+- 비번찾기(임시패스워드 발송)   👌
+- 게시물 페이징   👌
+- 게시물 검색   👌
+- 회원 정보 수정   👌
+- 게시물 작성에 토스트 에디터 붙이기   👌
+- 회원정보 수정페이지(비밀번호 수정 추가) 👌
+- 게시물 수정페이지에 토스트 에디터 붙이기  👌
+- 회원 비밀번호 수정 기능 구현  👌
+- MySQL attr 테이블 생성 후 JSP 추가  👌
+- 임시 비밀번호 사용시 경고문구 구현  👌
+  - 비밀번호 변경시 제거  👌
+- 회원 가입 시 환영 이메일 보내기  👌
+- 게시물 조회수 기능 구현  👌
+- 비밀번호 변경 90일 후 변경 경고문구 구현  👌
+---
+기본 기능 구현 완료 !!!👍
 
-```slq
-----------------------------------------------  
--- 올림  
-----------------------------------------------  
-  
-SELECT CEILING(12.35393)   
---> 결과값 : 13  
-  
-SELECT CEILING(-12.35393)   
---> 결과값 : -12  
-  
-SELECT CEILING(0.00)   
---> 결과값 : 0  
-```
 
-**3\. 내림**
-
-**함수 : FLOOR ( numeric\_expression )**
-
-**<예>**
-
-```slq
-----------------------------------------------  
--- 내림  
-----------------------------------------------  
-  
-SELECT FLOOR(12.35393)   
---> 결과값 : 12  
-  
-SELECT FLOOR(-12.35393)   
---> 결과값 : -13  
-  
-SELECT FLOOR(0.00)   
---> 결과값 : 0  
-```
+다음 추가 작업💻
+===
+- 메인페이지 디자인 적용
 			</script>
 			<il class="article-detail__body toast-ui-viewer"> </il>
 		</ul>
@@ -365,26 +371,26 @@ SELECT FLOOR(0.00)
 		</contents>
 		<bottom>
 		<ul class="flex">
-			<li>추천수: 1</li>
+			<li>추천수: 0</li>
 			<li class="flex-g-1"></li>
 			<li class="hover-underline ">
-				<a class="${article-detail__link-prev-article-class}"
-					href="article_detail_31.html">&lt; 이전글</a>
+				<a class="none"
+					href="${article-detail__link-prev-article}">&lt; 이전글</a>
 			</li>
 			<li class="hover-underline">
-				<a href="article_list_MySQL_1.html">목록</a>
+				<a href="article_list_JSP dev. log_1.html">목록</a>
 			</li>
 			<li class="hover-underline ">
-				<a class="none"
-					href="${article-detail__link-next-article}"> 다음글 &gt;</a>
+				<a class="${article-detail__link-next-article-class}"
+					href="article_detail_32.html"> 다음글 &gt;</a>
 			</li>
 		</ul>
 		</bottom>
 		<div id="disqus_thread"></div>
 		<script>
 		var disqus_config = function () {
-		this.page.url = 'https://blog.phoneus.net/article_detail_13.html';
-		this.page.identifier = 'article_detail_13.html';
+		this.page.url = 'https://blog.phoneus.net/article_detail_33.html';
+		this.page.identifier = 'article_detail_33.html';
 		};		
 		(function() { // DON'T EDIT BELOW THIS LINE
 			var d = document, s = d.createElement('script');
