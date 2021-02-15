@@ -14,7 +14,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="ko_KR" />
 <meta property="og:image:alt" content="fun and coding" />
-<meta property="og:updated_time" content="2021-02-14 23:44:59" />
+<meta property="og:updated_time" content="2021-02-16 00:38:18" />
 <meta property="og:pubdate" content="2020-12-18" />
 
 <!-- META *반드시* head 태그의 처음-->
@@ -24,7 +24,7 @@
 <meta name="keywords" content="fun and coding, dk, java, html, photograph, technical, css,js, java script, scss, cording, c" />
 <meta name="copyright" content="fun and coding" />
 <meta name="pubdate" content="2020-12-18" />
-<meta name="lastmod" content="2021-02-14 23:44:59" />
+<meta name="lastmod" content="2021-02-16 00:38:18" />
 <meta name="content-language" content="kr">
 <meta name="content-language" content="en">
 
@@ -201,16 +201,14 @@
 </div>
 <div class="scroll-move-box">
 	<ul>
-		<li><a href="#page1" id="scroll_move">JSP deveropment log</a></li>
-		<li><a href="#page2" id="scroll_move">java</a></li>
-		<li><a href="#page3" id="scroll_move">MySQL</a></li>
-		<li><a href="#page4" id="scroll_move">html&CSS</a></li>
-		<li><a href="#page5" id="scroll_move">Code UP</a></li>
-		<li><a href="#page6" id="scroll_move">Source code</a></li>
+		<li><a href="#page1" class="scroll_move">JSP deveropment log</a></li>
+		<li><a href="#page2" class="scroll_move">java</a></li>
+		<li><a href="#page3" class="scroll_move">MySQL</a></li>
+		<li><a href="#page4" class="scroll_move">html&CSS</a></li>
+		<li><a href="#page5" class="scroll_move">Code UP</a></li>
+		<li><a href="#page6" class="scroll_move">Source code</a></li>
 	</ul>
-	<button>
-		<span class="btn_t">◀</span>
-	</button>
+  <a class="btn_t button"><span>◀</span></a>
 </div>
 <div class="body-box flex flex-jc-c flex-dr-c">
 
@@ -226,14 +224,329 @@
 		</figure>
 		<div class="content">
 			<div class="header">
-				<div class="header__box flex flex-dr-c" id="page1">
-					<a href="article_detail_33.html">
-						<div class="box__info flex">
-							<div class="subheading box__info_board">board > JSP dev. log</div>
-							<div class="subheading box__info_writer">D.K</div>
+				<div class="header__box flex flex-ai-c flex-dr-c" id="page1">
+					<div class="latest-list">
+						<div class="title-of-list">
+							<span>JSP dev. log 최신 게시물</span>
 						</div>
-						<h2 class="heading">💻JSP 개발일지(5):: 서버등록, 게시물 좋아요 싫어요, 댓글 등 기능 구현</h2>
-					</a>
+						<figure class="latest-list__box">
+							<span>21-02-07</span>
+							<img src="img/JSP log.png" />
+							<figcaption>
+								<h3>💻JSP 개발일지(5):: 서버등록, 게시물 좋아요 싫어요, 댓글 등 기능 구현</h3>
+								<script type="text/x-template">
+JSP 구현 확인
+===
+
+```youtube
+T9lLI29P2i0
+```
+
+### - 금일 완료 리스트✔️
+<br>
+- [x] 서버 등록
+- [x] 컨택스트패스 제거:8080/dkJspCommunity
+- [x] 홈페이지 SSL 적용
+- [x] 게시물 좋아요, 싫어요 기능 구현
+  - 로그인 후 이용가능
+  - 아이디당 좋아요 또는 싫어요 한번만 가능
+  - 한번 클릭 시 추가 후 채워진 엄지 업/다운
+  - 한번 더 클릭 시 삭제 후 비어 있는 엄지 업/다운
+- [x] 댓글 추가, 삭제 기능 구현
+  - 로그인 후 이용가능
+  - 본인 만 삭제 가능(삭제 버튼 없어짐)
+- [x] 대댓글 추가, 삭제 기능 구현
+  - 로그인 후 이용가능
+- [x] 댓글, 대댓글 리스팅
+  - 댓글과 대댓글 배경색 및 꺽인 화살표로 구분
+---
+
+### - 당장 할일 리스트✔️	
+
+<br>
+- [ ] 디자인 정리
+- [ ] 로그인, 로그아웃 시 그 전 페이지로 새로고침 이동
+- [ ] 게시물 리스트에 댓글 수 표시
+- [ ] 게시물 리스트에 좋아요, 싫어요  수 표시
+- [ ] 댓글 좋아요, 싫어요
+---
+
+<br>
+### - 추후 할일 리스트✔️
+<br>
+- [ ] 내 글에 새 댓글 알림
+- [ ] 내 댓글에 추가 댓글 알림
+- [ ] 댓글멘션
+- [ ] 게시물 블라인드
+- [ ] 태그
+- [ ] 댓글, ajax화
+- [ ] 파일업로드
+- [ ] 회원인증
+- [ ] 관리자페이지
+- [ ] 1:1 쪽지
+- [ ] 화상통화
+- [ ] 녹음
+- [ ] 신고
+
+<br>
+---
+### - 그 동안 완료리스트✔️
+<br>
+- 프레임워크 기초   👌
+- 로그인/로그아웃   👌
+- 회원가입   👌
+- 게시글 CRUD   👌
+- 인터셉터   👌
+- 로그인/로그아웃 상태 관련 권한체크   👌
+- 게시물 수정/삭제 관련 권한체크   👌
+- 비밀번호 암호화   👌
+- 아이디찾기   👌
+- 비번찾기(임시패스워드 발송)   👌
+- 게시물 페이징   👌
+- 게시물 검색   👌
+- 회원 정보 수정   👌
+- 게시물 작성에 토스트 에디터 붙이기   👌
+- 회원정보 수정페이지(비밀번호 수정 추가) 👌
+- 게시물 수정페이지에 토스트 에디터 붙이기  👌
+- 회원 비밀번호 수정 기능 구현  👌
+- MySQL attr 테이블 생성 후 JSP 추가  👌
+- 임시 비밀번호 사용시 경고문구 구현  👌
+  - 비밀번호 변경시 제거  👌
+- 회원 가입 시 환영 이메일 보내기  👌
+- 게시물 조회수 기능 구현  👌
+- 비밀번호 변경 90일 후 변경 경고문구 구현  👌
+---
+기본 기능 구현 완료 !!!👍
+
+
+다음 추가 작업💻
+===
+- 메인페이지 디자인 적용
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="article_detail_33.html"></a>
+						</figure>
+						<figure class="latest-list__box">
+							<span>21-01-30</span>
+							<img src="img/JSP log.png" />
+							<figcaption>
+								<h3>💻JSP 개발일지(4):: attr 추가 및 각종 경고문구 등 추가</h3>
+								<script type="text/x-template">
+JSP 구현 확인
+===
+
+```youtube
+O7Xd3ZX2h0g
+```
+
+### - 금일 완료 리스트✔️
+<br>
+- [x] 회원 비밀번호 수정 기능 구현 [완]
+- [x] MySQL attr 테이블 생성 후 JSP 추가 [완]
+- [x] 임시 비밀번호 사용시 경고문구 구현 [완] 
+  - 비밀번호 변경시 제거 [완]
+- [x] 회원 가입 시 환영 이메일 보내기[완]
+- [x] 게시물 조회수 기능 구현 [완]
+- [x] 비밀번호 변경 90일 후 변경 경고문구 구현[완]
+---
+<br>
+
+### - 당장 할일 리스트✔️	
+
+<br>
+- [ ] 게시물 블라인드
+- [ ] 좋아요, 싫어요
+---
+
+<br>
+### - 추후 할일 리스트✔️
+<br>
+- [ ] 내 글에 새 댓글 알림
+- [ ] 내 댓글에 추가 댓글 알림
+- [ ] 댓글
+- [ ] 댓글멘션
+- [ ] 대댓글
+- [ ] 태그
+- [ ] 댓글, ajax화
+- [ ] 파일업로드
+- [ ] 회원인증
+- [ ] 관리자페이지
+- [ ] 1:1 쪽지
+- [ ] 신고
+
+<br>
+---
+### - 그 동안 완료리스트✔️
+<br>
+- 프레임워크 기초   👌
+- 로그인/로그아웃   👌
+- 회원가입   👌
+- 게시글 CRUD   👌
+- 인터셉터   👌
+- 로그인/로그아웃 상태 관련 권한체크   👌
+- 게시물 수정/삭제 관련 권한체크   👌
+- 비밀번호 암호화   👌
+- 아이디찾기   👌
+- 비번찾기(임시패스워드 발송)   👌
+- 게시물 페이징   👌
+- 게시물 검색   👌
+- 회원 정보 수정   👌
+- 게시물 작성에 토스트 에디터 붙이기   👌
+- 회원정보 수정페이지(비밀번호 수정 추가) 👌
+- 게시물 수정페이지에 토스트 에디터 붙이기  👌
+---
+기본 기능 구현 완료 !!!👍
+
+
+
+다음 추가 작업💻
+===
+- 메인페이지 디자인 적용
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="article_detail_32.html"></a>
+						</figure>
+						<figure class="latest-list__box">
+							<span>21-01-29</span>
+							<img src="img/JSP log.png" />
+							<figcaption>
+								<h3>💻JSP 개발일지(3):: 토스트에디터 추가 및 회원정보 수정 기능 구현</h3>
+								<script type="text/x-template">
+JSP 구현 확인
+===
+```youtube
+vWq7FaNq-GY
+```
+---
+### - 금일 완료 리스트✔️
+<br>
+- [x] 회원정보 수정페이지(비밀번호 수정 추가) 👌
+- [x] 게시물 수정페이지에 토스트 에디터 붙이기  👌
+---
+<br>
+### - 당장 할일 리스트✔️	
+<br>
+- [ ] 게시물 블라인드
+- [ ] 좋아요, 싫어요
+---
+<br>
+### - 추후 할일 리스트✔️
+<br>
+- [ ] 내 글에 새 댓글 알림
+- [ ] 내 댓글에 추가 댓글 알림
+- [ ] 댓글
+- [ ] 댓글멘션
+- [ ] 대댓글
+- [ ] 태그
+- [ ] 댓글, ajax화
+- [ ] 파일업로드
+- [ ] 회원인증
+- [ ] 관리자페이지
+- [ ] 1:1 쪽지
+- [ ] 신고
+
+<br>
+---
+### - 그 동안 완료리스트✔️
+<br>
+- 프레임워크 기초   👌
+- 로그인/로그아웃   👌
+- 회원가입   👌
+- 게시글 CRUD   👌
+- 인터셉터   👌
+- 로그인/로그아웃 상태 관련 권한체크   👌
+- 게시물 수정/삭제 관련 권한체크   👌
+- 비밀번호 암호화   👌
+- 아이디찾기   👌
+- 비번찾기(임시패스워드 발송)   👌
+- 게시물 페이징   👌
+- 게시물 검색   👌
+- 회원 정보 수정   👌
+- 게시물 작성에 토스트 에디터 붙이기   👌
+---
+기본 기능 구현 완료 !!!👍
+
+
+
+다음 추가 작업💻
+===
+- 메인페이지 디자인 적용
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="article_detail_30.html"></a>
+						</figure>
+						<figure class="latest-list__box">
+							<span>21-01-28</span>
+							<img src="img/JSP log.png" />
+							<figcaption>
+								<h3>💻JSP 개발일지(2):: 기본동작 구현 및 확인</h3>
+								<script type="text/x-template">
+JSP 구현 확인
+===
+```youtube
+j-64-tEGHQw
+```
+---
+### - 완료리스트✔️
+<br>
+- [x] 프레임워크 기초   👌
+- [x] 로그인/로그아웃   👌
+- [x] 회원가입   👌
+- [x] 게시글 CRUD   👌
+- [x] 인터셉터   👌
+- [x] 로그인/로그아웃 상태 관련 권한체크   👌
+- [x] 게시물 수정/삭제 관련 권한체크   👌
+- [x] 비밀번호 암호화   👌
+- [x] 아이디찾기   👌
+- [x] 비번찾기(임시패스워드 발송)   👌
+- [x] 게시물 페이징   👌
+- [x] 게시물 검색   👌
+- [x] 회원 정보 수정   👌
+- [x] 게시물 작성에 토스트 에디터 붙이기   👌
+---
+<br>
+<br>
+### - 당장 할일 리스트✔️	
+<br>
+- [ ] 게시물 수정에 토스트 에디터 붙이기
+- [ ] 게시물 블라인드
+- [ ] 좋아요, 싫어요
+---
+<br>
+<br>
+### - 추후 할일 리스트✔️
+<br>
+- [ ] 내 글에 새 댓글 알림
+- [ ] 내 댓글에 추가 댓글 알림
+- [ ] 댓글
+- [ ] 댓글멘션
+- [ ] 대댓글
+- [ ] 태그
+- [ ] 댓글, ajax화
+- [ ] 파일업로드
+- [ ] 회원인증
+- [ ] 관리자페이지
+- [ ] 1:1 쪽지
+- [ ] 신고
+
+<br>
+기본 기능 구현 완료 !!!👍
+
+
+
+다음 추가 작업💻
+===
+- 메인페이지 디자인 적용
+
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="article_detail_29.html"></a>
+						</figure>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -245,14 +558,772 @@
 		</figure>
 		<div class="content">
 			<div class="header">
-				<div class="header__box flex flex-dr-c" id="page2">
-					<a href="article_detail_32.html">
-						<div class="box__info flex">
-							<div class="subheading box__info_board">board > JSP dev. log</div>
-							<div class="subheading box__info_writer">D.K</div>
+				<div class="header__box flex flex-ai-c flex-dr-c" id="page2">
+					<div class="latest-list">
+						<div class="title-of-list">
+							<span>java 최신 게시물</span>
 						</div>
-						<h2 class="heading">💻JSP 개발일지(4):: attr 추가 및 각종 경고문구 등 추가</h2>
-					</a>
+						<figure class="latest-list__box">
+							<span>21-01-27</span>
+							<img src="img/java.png" />
+							<figcaption>
+								<h3>Google Analytics API 사용 (조회수 적용 및 오류 수정)</h3>
+								<script type="text/x-template">
+#  Google Analyitics API 사용 (ga4) 예제
+<br>
+<br>
+##  api적용
+- Analytics에 가입을 완료 했다는 가정하에 하단 링크에 접속하면 적용 예제를 보고 따라 할 수 있다.
+   링크 : [https://developers.google.com/analytics/devguides/reporting/data/v1/quickstart-client-libraries](https://developers.google.com/analytics/devguides/reporting/data/v1/quickstart-client-libraries)
+---
+<br>
+<br>
+### 절차 설명 
+---
+- 3단계 환경 변수까지 등록을 완료 후 클라이언트 라이브러리를 설치
+- maven을 사용 하고 있다면 아래에 소스코드를 porm.xml 파일에 추가
+<br>
+```xml
+<dependency>
+  <groupId>com.google.analytics</groupId>
+  <artifactId>google-analytics-data</artifactId>
+  <version>0.1.0</version>
+</dependency>
+```
+<br>
+<br>
+이후 아래에 소스코드를 통해 city별 접속자수(activeUsers)를 2020.03.31 ~ 현재 까지 알아 볼수 있으며 
+API에서 지원하는 [API Dimensions & Metrics](https://developers.google.com/analytics/devguides/reporting/data/v1/api-schema)는 링크를 통해 참고 할 수 있고 
+몇 가지 변수 변경을 통해 내 사이트에 통계값을 ga4로 부터 받아 값을 표현 할 수 있다
+<br>
+```java
+import com.google.analytics.data.v1alpha.AlphaAnalyticsDataClient;
+import com.google.analytics.data.v1alpha.DateRange;
+import com.google.analytics.data.v1alpha.Dimension;
+import com.google.analytics.data.v1alpha.Entity;
+import com.google.analytics.data.v1alpha.Metric;
+import com.google.analytics.data.v1alpha.Row;
+import com.google.analytics.data.v1alpha.RunReportRequest;
+import com.google.analytics.data.v1alpha.RunReportResponse;
+
+public class QuickstartSample {
+
+  // This is an example snippet that calls the Google Analytics Data API and runs a simple report
+  // on the provided GA4 property id.
+  static void sampleRunReport(String ga4PropertyId) throws Exception {
+    // Instantiates a client using default credentials.
+    // See https://cloud.google.com/docs/authentication/production for more information
+    // about managing credentials.
+    try (AlphaAnalyticsDataClient analyticsData = AlphaAnalyticsDataClient.create()) {
+      RunReportRequest request = RunReportRequest.newBuilder()
+          .setEntity(Entity.newBuilder().setPropertyId(ga4PropertyId))
+          .addDimensions(
+              Dimension.newBuilder().setName("city"))
+          .addMetrics(Metric.newBuilder().setName("activeUsers"))
+          .addDateRanges(
+              DateRange.newBuilder().setStartDate("2020-03-31").setEndDate("today")).build();
+
+      // Make the request
+      RunReportResponse response = analyticsData.runReport(request);
+
+      System.out.println("Report result:");
+      for (Row row : response.getRowsList()) {
+        System.out.printf("%s, %s%n", row.getDimensionValues(0).getValue(),
+            row.getMetricValues(0).getValue());
+      }
+    }
+  }
+
+  public static void main(String... args) throws Exception {
+    // TODO(developer): Replace this variable with your GA4 property ID before running the sample.
+    String ga4PropertyId = "GA4 PROPERTY ID";
+    sampleRunReport(ga4PropertyId);
+  }
+}
+```
+
+---
+<br>
+<br>
+
+### 실제 블로그 적용 테스트 예시
+### - <span style="color:red">문제 발생</span>
+위 소스코드에서 현 블로그에 조회수를 적용하기 위해 아래와 같이 몇가지 변경을 진행 하고 실행을 하였지만 몇 가지 <u style="color:red">문제</u>가 보였습니다.
+출력값을 보면 이상한 점이 제 블로그에 페이지는 30개가 넘게 구성이 되어 있는데 출력은 10개만 받아오는것을 확인
+<br>
+변경값:
+```java
+.addDimensions(Dimension.newBuilder().setName("pagePath"))  //블로그 페이별 값을 받아 오기 위해 pagePath 값 적용
+.addMetrics(Metric.newBuilder().setName("activeUsers"))     //새로운 접속자를 검색 return
+.addDateRanges(DateRange.newBuilder().setStartDate("2020-12-18").setEndDate("today")).build(); //블로그 게시일로 seStartData를 변경
+```
+<br>
+출력값:
+```
+Report result:
+/, 101
+/article_list_html&CSS_1.html, 41
+/article_list_java_1.html, 41
+/article_list_source%20code_1.html, 39
+/article_list_MySQL_1.html, 38
+/index.html, 38
+/article_detail_12.html, 22
+/article_list_CodeUp_1.html, 18
+/article_detail_13.html, 16
+/article_detail_16.html, 16
+```
+<br>
+<br>
+
+### - <span style="color:red">문제 해결</span>
+API 사이트 검색 결과 [페이지 지정](https://developers.google.com/analytics/devguides/reporting/data/v1/basics#pagination)에 대한 "limit"이 기본 최대10 행을 포함한다고 되어 있는것을 발견 했습니다.
+limit을 해제 하기 위해서는 " limit": -1 를 사용해 보든 행에 값을 블러올수 있으며
+limit과 offset을 지정 해줄수도 있었으나 아직 페이지수가 많은 것이 아니므로 unlimit으로 지정하여 문제를 해결하기로 결정 하고 아래와 같은 소스코드 진행
+
+<br>
+
+변경값:
+```java
+.setEntity(Entity.newBuilder().setPropertyId(ga4PropertyId))
+					.addDimensions(Dimension.newBuilder().setName("pagePath"))
+					.addMetrics(Metric.newBuilder().setName("screenPageViews"))     //조회값을 사용자 수에서 조횟수로 변경하기 위해 변경적용
+					.addDateRanges(DateRange.newBuilder().setStartDate("2020-12-01").setEndDate("today"))
+					.setLimit(-1).build();                                          //리밋 해제를 위해 적용
+```
+<br>
+
+출력값:
+```
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dc9d231c-5140-feb4-5119-0aef193e4a8c, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dca14b7d-cb2b-000c-ccfc-abf3f0c773f9, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dca6f0f0-b3ea-0d8a-4bdc-bfeecc82cada, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dca7c03a-2012-9733-21a5-2b2c8910003d, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dca9d6a4-10a0-8fbd-57cb-8716e3a087d1, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dcb08f9b-f712-45bc-f996-9b4ba176ff34, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dcb4493b-fac3-25fc-3ddd-692aa99514d0, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dcb5407f-9d67-c32a-fd14-64ec3e6ae831, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dcbdd1a2-ecc6-5ff5-1907-432d8e237e52, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dcf4f620-4000-bae0-85fb-8e1e3cbdf93c, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dcf94706-1dba-db04-08d0-7b73756cf825, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dd1e0a24-80c9-2161-b62c-de2f050a22dc, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dd25bd2e-f7b3-0773-f753-b95795834460, 1
+/cp/internal/boomboom/index.html?editors=1100&key=index.html-dd27f52e-b974-527d-d87e-d5615b3974f6, 1
+/index.html?dummy:aldjslfjasldjfasdlkfjalsdjfla, 1
+/index.html?dummy:alksdjflajsdlfj, 1
+/index.html?dummy:alksjdlfkajsdlkfjaldsjf, 1
+/index.html?dummy:asldkjf;lkajsd;lfkja;sdlkjf;alsdjflajsd;lfjasdlkjf, 1
+/index.html?dummy:asldkjf;lkajsd;lfkja;sdlkjf;alsdjflajsd;lfjasdlkjfasdflkjasdjf;lkajsdflkjasdkl;fj, 1
+...
+...
+...
+```
+<br>
+<br>
+
+모든 페이지에 조회수가 조회되지만 여기에서 또 다른 문제에 국면합니다.
+출력값을 보면 검색을 위해 입력된 문자열이 포함된 페이지도 1페이지로 표현되고 
+이외에 깃에 정적블로그 업로드 후 빠른 확인을 위해 입력했던 
+dummy값도 한 페이지로 표현이 되어 쓰레기 값이 너무 쌓이는 문제가 또 발생했습니다.
+해결을 위해 저는 출력에 사용되는 반복문에 IF문을 추가 하여 
+"article"을 포함한 페이지(실제 제가 필요한 조회수는 상세 페이지만 필요하기에 지정)를 검색 후 "?"가 포함된 조회수를 제거 해주는 과정을 아래와 같이 추가 했습니다.
+```java
+try (AlphaAnalyticsDataClient analyticsData = AlphaAnalyticsDataClient.create()) {
+			RunReportRequest request = RunReportRequest.newBuilder()
+					.setEntity(Entity.newBuilder().setPropertyId(ga4PropertyId))
+					.addDimensions(Dimension.newBuilder().setName("pagePath"))
+					.addMetrics(Metric.newBuilder().setName("screenPageViews"))
+					.addDateRanges(DateRange.newBuilder().setStartDate("2020-12-01").setEndDate("today"))
+					.setLimit(-1).build();
+			
+			// Make the request
+			RunReportResponse response = analyticsData.runReport(request);
+			
+			System.out.println("Report result:");
+			
+			for (Row row : response.getRowsList()) {
+			    if(row.getDimensionValues(0).getValue().contains("article")) {      //article을 포함한 페이지 검색
+				if(!row.getDimensionValues(0).getValue().contains("?")) {           // ? 를 포함한 페이지 제외
+				    System.out.printf("%s, %s%n",row.getDimensionValues(0).getValue(), row.getMetricValues(0).getValue());
+				}				
+			    }
+			}
+```
+<br>
+출력값:
+```
+Report result:
+/article_list_java_1.html, 690
+/article_list_source%20code_1.html, 411
+/article_list_html&CSS_1.html, 384
+/article_list_MySQL_1.html, 285
+/article_detail_27.html, 256
+/article_detail_12.html, 200
+/article_list_CodeUp_1.html, 176
+/article_detail_13.html, 110
+/article_detail_9.html, 110
+/article_detail_7.html, 109
+/article_list_JSP%20dev.%20log_1.html, 109
+/article_detail_11.html, 95
+/article_search.html, 93
+/article_detail_14.html, 79
+/article_detail_17.html, 74
+...계속
+```
+<br>
+<br>
+실제로 제가 출력하고 싶은 조회수만을 받아오는 매서드를 완성하고 정상적으로 출력하는 것을 확인 후 적용을 완료 하였습니다.
+아직 자바를 배운지 얼마 되지 않아 api 적용도 힘들고 많은 검색과 시간이 필요하지만 
+하나씩 배워가면서 완료된 결과를 보면 뿌듯함이 밀려옵니다.
+혹시나 저와 동일한 문제를 격고 있으신 분들을 위해 포스팅을 진행 했지만 
+저도 초보입장이라 설명이 부족 할 수 있어 혹시 이해 안가는 부분이 있다면 댓글로 문의 주시면 아는한도 내에서 답변 드리겠습니다.
+
+모두들 코시국 파이팅 하시고 즐코딩 하세요😉 
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="article_detail_28.html"></a>
+						</figure>
+						<figure class="latest-list__box">
+							<span>20-12-20</span>
+							<img src="img/java.png" />
+							<figcaption>
+								<h3>자바: 아스키코드, 유니코드를 문자나 숫자로 변환하기</h3>
+								<script type="text/x-template">
+# 아스키 코드 
+
+미국에서 표준화가 추진된 정보교환용 7bit 부호로 정의합니다. 1962년 안시(ANSI)가 정의한 미국 표준 정보교환 코드이며 1963년 미국표준협회(ASA)에 의해 결정되어 미국의 표준부호가 되었습니다. 이 코드는 7비트의 이진수 조합으로 만들어져 총 128개의 부호를 표현합니다. 아스키코드의 처음 32개(0~31)는 프린터나 전송 제어용으로 사용되고 나머지는 숫자와 로마글자 및 도량형 기호와 문장기호를 나타냅니다. 아스키코드는 7자리의 2진코드인데 1비트의 패리티 비트를 추가하여 8비트로 많은 컴퓨터에 사용되고 있습니다.
+
+다음은 아스키코드 표 입니다.
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcQj4My%2FbtqOqUXWdmV%2FmOUfnQAPkYAzj1NfjYYtH1%2Fimg.png)
+
+# 유니코드 
+
+시간이 지나가면서 영어나 숫자 그리고 기본적인 기호뿐만 아니라 그 나라, 그 언어에서 쓰는 다양한 문자들을 처리하려면 1바이트로 정의된 아스키 코드를 확장할 필요가 있게 됩니다. 유니코드는 이런 아스키코드의 한계성을 해소할 수 있는 체계로 만들어진 코드입니다. 각 나라별 언어를 모두 표현하기 위해 나온 코드 체계가 유니코드(unicode)입니다. 유니코드는 사용중인 운영체제, 프로그램, 언어에 관계없이 문자마다 고유한 코드 값을 제공하는 새로운 개념의 코드입니다. 언어와 상관없이 모든 문자를 16비트로 표현하므로 최대 65,536자까지 포현할 수 있습니다. 자바는 모든 문서를 유니코드로 처리합니다. 유니코드표는 구할 수 없었습니다. 유니코드안에 속해있는 문자가 너무 많기 때문입니다.
+
+# 아스키코드, 유니코드를 문자나 숫자로 변환하기
+
+문자 -> 숫자 
+
+```java
+import java.util.Scanner;
+
+public class Ascii_Change {
+    public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+		
+	System.out.println("알파벳을 입력해주세요");
+	char alpa = sc.nextLine().charAt(0);
+	int ialpa = (int)alpa;
+		
+	System.out.println(ialpa);
+    }
+}
+```
+
+숫자 -> 문자 
+
+```java
+import java.util.Scanner;
+
+public class Ascii_Change {
+    public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+		
+	System.out.println("숫자를 입력해주세요");
+	int alpa = sc.nextInt();
+	char calpa = (char)alpa;
+		
+	System.out.println(calpa);
+    }
+}
+```
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="article_detail_12.html"></a>
+						</figure>
+						<figure class="latest-list__box">
+							<span>20-12-20</span>
+							<img src="img/java.png" />
+							<figcaption>
+								<h3>Java - split, substring으로 문자열을 자르기 & 분리하기</h3>
+								<script type="text/x-template">
+Java에서 String을 자르는 방법은 다음과 같이 여러가지 방법이 있습니다.
+
+-   String.split
+-   String.substring
+-   Commons-io 라이브러리
+
+각각 예제를 통해 어떻게 문자열을 자르는지 알아보겠습니다.
+
+## String.split()으로 문자열 자르기
+
+split()은 어떤 문자 기준으로 문자열을 자르고 배열로 리턴해 줍니다.
+
+String은 다음과 같은 메소드들을 제공합니다.
+
+```java
+public String[] split(String regex)
+public String[] split(String regex, int limit)
+```
+
+-   인자 regex는[정규표현식(regex)](https://codechacha.com/ko/java-regex/)으로 문자열 패턴을 받고, 그 패턴과 일치하는 문자열을 기준으로 잘라줍니다.
+-   인자 limit은 문자열을 나눌 최대 개수입니다. 인자로 2를 전달하면 리턴되는 배열의 길이가 2 이하가 됩니다.
+
+다음은split()을 사용하여 문자열을 자르는 예제입니다.
+
+```java
+String str = "Hi guys This is split example";
+
+String[] result = str.split(" ");
+String[] result2 = str.split(" ", 2);
+String[] result3 = str.split(" ", 3);
+
+System.out.println(Arrays.toString(result));
+System.out.println(Arrays.toString(result2));
+System.out.println(Arrays.toString(result3));
+```
+
+Output:
+
+```java
+[Hi, guys, This, is, split, example]
+[Hi, guys This is split example]
+[Hi, guys, This is split example]
+```
+
+이 예제에서는 공백으로 문자열을 잘랐습니다. 또한, 설정된 limit의 개수만큼만 문자열을 자르는 것을 볼 수 있습니다.
+
+다른 예제로, 개행 문자\\n로 문자열을 자를 수도 있습니다.
+
+```java
+String str = "Hi guys\n" +
+        "This is split example\n" +
+        "I'll show you how to use split method";
+String[] result = str.split("\n");
+
+System.out.println(Arrays.toString(result));
+```
+
+Output:
+
+```java
+[Hi guys, This is split example, I'll show you how to use split method]
+```
+
+### 정규표현식(regex)과 split으로 문자열 자르기
+
+위의 예제는 단순한 문자를 인자로 전달하였습니다.
+
+정규표현식을 전달하여 문자열을 자를 수도 있습니다.
+
+다음은 정규표현식과 일반 문자로 잘랐을 때의 결과를 비교하는 예제입니다.
+
+```java
+String str = "This island is beautiful";
+String[] result = str.split("is");
+String[] result2 = str.split("\\bis\\b");
+
+System.out.println(Arrays.toString(result));
+System.out.println(Arrays.toString(result2));
+```
+
+Output:
+
+```java
+[Th,  , land ,  beautiful]
+[This island ,  beautiful]
+```
+
+정규표현식을 사용하면 조금 더 섬세하게 문자열을 자를 수 있습니다.
+
+> 정규표현식에 대해서 더 알고 싶다면[Java - 정규표현식(regex), 다양한 예제로 쉽게 이해하기](https://codechacha.com/ko/java-regex/)를 읽어보시면 좋습니다.
+
+## String.substring()으로 문자열 자르기
+
+substring()은 인자로 전달된 index를 기준으로 문자열을 자르고 String을 리턴하는 메소드입니다.
+
+String은 다음과 같은 substring 메소드들을 제공합니다.
+
+```java
+public String substring(int beginIndex)
+public String substring(int beginIndex, int endIndex)
+```
+
+-   인자로 beginIndex만 전달하면, 이 index가 포함된 문자부터 마지막까지 잘라서 리턴합니다.
+-   인자로 beginIndex, endIndex를 모두 전달하면 begin을 포함한 문자부터 endIndex 이전 index의 문자까지 잘라서 리턴합니다.
+
+다음은 substring을 이용하여 문자열을 자르는 예제입니다.
+
+```java
+String str = "Hi guys. This is split example";
+String result = str.substring(17);
+String result2 = str.substring(17, 22);
+
+System.out.println(result);
+System.out.println(result2);
+```
+
+Output:
+
+```java
+split example 
+split
+```
+
+beginIndex로 17을, endIndex로 22를 전달하면 index 17을 포함하고, 22를 포함하지 않는 문자열을 리턴합니다. 즉, index 17의 문자s부터, index 21의 문자는t까지 잘라서 리턴합니다.
+
+다음은indexOf()로 어떤 문자의 index를 찾고 그 index로substring()에 전달하는 예제입니다.
+
+```java
+String str = "This island is beautiful";
+int beginIndex = str.indexOf("is");
+int endIndex = str.length();
+String result = str.substring(beginIndex, endIndex);
+
+System.out.println(result);
+```
+
+Output:
+
+```java
+is island is beautiful
+```
+
+indexOf()는 인자로 전달된 문자열의 index를 리턴합니다. 왼쪽에서 오른쪽 순서로 탐색하며 가장 첫번째로 발견한 문자열의 index를 리턴합니다.
+
+만약is beautiful만 잘라내고 싶다면 어떻게 해야할까요? 문자열 마지막에서 왼쪽방향으로is를 찾고 그 index를 substring()으로 전달하면 됩니다. 이런 경우lastIndexOf()를 사용하면 됩니다.
+
+다음은lastIndexOf()와substring()을 사용하여 문자열을 자르는 예제입니다.
+
+```java
+String str = "This island is beautiful";
+int beginIndex = str.lastIndexOf("is");
+int endIndex = str.length();
+String result = str.substring(beginIndex, endIndex);
+
+System.out.println(result);
+```
+
+Output:
+
+```java
+is beautiful
+```
+
+## commons-io 라이브러리로 문자열 자르기
+
+commons-io 라이브러리를 사용하여 문자열을 자를 수도 있습니다.
+
+### commons-io 라이브러리를 설정
+
+Gradle 프로젝트는build.gradle의 dependencies에 다음과 같이 추가합니다.
+
+```java
+dependencies {
+  compile group: 'commons-io', name: 'commons-io', version: '2.6'
+  ...
+}
+```
+
+> Maven 등의 다른 빌드시스템을 사용하는 프로젝트는[mvnrepository.com](https://mvnrepository.com/artifact/commons-io/commons-io/2.6)을 참고하셔서 설정하시면 됩니다.
+
+### StringUtils으로 문자열 자르기
+
+StringUtils은substringBetween()메소드를 제공합니다.
+
+다음과 같이 인자로 문자열을 전달하고, 추가로 2개의 문자열을 전달하면 그 2개의 문자열 사이의 String을 잘라서 리턴해 줍니다.
+
+```java
+String str = "This island is beautiful!";
+String result = StringUtils.substringBetween(str, "This ","!");
+System.out.println(result);
+```
+
+Output:
+
+```java
+island is beautiful
+```
+
+substringAfter()는 인자로 전달된 문자열을 찾고, 그 문자열 다음부터 끝까지 잘라서 String을 리턴합니다.
+
+```java
+String str = "This island is beautiful!";
+String result = StringUtils.substringAfter(str, "This ");
+System.out.println(result);
+```
+
+Output:
+
+```java
+island is beautiful!
+```
+
+substringBefore()는 인자로 전달된 문자열을 찾고, 처음부터 그 문자열 이전까지 잘라서 String을 리턴합니다.
+
+```java
+String str = "This island is beautiful!";
+String result = StringUtils.substringBefore(str, "is ");
+System.out.println(result);
+```
+
+Output:
+
+```java
+Th
+```
+
+substringBeforeLast()는 반대방향으로 문자열을 찾고, 처음부터 그 문자열 이전까지 잘라서 String을 리턴합니다.
+
+```java
+String str = "This island is beautiful!";
+String result = StringUtils.substringBeforeLast(str, "is ");
+System.out.println(result);
+```
+
+Output:
+
+```java
+This island
+```
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="article_detail_11.html"></a>
+						</figure>
+						<figure class="latest-list__box">
+							<span>20-12-20</span>
+							<img src="img/java.png" />
+							<figcaption>
+								<h3>예외처리 try catch</h3>
+								<script type="text/x-template">
+ 1\. 예외 처리
+ 
+ 프로그램을 만들다 보면 수많은 에러를 만나기도 하지만 문법적인 오류가 아닌 예외 사항이 발생하기도 한다. 이때, 이에 대한 적절한 처리가 필요한데 간단한 예외의 경우 if 조건문으로 처리할 수 있다.
+ 
+ ​
+ 
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FDYReX%2FbtqNwxxnTba%2Fk44Uwu4hspKlzORO7MTZl1%2Fimg.png)
+ 
+ 하지만 이렇게 되면 정상적인 if 코드와 구분이 어렵다. 이럴 때 사용할 수 있는 게 바로 try catch다.
+ 
+ ​
+ 
+ try catch의 형태는 아래와 같다.
+ 
+ ​
+ ```java
+ try {
+ 
+ 예외가 발생할 구문
+ 
+ } catch (Exception e) {
+ 
+ 처리할 구문
+ 
+ }
+ ```
+ ​
+ 
+ try의 안에는 예외가 발생할만한 부분을 넣어주고 catch의 괄호 안에 해당하는 예외와 같은 예외가 발생하면 try 구문을 더 실행하지 않고 catch로 넘어가 중괄호 안의 구문을 실행한다.
+ 
+ ​
+ 
+ 자바 컴파일러는 예외가 발생하는 순간 그 예외를 던지는데, chatch가 그 예외를 잡아 처리해 주는 역할을 하는 것이다.
+ 
+ ​
+ 
+ try catch는 try catch finally의 형태로도 쓸 수 있는데, 이 형태는 try catch 내 예외 발생 여부와 상관없이 반드시 실행해야 할 구문이 있을 때 사용한다.
+ 
+ ​
+ ```java
+ try {
+ 
+ ​
+ 
+ } catch(Exception e) {
+ 
+ ​
+ 
+ } finally {
+ 
+ 마지막에 출력되는 실행문
+ 
+ }
+ ```
+ ​
+ 
+ 위의 형태를 사용하면 예외 처리를 위해 catch 구문을 실행하든 하지 않든 반드시 출력된다.
+ 
+ ​
+ 
+ 이제 try catch를 이용하여 위의 소스 코드를 변경해보자.
+ 
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FqCCTH%2FbtqNx9CYRYN%2FHrt7BL7ML7PnSG3JByj6i1%2Fimg.png) 
+ 
+ ​
+ 
+ 추가로 finally까지 구현해 보자.
+ 
+ ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FqCCTH%2FbtqNx9CYRYN%2FHrt7BL7ML7PnSG3JByj6i1%2Fimg.png)
+ 
+ catch의 내용을 실행하고도 finally의 출력문이 실행되었다.
+ 
+ ​
+ 
+ 이번엔 try 부분에 다른 출력 소스들을 추가해 보았다. 하지만 실행된 소스는 catch와 finally뿐이다. 이로써 try에서 예외가 발생하면 그다음 코드를 실행하지 않고 바로 catch로 넘어간다는 것을 알 수 있다.
+ 
+ ​
+ 
+ 그렇다면 소스가 정상적으로 출력되었을 때는 어떨까?
+ 
+ ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcIHyOM%2FbtqNuPdYSKq%2F0tkSckgiMR1HraoxsH8hU1%2Fimg.png)
+ 
+ try 안의 출력문이 정상적으로 출력되었을 뿐만 아니라 finally의 출력문도 함께 실행되었다.
+ 
+ ​
+ 
+ 이처럼 finally에는 예외 발생 여부와 상관없이 반드시 실행되어야 하는 부분을 넣으면 된다.
+ 
+ ​
+ 
+ > 2\. 커스텀 익셉션 (Custom Exception)
+ 
+ 커스텀 Exception은 Exception 클래스에 명시되지 않은 예외를 처리하고 싶을 때 사용할 수 있다.
+ 
+ ​
+ 
+ 간단히 상속의 흐름을 알아보자면 예외 처리를 하기 위한 최상위 클래스인 Throwable 클래스가 있고, 이를 상속받는 Error 클래스와 Exception 클래스가 있다.
+ 
+ ​
+ 
+ Exception 클래스는 모든 예외를 처리할 수 있는 코드들을 담고 있고 Error 클래스는 모든 오류들을 담고 있는 클래스라고 할 수 있다.
+ 
+ ​
+ 
+ 때문에 커스텀 예외 처리를 위해서는 새로운 클래스를 생성하고 Exception 클래스를 상속받아야 한다.
+ 
+ ​
+ 
+ 예를 들어 나이를 출력하는 프로그램이 있다고 하자. 나이는 음수가 될 수 없기 때문에 오류가 발생해야 하는데 Exception 클래스 내에는 정의되어 있지 않다. 그렇기 때문에 직접 예외를 발생시키는 것이다.
+ 
+ ![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FyxfTm%2FbtqNEev3Pqe%2FK019HJgdX1Q7wAOvrecL50%2Fimg.png)
+ 
+ ​
+ 
+ 위 코드에서 낯선 부분이 두 가지 정도 보인다.
+ 
+ 1\. throw
+ 
+ 2\. throws 예외명
+ 
+ ​
+ 
+ 간단히 말하자면 throw는 내가 직접 발생시킨 예외를 던지는 행위에 해당한다.
+ 
+ Exception에 명시된 예외는 JVM이 인식하여 내부적으로 처리하지만 커스텀 익셉션은 그렇지 못하다. 그렇기 때문에 사용자가 직접 예외를 생성하여 던져 주어야 한다.
+ 
+ ​
+ 
+ 메소드 선언문 옆 throws 예외명은 발생한 예외를 처리하지 않겠다고 선언하는 것이다.
+ 
+ custom 메소드에서 처리되지 못한 예외는 해당 메소드가 호출된 곳으로 돌아가면서 함께 던져지게 된다.
+ 
+ 돌아간 부분이 try catch 형식 안이기 때문에 던져진(throw) 예외가 잡힐(catch) 수 있는 것이다.
+ 
+ 쉽게 말해 custom 메소드는 자신의 예외를 메인 메소드에게 미룬 것과 같다.
+ 
+ ​
+ 
+ 만약 메인 메소드에도 throws AgeException가 선언되어 있었다면 예외는 처리되지 못하고 결국 프로그램은 예외 메시지를 띄우며 강제 종료된다.
+ 
+ ​
+ 
+ 그렇기 때문에 예외를 던지면 잡거나(catch) 받지 않겠다 명시(throws 예외명)하거나 둘 중 하나는 반드시 해야 한다.
+ 
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbW7V83%2FbtqNCfoV0oF%2FFAOvQmCTxsSzowN0S8MqJK%2Fimg.png)
+ 
+ ​
+ 
+ > 3\. 가볍게 읽어볼 내용
+ 
+ 1\. getMessage는 예외 상황을 알리기 위해 정의된 모든 예외 클래스들이 상속하는 Throwable 클래스에 정의되어 있는 메소드이다. 모든 예외들은 Throwable 클래스를 상속받는다.
+ 
+ ​
+ 
+ 2\. Exception 종류
+ 
+ \>> ArrayIndexOutOfBoundsException : 배열에 잘못된 인덱스 값을 사용하는 예외
+ 
+ \>> ClassCastException : 허용되지 않는 형 변환을 진행하는 예외
+ 
+ \>> NegativeArraySizeException : 배열의 크기를 음수로 지정하는 예외
+ 
+ \>> NullPointerException : 참조 변수가 null인 상태에서 메소드를 호출할 때 발생하는 예외
+ 
+ ​
+ 
+ 3\. try catch에서 두 개 이상의 catch를 사용할 경우 상위 클래스가 먼저 올 수 없다.
+ 
+ // 불가능한 예시 try { ... } catch(Throwable e) { // 가장 최상위 클래스이기 때문에 아래 예외가 실행될 수 X ... } catch(ArithmeticException e) { ... } // 가능한 예시 try { ... } catch(ArithmeticException e) { ... } catch(Throwable e) { ... }
+ 
+ ​
+ 
+ 4\. throw는 예외 상황이 발생되었음을 자바 가상머신에게 알리는 키워드다. 따라서 이 문장이 실행되면서 자바의 예외 처리 메커니즘이 동작하게 된다.
+ 
+ ​
+ 
+ 5\. Throwable 클래스에 정의되어 있는 printStackTrace 메소드로 예외가 발생하여 전달되는 과정을 출력할 수 있다.
+ 
+ ​
+ 
+ 6\. 가상머신의 예외 처리 방식
+ 
+ \>> 1) getMessage 메소드를 호출한다.
+ 
+ \>> 2) 예외 상황이 발생하여 전달되는 과정을 출력해 준다. (printStackTrace 메소드)
+ 
+ \>> 3) 프로그램을 종료한다.
+ 
+ ​
+ 
+ 7\. Throwable을 상속하는 예외 클래스는 Error와 Exception 두 가지이다.
+ 
+ 그런데 Error는 이름처럼 단순한 예외로 볼 수 없는 심각한 오류 상황을 표현하기 위해 정의된 클래스이다. 따라서 이 클래스를 상속하여 정의된 클래스는(프로그래머가 정의하는 클래스 X) 프로그램의 실행을 멈춰야 할 정도로 매우 심각한 오류 상황을 표현하는 데 사용된다.
+ 
+ ​
+ 
+ 8\. Error 클래스를 상속하는 대표적인 클래스는 VirtualMachineError이다. API 문서에서는 이 클래스를 "자바 가상머신에 문제가 생겨 더 이상 제대로 동작할 수 없는 상황을 알리기 위해 정의된 클래스이다."라고 설명한다. 그렇기 때문에 Error를 상속하는 클래스의 오류 상황이 발생하면, 그냥 프로그램이 종료되도록 놔두는 것이 상책이다. 프로그램이 종료된 이후 소스코드를 수정하는 등의 방식으로 원인을 해결해야 한다.
+ 
+ ​
+ 
+ 9\. VirtualMachineError 클래스를 상속하는 클래스 중 OutOfMemoryError라는 클래스가 있는데, 이는 메모리 공간이 부족한 상황을 표현하는 예외 클래스이다. 따라서 이러한 오류가 발생하면, 메모리가 효율적으로 사용되도록 소스코드 자체를 변경해야 한다.
+ 
+ ​
+ 
+ 10\. Exception을 상속하는 대표적 클래스는 두 가지이다.
+ 
+ \>> RuntimeException : 주로 프로그램의 오류가 있을 때 발생하도록 의도된 것들(NullPointer 등과 같이 부주의로 생기는 오류), 그렇기 때문에 try catch문을 사용하지 않고도 예외를 처리할 수 있다.
+ 
+ (다만, 프로그램의 실행을 이어가기 위해 try catch문으로 해당 예외를 처리하기도 한다)
+ 
+ \>> IOException : 입출력과 관련된 오류, 반드시 try catch문으로 예외를 처리해야 한다.
+ 
+ ​
+ 
+ 11\. Exception을 상속하는 클래스의 예외 상황이 임의의 메소드 내에서 발생한다면 해당 메소드는 반드시 두 가지 중 한 가지 방법을 선택하여 정의해야 한다.
+ 
+ \>> 1) try catch문을 이용하여 메소드 내의 예외 처리
+ 
+ \>> 2) trows를 이용하여 메소드를 호출한 영역으로 예외가 전달될 수 있도록 정의
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="article_detail_9.html"></a>
+						</figure>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -264,14 +1335,184 @@
 		</figure>
 		<div class="content">
 			<div class="header">
-				<div class="header__box flex flex-dr-c" id="page3">
-					<a href="article_detail_31.html">
-						<div class="box__info flex">
-							<div class="subheading box__info_board">board > MySQL</div>
-							<div class="subheading box__info_writer">D.K</div>
+				<div class="header__box flex flex-ai-c flex-dr-c" id="page3">
+					<div class="latest-list">
+						<div class="title-of-list">
+							<span>MySQL 최신 게시물</span>
 						</div>
-						<h2 class="heading">[MySQL] INSERT UNIQUE중복 체크 ON DUPLICATE KEY UPDATE</h2>
-					</a>
+						<figure class="latest-list__box">
+							<span>21-01-30</span>
+							<img src="img/MySQL.jpg" />
+							<figcaption>
+								<h3>[MySQL] INSERT UNIQUE중복 체크 ON DUPLICATE KEY UPDATE</h3>
+																<script type="text/x-template">
+## UNIQUE 지정
+테이블 생성 후 , 중복 저장을 막기 위해 중복 체크 할 column에 unique 키를 등록
+데이터 베이스에서 대량의 데이터를 등록할 경우, 키 값이 있음에도 INSERT문을 실행 하게 되면 에러가 발생한다.
+해결방법으로는 테이블에 있는 데이터를 모두 삭제 한 후 다시 집어넣는 방법 이지만 번거롭고 위험요소 역시 발생한다.
+따라서, 키 값이 있는 경우 INSERT 대신 UPDATE를 사용하면 번거로운 일과 에러를 줄일 수 있다.
+
+---
+<br>
+## TABLE 셋팅 예제
+```sql
+CREATE TABLE attr(
+    id INT(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    regDate DATETIME NOT NULL,
+    updateDate DATETIME NOT NULL,
+    relTypeCode CHAR(20) NOT NULL, 
+    relId INT(10) UNSIGNED NOT NULL,
+    typeCode CHAR(30) NOT NULL,
+    type2Code CHAR(30) NOT NULL,
+    `value` TEXT NOT NULL,
+    expireDate DATETIME NULL
+);
+# 변수찾는 속도 최적화
+ALTER TABLE attr ADD UNIQUE INDEX (relTypeCode,relId, typeCode, type2Code);
+
+# 특정 조건을 만족하는 회원 또는 게시물(기타데이터)를 빠르게 찾기 위해
+ALTER TABLE attr ADD INDEX (relTypeCode, typeCode, type2Code);
+```
+---
+<br>
+## ON DUPLICATE KEY UPDATE 사용
+```sql
+INSERT INTO attr (regDate, updateDate, expireDate, `relTypeCode`, `relId`, `typeCode`, `type2Code`, `value`)
+VALUES (NOW(), NOW(),NULL, 'member', 27, 'extra', 'isUsingTempPassword', 1)
+ON DUPLICATE KEY UPDATE
+updateDate = NOW()
+, `value` = 1;
+```
+
+
+attr 이라는 테이블에 relTypeCode,relId, typeCode, type2Code  칼럼 값을 중복 검사 후 중복 값이 있다면 <span style="color:red">value </span> 칼럼에 값을 변경 해주는 예제이다.
+
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="article_detail_31.html"></a>
+						</figure>
+						<figure class="latest-list__box">
+							<span>20-12-21</span>
+							<img src="img/MySQL.jpg" />
+							<figcaption>
+								<h3>SQL 소수점 반올림, 버림, 내림</h3>
+																<script type="text/x-template">
+**1\. 반올림 ( 자르기 포함 )**
+
+**함수 : ROUND ( numeric\_expression, length\[, function\])**
+
+**1) 반올림**
+
+```slq
+----------------------------------------------  
+-- 반올림  
+----------------------------------------------  
+  
+SELECT ROUND(12.35393,2)   
+--> 결과값 : 12.35000  
+  
+SELECT ROUND(12.35593,2)   
+--> 결과값 : 12.36000  
+  
+SELECT ROUND(12.35393,-1)   
+--> 결과값 : 10.00000  
+  
+SELECT ROUND(15.35393,-1)   
+--> 결과값 : 20.00000  
+  
+SELECT ROUND(12.35393,0)   
+--> 결과값 : 12.00000  
+```
+
+**2) 자르기**
+
+```slq
+----------------------------------------------  
+-- 자르기  
+----------------------------------------------  
+  
+Select Round(98.65, 1, 1)  
+--> 결과값 : 98.60  
+  
+Select Round(98.65, 0, 1)  
+--> 결과값 : 98.00  
+  
+Select Round(98.65, -1, 1)  
+--> 결과값 : 90.00  
+```
+
+**2\. 올림**
+
+**함수 : CEILING ( numeric\_expression )**
+
+**<예>**
+
+```slq
+----------------------------------------------  
+-- 올림  
+----------------------------------------------  
+  
+SELECT CEILING(12.35393)   
+--> 결과값 : 13  
+  
+SELECT CEILING(-12.35393)   
+--> 결과값 : -12  
+  
+SELECT CEILING(0.00)   
+--> 결과값 : 0  
+```
+
+**3\. 내림**
+
+**함수 : FLOOR ( numeric\_expression )**
+
+**<예>**
+
+```slq
+----------------------------------------------  
+-- 내림  
+----------------------------------------------  
+  
+SELECT FLOOR(12.35393)   
+--> 결과값 : 12  
+  
+SELECT FLOOR(-12.35393)   
+--> 결과값 : -13  
+  
+SELECT FLOOR(0.00)   
+--> 결과값 : 0  
+```
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="article_detail_13.html"></a>
+						</figure>
+						<figure class="latest-list__box">
+							<span>${index__summary-regDate-MySQL2}</span>
+							<img src="img/MySQL.jpg" />
+							<figcaption>
+								<h3>${index__summary-body-title-MySQL2}</h3>
+																<script type="text/x-template">
+${index__summary-body-MySQL2}
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="${index__summary-link-MySQL2}"></a>
+						</figure>
+						<figure class="latest-list__box">
+							<span>${index__summary-regDate-MySQL3}</span>
+							<img src="img/MySQL.jpg" />
+							<figcaption>
+								<h3>${index__summary-body-title-MySQL3}</h3>
+								<script type="text/x-template">
+${index__summary-body-MySQL3}
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="${index__summary-link-MySQL3}"></a>
+						</figure>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -283,14 +1524,1022 @@
 		</figure>
 		<div class="content">
 			<div class="header">
-				<div class="header__box flex flex-dr-c" id="page4">
-					<a href="article_detail_30.html">
-						<div class="box__info flex">
-							<div class="subheading box__info_board">board > JSP dev. log</div>
-							<div class="subheading box__info_writer">D.K</div>
+				<div class="header__box flex flex-ai-c flex-dr-c" id="page4">
+					<div class="latest-list">
+						<div class="title-of-list">
+							<span>html&CSS 최신 게시물</span>
 						</div>
-						<h2 class="heading">💻JSP 개발일지(3):: 토스트에디터 추가 및 회원정보 수정 기능 구현</h2>
-					</a>
+						<figure class="latest-list__box">
+							<span>21-01-20</span>
+							<img src="img/html&CSS.png" />
+							<figcaption>
+								<h3>[html, css] ::selection 마우스 드래그 배경색 변경</h3>
+								<script type="text/x-template">
+##텍스트를 드래그하여 블럭을 씌울 때 스타일을 변경하기 위한, CSS의 pseudo-element 중**::selection**선택자에 대해 알아보자.
+
+#### 사용
+
+심플하다. 직접 드래그해보자.
+
+```codepen
+https://codepen.io/d8040/embed/zYKberq?height=265&theme-id=dark&default-tab=html,result
+```
+
+##모질라 계열을 위해**::-moz-selection** 또한 사용하자.
+
+#### 속성
+
+모든 속성을 사용해 스타일이 가능하진 않고, 아래의 속성들만 사용할 수 있다.
+
+-   color
+-   background-color
+-   cursor
+-   caret-color
+-   outline
+-   text-decoration 및 관련 속성
+-   text-emphasis-color
+-   text-shadow
+
+#### 주의
+
+단순한 미적 이유로 selected 텍스트를 스타일할 때 웹 접근성을 고려해야 한다. 
+
+시력이 나쁜 사람도 블럭을 씌웠다고 인식할 만큼의 명암비가 필요하다. 
+
+(아마도) 좋지 않은 예.
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdpJTiw%2FbtqUeW3VGvA%2F6gDfzr0iorh0BIxoszJTN0%2Fimg.png)
+
+#### 브라우저 지원
+
+IE는 8이하에서 작동하지 않는다.
+
+모바일에선 iOS Safari와 Opera Mini에서 지원하지 않는다.
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="article_detail_26.html"></a>
+						</figure>
+						<figure class="latest-list__box">
+							<span>20-12-23</span>
+							<img src="img/html&CSS.png" />
+							<figcaption>
+								<h3>css 박스 안 넘치는 글 자르기</h3>
+								<script type="text/x-template">
+고정된 너비만을 제공하는 레이아웃에서는 서버단에서 화면에 출력할 글자수를 미리 가늠하며 디자인하기가 수월합니다. 레이아웃이 유동적인 너비를 가지거나 서버 스크립트쪽에 접근할 수 없어 글자수를 제어하기 곤란할 경우에는 아래에서 설명하는 방법들이 추천됩니다.
+
+### 한 줄 단위로 글자 자르기
+
+처음으로 적용해 볼 것은 한 줄, 혹은 여러 줄에 걸쳐 출력되고 있는 글자들을 지정된 너비에 맞게
+
+**한 줄 단위로**
+
+자르는 법이다. 이는 여러가지 CSS 속성들을 조합하여 조건을 맞추는 일부터 시작된다.
+
+#### 출력될 너비 조정하기
+
+CSS로 글자 자르기를 위해서는 글자가 출력될 너비가 필요하다. 기본적으로  **display** 속성의 `inline` 값과 같이 요소의 너비를 가질 수 없는 경우에는 이를 너비를 가질 수 있게 변경해야 한다.
+
+CSS
+
+```css
+.target {
+    display: block;
+}
+
+```
+
+  
+
+요소를 `block` 값으로 변경했기에 자동적으로 요소의 너비는 부모 너비의 100%를 차지하도록 변경된다. 만약 `inline-block` 과 같이 콘텐츠에 따라 유동적인 너비를 가진다면 직접 요소의 너비를 설정해야 한다. 즉, 일정한 고정된 너비를 가지는 것이 전제 조건이다.
+
+CSS
+
+```css
+.target {
+    display: inline-block;
+    width: 200px;
+}
+
+```
+
+#### 줄바꿈을 없애기
+
+너비가 지정된 요소라도 글자수가 해당 너비를 넘어서게 되면 자동으로 줄바꿈이 이루어진다. 이 것은 [white-space] 속성을 `nowrap` 으로 설정하여 방지할 수 있다.
+
+CSS
+
+```css
+.target {
+    display: inline-block;
+    width: 200px;
+    white-space: nowrap;
+}
+
+```
+
+
+
+#### 넘치는 부분을 감추기
+
+CSS에서 요소를 넘치는 부분을 처리하는 것은 [overflow] 속성이 담당한다. 대상 요소의 overflow 속성을 `hidden` 으로 설정하여 넘치는 부분을 화면에서 숨긴다.
+
+CSS
+
+```css
+.target {
+    display: inline-block;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+```
+
+
+
+#### 숨긴 부분 처리
+
+위에서 설정한 속성들과 속성값으로 인해 숨겨지게 되는 부분을 처리하는 방식은 [text-overflow]속성이 담당하며, `ellipsis` 를 설정하면 말줄임표(...)가 숨겨지는 영역의 끝에 생성된다(오우~ 굿!).
+
+CSS
+
+```css
+.target {
+    display: inline-block;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+```
+
+
+이상의 내용은 출력될 글자수를 서버단에서 적은 수로 제한하지 않은 경우에는 유동적인 너비에 충분히 대응된다. 다만, 한 줄로 레이아웃이 제한된다는 것에 유념해야 한다.
+
+### 여러 줄 단위로 글자 자르기
+
+다음으로 적용해 볼 것은 여러 줄에 걸쳐 출력되고 있는 글자들을 지정된 너비와 높이에 맞게
+
+**여러 줄 단위로**
+
+자르는 법이다. 이는 위에서 다룬 내용의 반복과 추가적인 설정이 필요하다.
+
+#### 한 줄 출력의 해제 및 재설정
+
+위의 한 줄 자르기에서 `white-space` 속성을 이용해서 여러 줄에 걸쳐 출력되는 글자를 한 줄로 출력되게 했었다. 이를 해제하여 다시 여러 줄로 표현되게 해야 한다.
+
+CSS
+
+```css
+.target {
+    /* 한 줄 자르기 */
+    display: inline-block;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /* 여러 줄 자르기 추가 스타일 */
+    white-space: normal;
+}
+
+```
+
+
+
+#### 줄 높이의 추가
+
+여러 줄을 출력하기 위해서는 요소의 줄 높이의 설정이 필수다. 이 줄 높이가 기준이 되어 보여주고 싶은 줄의 행수 만큼 요소의 높이를 설정하게 된다.
+
+CSS
+
+```css
+.target {
+    /* 한 줄 자르기 */
+    display: inline-block;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /* 여러 줄 자르기 추가 스타일 */
+    white-space: normal;
+    line-height: 1.2;
+}
+
+```
+
+#### 요소 높이의 추가
+
+위에서 설정한 줄 높이를 기준으로 요소의 높이를 설정한다. 즉, 2줄을 보여주고 싶다면 높이를 줄 높이의 2배로 설정하고 3줄을 보여주고 싶다면 줄 높이의 3배로 설정하면 된다.
+
+CSS
+
+```css
+.target {
+    /* 한 줄 자르기 */
+    display: inline-block;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /* 여러 줄 자르기 추가 스타일 */
+    white-space: normal;
+    line-height: 1.2;
+    height: 3.6em;
+}
+
+```
+
+  
+
+`height` 대신에 `max-height` 를 설정해서 최대치만 제한해도 된다.
+
+#### 숨긴 부분 처리 추가
+
+위의 설정으로 여러 줄을 출력하고 글자를 자를 수 있지만 `text-overflow` 속성으로 숨긴 부분에 대한 처리가 되질 않는다. 여러 줄에 걸친 숨긴 처리는 현재 웹킷 계열의 브라우저에서만 지원하는 속성으로 아래와 같다.
+
+CSS
+
+```css
+.target {
+    /* 한 줄 자르기 */
+    display: inline-block;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /* 여러 줄 자르기 추가 스타일 */
+    white-space: normal;
+    line-height: 1.2;
+    height: 3.6em;
+    text-align: left;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+```
+
+
+-   `text-align: left` : 글자 정렬이 양쪽 정렬이면 말 줄임표가 숨겨질 수 있으니 좌측 정렬로
+-   `word-wrap: break-word` : 잘라버릴 글자를 단어 단위로
+-   `display: -webkit-box` : 여백 삽입과 같이 유연한 높이 증가를 위해 플렉스 박스형태로 변환
+-   `-webkit-line-clamp: 3` : 보여줄 줄 갯수
+-   `-webkit-box-orient: vertical` : 플렉스 박스의 방향 설정
+
+다시 말하자면, 크롬이나 오페라, 사파리 같은 웹킷 계열의 브라우저는 여러 줄의 글자를 자르는 자신만의 방법을 제공하고 있기에 높이나 줄 높이 설정이 필요치 않는다. 다만 크로스브라우징을 위해서 필요할 뿐이다.
+
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="article_detail_17.html"></a>
+						</figure>
+						<figure class="latest-list__box">
+							<span>20-12-23</span>
+							<img src="img/html&CSS.png" />
+							<figcaption>
+								<h3>파비콘 설명 적용 방법👌</h3>
+								<script type="text/x-template">
+파비콘에 대해 궁금했던 내용들을 정리했습니다.
+
+![](https://t1.daumcdn.net/cfile/tistory/2176FD36555471FE2D)
+
+### 파비콘(favicon) 소개
+
+파비콘은 웹페이지에 접속했을때, 상단 탭에 보여지는 아이콘을 일컫는다. 이 아이콘은 즐겨찾기에 웹페이지를 등록할때도 사용된다. 웹사이트를 대표하는 로고(logo)의 개념과 비슷하며, 사이트의 성격을 드러내기도 한다.
+
+최근에는 터치(touch) 아이콘, 타일(tile) 아이콘의 등장으로 더욱 혼란스러움이 가중되었으며, 각각의 기기에 최적화된 파비콘의 크기를 재설정하여 개발자들에게 어려움을 주고 있다.
+
+### 파비콘(favicon) 기본 설정
+
+1999년에 인터넷 익스플로러(Internet Explorer)에 처음 도입된 후로, 파비콘의 사양은 거의 변경되지 않은 채로 대부분 아이콘(ico) 파일의 형태로 도메인(domain)의 루트(root) 디렉토리에 위치해 왔다.
+
+![](https://t1.daumcdn.net/cfile/tistory/250FC64A5559181E27)
+
+크로스브라우징을 염두에 둔다면, 어떠한 HTML 코드도 작성하지 않고, 자신의 웹계정 루트(root) 디렉토리에 **16x16** 과 **32x32**의 이미지를 하나에 품은(multiple sizes[\[각주:1\]](#footnote_337_1)) `favicon.ico` 파일을 위치시킴으로써, 설정을 마무리한다.
+
+이 방법은 씨몽키(SeaMonkey) 브라우저를 제외한 모든 데스크톱 브라우저/버전에서(IE6 포함) 작동한다.
+
+CMS의 경우에는 테마(theme) 혹은 이미지(image) 디렉토리를 이용하기도 한다.
+
+Html
+
+```html
+<link rel="shortcut icon" href="/path/to/favicon.ico">
+
+```
+
+rel 속성과 type 속성 자세히
+
+접기
+
+IE에서는 `rel="shortcut icon"`처럼 rel 속성에 두가지 값을 모두 입력하면 IE6~10까지 이상없이 작동되고, 그 밖의 다른 브라우저는 `rel="icon"`처럼 icon 값만 입력해도 작동된다.
+
+Html
+
+```html
+<!-- IE6-10 -->
+<link rel="shortcut icon" href="path/to/favicon.ico">
+ 
+<!-- Everybody else -->
+<link rel="icon" href="path/to/favicon.ico">
+
+```
+
+type 속성의 값은 IE에서만 ICO 파일에 대한 서버의 MIME 값에 영향을 받고 다른 브라우저는 이 속성을 무시한다. 결국 type 속성은 무엇이든 값이 될 수 있고, 없어도 된다.
+
+Html
+
+```html
+<!-- Still works in IE6+ -->
+<link rel="shortcut icon" href="path/to/favicon.ico" type="image/vnd.microsoft.icon">
+ 
+<!-- Still works in IE6+ -->
+<link rel="shortcut icon" href="path/to/favicon.ico" type="image/x-icon">
+ 
+<!-- Still works in IE6+ -->
+<link rel="shortcut icon" href="path/to/favicon.ico">
+
+```
+
+접기
+
+전통적으로 favicon.ico 파일은 16컬러 24비트 알파 투명도(alpha transparency) 포맷의 16x16 아이콘(ICO) 파일이다. 최근의 파비콘은 32x32를 지원하는데, 모든 주요 인기 있는 브라우저들에서 적절하게 축소되어 이를 표현해준다. IE10의 매트로(Metro)에서는 32x32 아이콘이 주소창에 사용된다.
+
+![](https://t1.daumcdn.net/cfile/tistory/271CDC435559187D26)
+
+ICO 파일을 사용할 경우 아래와 같은 크기 정도는 포함하는 것을 추천한다.
+
+| 크기 | 용도 |
+| --- | --- |
+| 16x16 | IE9 주소 표시줄, 고정된(pinned) 사이트의 점프목록/툴바/오버레이 |
+| 32x32 | IE의 새로운 탭 페이지, 윈도우7 이상에서 작업 표시줄 단추, Safari 나중에 읽기 사이드바 |
+| 48x48 | 윈도우즈 사이트 아이콘 |
+
+좀 더 완벽하게 설정하길 원하고 1~3kb 쯤의 여분의 용량증가가 상관없다면 아래의 크기도 포함시켜도 된다.
+
+| 크기 | 용도 |
+| --- | --- |
+| 24x24 | IE9 고정된(pinned) 사이트 브라우저 UI |
+| 64x64 | 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 |
+
+### 파비콘(favicon) 추가 설정
+
+iOS 2.0 이상과 Android 2.1 이상에서는 터치(Touch) 아이콘 지정이 가능하다. 고해상도 아이콘(152x152) 하나만 준비하면 저해상도에서는 알아서 아이콘의 크기가 변경된다. 다만, 기기의 홈스크린에 아이콘이 추가되면 성능에 부정적일 수는 있다.
+
+Html
+
+```html
+<link rel="apple-touch-icon-precomposed" href="path/to/favicon-152.png">
+
+```
+
+apple-touch-icon 세분화 대응
+
+접기
+
+apple-touch-icon에 대해 좀 더 완벽하게 대응하고 싶다면 아래와 같이 세분화 할 수 있지만, 굳이 이럴 필요까지야...
+
+Html
+
+```html
+<!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/path/to/favicon-152.png">
+
+<!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/path/to/favicon-144.png">
+
+<!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/path/to/favicon-120.png">
+
+<!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/path/to/favicon-114.png">
+
+<!-- For first- and second-generation iPad: -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/path/to/favicon-72.png">
+
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+<link rel="apple-touch-icon-precomposed" href="/path/to/favicon-57.png">
+
+```
+
+위의 코드로 적용되지 않는 경우를 위해 추가적인 PNG 크기를 준비한다.
+
+Html
+
+```html
+<link rel="icon" href="/path/to/favicon-32.png" sizes="32x32">
+
+```
+
+접기
+
+IE10 매트로는 타일(tile) 아이콘이 추가되었는데(apple-touch-icon과 유사한) 방문자가 고정(pins)할 경우, 시작화면에 이를 표시한다. 타일 아이콘의 크기는 144x144 PNG 파일이며, 투명한 배경을 사용해야 최상의 결과를 얻을 수 있다.
+
+Html
+
+```html
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/path/to/favicon-144.png">
+
+```
+
+원하는 타일의 색상으로 `content="#ffffff"`부분을 수정하면 된다.
+
+### 파비콘(favicion) PNG 파일 지원 사항
+
+Chrome, Firefox, Opera 7+, 그리고 Safari 4+는 모두 PNG 파비콘을 지원하지만 Chrome과 Safari는 ICO 파비콘이 함께 지정되어 있으면 선언된 순서에 상관없이 PNG 파비콘을 무시하고 ICO 파비콘을 사용한다. 즉, PNG 파비콘을 지원하지 않는 IE를 위해 ICO 파일을 사용하게 되는 순간, Chrome과 Safari는 PNG 파비콘을 무시하게 된다는 이야기다.
+
+favicion.ico > favicon.png
+
+Html
+
+```html
+<!-- Chrome, Safari, IE -->
+<link rel="shortcut icon" href="path/to/favicon.ico">
+ 
+<!-- Firefox, Opera (Chrome and Safari say thanks but no thanks) -->
+<link rel="icon" href="path/to/favicon.png">
+
+```
+
+ICO 파비콘은 multiple sizes를 지원하기에 하나의 ICO 파일에 여러 사이즈의 아이콘을 넣어 두고 이를 활용할 수 있지만 PNG 파비콘은 이것이 불가능하다. 그런 이유로 각각의 필요한 사이즈를 아래와 같이 모두 선언해야 한다.
+
+Html
+
+```html
+<link rel="icon" href="favicon-16.png" sizes="16x16">
+<link rel="icon" href="favicon-32.png" sizes="32x32">
+<link rel="icon" href="favicon-48.png" sizes="48x48">
+<link rel="icon" href="favicon-64.png" sizes="64x64">
+<link rel="icon" href="favicon-128.png" sizes="128x128">
+
+```
+
+PNG 파비콘을 사용시에 브라우저는 어떠한 파비콘을 사용할지 어떻게 결정하는가?
+
+-   Firefox와 Safari는 마지막에 제공되는 파비콘을 사용한다.
+-   맥(Mac) 용 Chrome은 ICO 포맷의 파비콘이 아니라면 32x32 파비콘을 사용한다.
+-   윈도우즈(Windows) 용 Chrome은 16x16이 먼저 선언되지 않는다면 ICO 파비콘이 사용된다.
+-   상기 옵션 중 아무것도 사용할 수 없는 경우, 양쪽 Chrome은 먼저 선언되는 파비콘을 사용하고 Firefox와 Safari는 마지막에 선언된 것이 사용된다. 사실 맥 용 Chrome은 16x16 파비콘을 무시하고 non-retina 기기에서 16x16으로 크기를 줄일때만 32x32 파비콘을 사용한다.
+-   Opera는 사용가능한 아이콘 중에서 하나를 임의로 선택하게 된다.
+
+### 파비콘(favicon) 실전 정리
+
+적어도 아래의 ICO 파일은 준비한다.
+
+| 크기 | 파일명 | 용도 |
+| --- | --- | --- |
+| 16x16 & 32x32 | favicon.ico | IE를 위해 필요한 기본이다. |
+
+조금 느려지더라도 iOS와 Android를 고려하겠다면 아래와 같은 PNG 파일을 준비한다.
+
+| 크기 | 파일명 | 용도 |
+| --- | --- | --- |
+| 152x152 | favicon-152.png | 일반적으로 iOS와 Android에서 사용하는 아이콘, 기기에 따라 자동으로 크기가 줄여진다. |
+
+좀 더 완벽한 파비콘을 설정하기 원한다면 아래의 표를 참고하여 PNG 파일을 준비하도록 하자.
+
+| 크기 | 파일명 | 용도 |
+| --- | --- | --- |
+| 32x32 | favicon-32.png | 일부 오래된 하지만 너무 오래된 Chrome은 ICO를 제대로 처리하지 못함. |
+| 57x57 | favicon-57.png | 표준 iOS 홈스크린(iPad Touch, iPhone 3G의 1세대) |
+| 72x72 | favicon-72.png | iPad 홈스크린 아이콘 |
+| 96x96 | favicon-96.png | 구글TV 아이콘 |
+| 120x120 | favicon-120.png | iPhone 레티나(retina) 터치 아이콘(Change for iOS 7: up from 114x114) |
+| 128x128 | favicon-128.png | Chrome 웹스토어 아이콘 |
+| 144x144 | favicon-144.png | 고정(pinned)된 IE10 매트로 타일 |
+| 152x152 | favicon-152.png | iPad 레티나 터치 아이콘(Change for iOS 7: up from 144x144) |
+| 195x195 | favicon-195.png | Opera 스피드 다이얼 아이콘 |
+| 228x228 | favicon-228.png | Opera Coast 아이콘 |
+
+### 파비콘(favicon)과 IE 브라우저 유의사항
+
+-   IE8~10은 페이지의 첫 방문에 바로 파비콘을 표시해준다.
+-   IE7은 첫번째 방문은 무시하고 재방문시에 파비콘을 표시해준다.
+-   IE6은 사이트를 북마크를 한 후 브라우저를 다시 열면 표시해준다. IE6은 브라우저 캐시가 삭제 될 때마다 파비콘을 삭제하며, 사이트가 다시 북마크된다거나 파비콘이 어떻게든 다시 로드 될때까지 파비콘을 표시하지 않는다.
+
+### 파비콘(favicon) 강제 새로고침
+
+일반적으로는 필요치 않으나, 개발하는 동안이나 새로고침으로 파비콘이 표시되지 않을때를 고려한 방법이다.
+
+-   브라우저 캐시를 삭제한다(Ctrl + F5 혹은 Ctrl + Shift + R).
+-   만일 IE라면 브라우저를 닫고 다시 연다.
+-   만일 여전히 골머리를 썩고 있다면 새로운 탭을 열어보거나 [How do I force a favicon refresh]( http://stackoverflow.com/questions/2208933/how-do-i-force-a-favicon-refresh)을 참고하라.
+-   일시적으로 명시적인 HTML 태그를 추가하고 쿼리 문자열을 추가한다. 확인이 완료된 후엔 이를 제거하자.
+    
+    Html
+    
+    ```html
+    <link rel="shortcut icon" href="http://www.yoursite.com/favicon.ico?v=2">
+    <link rel="icon" sizes="16x16 32x32" href="/favicon.ico?v=2">
+    
+    ```
+    
+
+### 도움이 되는 도구들
+
+-   [OptiPNG](http://optipng.sourceforge.net/) : ICO 파일안에 넣을 PNG 파일들을 최적화 한다.
+-   [x-icon editor](http://www.xiconeditor.com/) : ICO 파일을 만들수 있는 웹용 도구이다.
+-   [Favicon & App Icon Generator](http://www.favicon-generator.org/) : PNG 파비콘을 다양하게 생성해준다(위에서 다룬 apple-touch-icon을 크기별로, IE10용 타일 파비콘을 생성).
+
+### 파비콘 만드는 사이트
+
+-    [https://icoconvert.com/](https://icoconvert.com/)
+
+### 참고문헌 및 관련링크.
+
+1.  [favicon-cheat-sheet](https://github.com/audreyr/favicon-cheat-sheet)
+2.  [understand-the-favicon](http://www.jonathantneal.com/blog/understand-the-favicon/)
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="article_detail_16.html"></a>
+						</figure>
+						<figure class="latest-list__box">
+							<span>20-12-21</span>
+							<img src="img/html&CSS.png" />
+							<figcaption>
+								<h3>마크다운(MarkDown)사용법 용어👍</h3>
+								<script type="text/x-template">
+# [](#공통-마크다운-markdown-작성법)\[공통\] 마크다운 markdown 작성법
+
+# [](#1-마크다운에-관하여)1\. 마크다운에 관하여
+
+## [](#11-마크다운이란)1.1. 마크다운이란?
+
+[**Markdown**](http://whatismarkdown.com/)은 텍스트 기반의 마크업언어로 2004년 존그루버에 의해 만들어졌으며 쉽게 쓰고 읽을 수 있으며 HTML로 변환이 가능하다. 특수기호와 문자를 이용한 매우 간단한 구조의 문법을 사용하여 웹에서도 보다 빠르게 컨텐츠를 작성하고 보다 직관적으로 인식할 수 있다. 마크다운이 최근 각광받기 시작한 이유는 깃헙([https://github.com](https://github.com)) 덕분이다. 깃헙의 저장소Repository에 관한 정보를 기록하는 README.md는 깃헙을 사용하는 사람이라면 누구나 가장 먼저 접하게 되는 마크다운 문서였다. 마크다운을 통해서 설치방법, 소스코드 설명, 이슈 등을 간단하게 기록하고 가독성을 높일 수 있다는 강점이 부각되면서 점점 여러 곳으로 퍼져가게 된다.
+
+## [](#12-마크다운의-장-단점)1.2. 마크다운의 장-단점
+
+### [](#121-장점)1.2.1. 장점
+
+```java
+1. 간결하다.
+2. 별도의 도구없이 작성가능하다.
+3. 다양한 형태로 변환이 가능하다.
+3. 텍스트(Text)로 저장되기 때문에 용량이 적어 보관이 용이하다.
+4. 텍스트파일이기 때문에 버전관리시스템을 이용하여 변경이력을 관리할 수 있다.
+5. 지원하는 프로그램과 플랫폼이 다양하다.
+
+```
+
+### [](#122-단점)1.2.2. 단점
+
+```java
+1. 표준이 없다.
+2. 표준이 없기 때문에 도구에 따라서 변환방식이나 생성물이 다르다.
+3. 모든 HTML 마크업을 대신하지 못한다.
+
+```
+
+---
+
+# [](#2-마크다운-사용법문법)2\. 마크다운 사용법(문법)
+
+## [](#21-헤더headers)2.1. 헤더Headers
+
+-   큰제목: 문서 제목
+    
+    ```java
+    This is an H1
+    =============
+    
+    ```
+    
+    # [](#this-is-an-h1)This is an H1
+    
+-   작은제목: 문서 부제목
+    
+    ```java
+    This is an H2
+    -------------
+    
+    ```
+    
+    [](#this-is-an-h2)This is an H2
+-   글머리: 1~6까지만 지원
+    
+
+```java
+# This is a H1
+## This is a H2
+### This is a H3
+#### This is a H4
+##### This is a H5
+###### This is a H6
+
+```
+
+# [](#this-is-a-h1)This is a H1
+
+## [](#this-is-a-h2)This is a H2
+
+### [](#this-is-a-h3)This is a H3
+
+#### [](#this-is-a-h4)This is a H4
+
+##### [](#this-is-a-h5)This is a H5
+
+###### [](#this-is-a-h6)This is a H6
+
+####### This is a H7(지원하지 않음)
+
+## [](#22-blockquote)2.2. BlockQuote
+
+이메일에서 사용하는 `>` 블럭인용문자를 이용한다.
+
+```java
+> This is a first blockqute.
+>	> This is a second blockqute.
+>	>	> This is a third blockqute.
+
+```
+
+> This is a first blockqute.
+> 
+> > This is a second blockqute.
+> > 
+> > > This is a third blockqute.
+
+이 안에서는 다른 마크다운 요소를 포함할 수 있다.
+
+> ### [](#this-is-a-h3-1)This is a H3
+> 
+> -   List
+>     
+>     ```java
+>     code
+>     
+>     ```
+>     
+
+## [](#23-목록)2.3. 목록
+
+### [](#-순서있는-목록번호)● 순서있는 목록(번호)
+
+순서있는 목록은 숫자와 점을 사용한다.
+
+```java
+1. 첫번째
+2. 두번째
+3. 세번째
+
+```
+
+1.  첫번째
+2.  두번째
+3.  세번째
+
+**현재까지는 어떤 번호를 입력해도 순서는 내림차순으로 정의된다.**
+
+```java
+1. 첫번째
+3. 세번째
+2. 두번째
+
+```
+
+1.  첫번째
+2.  세번째
+3.  두번째
+
+딱히 개선될 것 같지는 않다. 존 그루버가 신경안쓰고 있다고...
+
+### [](#-순서없는-목록글머리-기호-----지원)● 순서없는 목록(글머리 기호: `*`, `+`, `-` 지원)
+
+```java
+* 빨강
+  * 녹색
+    * 파랑
+
++ 빨강
+  + 녹색
+    + 파랑
+
+- 빨강
+  - 녹색
+    - 파랑
+
+```
+
+-   빨강
+    -   녹색
+        -   파랑
+
+-   빨강
+    -   녹색
+        -   파랑
+
+-   빨강
+    -   녹색
+        -   파랑
+
+혼합해서 사용하는 것도 가능하다(내가 선호하는 방식)
+
+```java
+* 1단계
+  - 2단계
+    + 3단계
+      + 4단계
+
+```
+
+-   1단계
+    -   2단계
+        -   3단계
+            -   4단계
+
+## [](#24-코드)2.4. 코드
+
+4개의 공백 또는 하나의 탭으로 들여쓰기를 만나면 변환되기 시작하여 들여쓰지 않은 행을 만날때까지 변환이 계속된다.
+
+### [](#241-들여쓰기)2.4.1. 들여쓰기
+
+```java
+This is a normal paragraph:
+
+    This is a code block.
+    
+end code block.
+
+```
+
+실제로 적용해보면,
+
+적용예:
+
+---
+
+This is a normal paragraph:
+
+```java
+This is a code block.
+
+```
+
+end code block.
+
+---
+
+> 한줄 띄어쓰지 않으면 인식이 제대로 안되는 문제가 발생합니다.
+
+```java
+This is a normal paragraph:
+    This is a code block.
+end code block.
+
+```
+
+적용예:
+
+---
+
+This is a normal paragraph: This is a code block. end code block.
+
+---
+
+### [](#241-코드블럭)2.4.1. 코드블럭
+
+코드블럭은 다음과 같이 2가지 방식을 사용할 수 있습니다:
+
+-   `<pre><code>{code}</code></pre>` 이용방식
+
+```java
+<pre>
+<code>
+public class BootSpringBootApplication {
+  public static void main(String[] args) {
+    System.out.println("Hello, Honeymon");
+  }
+
+}
+</code>
+</pre>
+
+```
+
+```java
+
+public class BootSpringBootApplication {
+  public static void main(String[] args) {
+    System.out.println("Hello, Honeymon");
+  }
+}
+
+```java
+
+-   코드블럭코드("\`\`\`") 을 이용하는 방법
+
+```
+
+```java
+public class BootSpringBootApplication {
+  public static void main(String[] args) {
+    System.out.println("Hello, Honeymon");
+  }
+}
+```
+
+```
+
+```java
+public class BootSpringBootApplication {
+  public static void main(String[] args) {
+    System.out.println("Hello, Honeymon");
+  }
+}
+
+```java
+
+## [](#25-수평선-hr)2.5. 수평선 `<hr/>`
+
+아래 줄은 모두 수평선을 만든다. 마크다운 문서를 미리보기로 출력할 때 _페이지 나누기_ 용도로 많이 사용한다.
+
+```
+* * *
+
+***
+
+*****
+
+- - -
+
+---------------------------------------
+
+```java
+
+-   적용예
+
+---
+
+---
+
+---
+
+---
+
+---
+
+## [](#26-링크)2.6. 링크
+
+-   참조링크
+
+```java
+[link keyword][id]
+
+[id]: URL "Optional Title here"
+
+// code
+Link: [Google][googlelink]
+
+[googlelink]: https://google.com "Go google"
+
+```
+
+Link: [Google](https://google.com "Go google")
+
+-   외부링크
+
+```java
+사용문법: [Title](link)
+적용예: [Google](https://google.com, "google link")
+
+```
+
+Link: [Google](https://google.com, "google link")
+
+-   자동연결
+
+```java
+일반적인 URL 혹은 이메일주소인 경우 적절한 형식으로 링크를 형성한다.
+
+* 외부링크: <http://example.com/>
+* 이메일링크: <address@example.com>
+
+```
+
+-   외부링크: [http://example.com/](http://example.com/)
+-   이메일링크: [address@example.com](mailto:address@example.com)
+
+## [](#27-강조)2.7. 강조
+
+```java
+*single asterisks*
+_single underscores_
+**double asterisks**
+__double underscores__
+~~cancelline~~
+
+```
+
+-   _single asterisks_
+-   _single underscores_
+-   **double asterisks**
+-   **double underscores**
+-   ~cancelline~
+
+> `문장 중간에 사용할 경우에는 **띄어쓰기** 를 사용하는 것이 좋다.`  
+> 문장 중간에 사용할 경우에는 띄어쓰기를 사용하는 것이 좋다.
+
+## [](#28-이미지)2.8. 이미지
+
+```java
+![Alt text](/path/to/img.jpg)
+![Alt text](/path/to/img.jpg "Optional title")
+
+```
+
+[![석촌호수 러버덕](https://camo.githubusercontent.com/a123b2c6011765dd07b9b58e40599a0ba15336a9ddd082e85f704781c97baee2/687474703a2f2f6366696c65362e75662e746973746f72792e636f6d2f696d6167652f32343236453634363534334339423435333243374230)](https://camo.githubusercontent.com/a123b2c6011765dd07b9b58e40599a0ba15336a9ddd082e85f704781c97baee2/687474703a2f2f6366696c65362e75662e746973746f72792e636f6d2f696d6167652f32343236453634363534334339423435333243374230) [![석촌호수 러버덕](https://camo.githubusercontent.com/a123b2c6011765dd07b9b58e40599a0ba15336a9ddd082e85f704781c97baee2/687474703a2f2f6366696c65362e75662e746973746f72792e636f6d2f696d6167652f32343236453634363534334339423435333243374230 "RubberDuck")](https://camo.githubusercontent.com/a123b2c6011765dd07b9b58e40599a0ba15336a9ddd082e85f704781c97baee2/687474703a2f2f6366696c65362e75662e746973746f72792e636f6d2f696d6167652f32343236453634363534334339423435333243374230)
+
+사이즈 조절 기능은 없기 때문에 `<img width="" height=""></img>`를 이용한다.
+
+예
+
+```java
+<img src="/path/to/img.jpg" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
+<img src="/path/to/img.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
+
+```
+
+[![RubberDuck](https://camo.githubusercontent.com/a123b2c6011765dd07b9b58e40599a0ba15336a9ddd082e85f704781c97baee2/687474703a2f2f6366696c65362e75662e746973746f72792e636f6d2f696d6167652f32343236453634363534334339423435333243374230 "px(픽셀) 크기 설정")](https://camo.githubusercontent.com/a123b2c6011765dd07b9b58e40599a0ba15336a9ddd082e85f704781c97baee2/687474703a2f2f6366696c65362e75662e746973746f72792e636f6d2f696d6167652f32343236453634363534334339423435333243374230)  
+[![RubberDuck](https://camo.githubusercontent.com/a123b2c6011765dd07b9b58e40599a0ba15336a9ddd082e85f704781c97baee2/687474703a2f2f6366696c65362e75662e746973746f72792e636f6d2f696d6167652f32343236453634363534334339423435333243374230 "%(비율) 크기 설정")](https://camo.githubusercontent.com/a123b2c6011765dd07b9b58e40599a0ba15336a9ddd082e85f704781c97baee2/687474703a2f2f6366696c65362e75662e746973746f72792e636f6d2f696d6167652f32343236453634363534334339423435333243374230)
+
+## [](#29-줄바꿈)2.9. 줄바꿈
+
+3칸 이상 띄어쓰기(  )를 하면 줄이 바뀐다.
+
+```java
+* 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다. 
+이렇게
+
+* 줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다.___\\ 띄어쓰기
+이렇게
+
+```
+
+-   줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다. 이렇게
+    
+-   줄 바꿈을 하기 위해서는 문장 마지막에서 3칸이상을 띄어쓰기해야 한다.  
+    이렇게
+    
+
+---
+
+# [](#3-마크다운-사용기)3\. 마크다운 사용기
+
+## [](#31-위지윅wsywig-에디터)3.1. 위지윅(WSYWIG) 에디터
+
+우리가 흔하게 접하는 웹에서 사용되는 에디터(네이버, 다음, 구글 등)이 대부분 위지윅 에디터에 속하며 기본적으로 HTML을 이용하여 스타일을 적용하여 문장을 꾸미는 형태를 취하게 된다. 그래서 하루패드와 같은 마크다운 에디터의 View 영역의 내용을 복사하여 붙여넣기를 하면 대체적으로 View영역에서 보이는 그대로 복사되는 편이다. 다만, 붙여넣기 이후에 문장들을 수정하려고 할 떄 문제가 되는데, 이는 스타일이 포함된 태그가 수정과정에서 변형되면서 전체적인 영향을 끼치는 탓이다. 티스토리 블로그에서는 쉽지 않고... 워드프레스의 경우에는 마크다운으로 작성된 포스트를 HTML로 변환해주는 기능을 활용하는 것이 좋다. 결론은, **복사해서 붙여넣기하면 가급적이면 본문은 수정하지 않는 것이 좋다.**
+
+## [](#32-깃헙github-비트버킷bitbucket과-요비yobi-등)3.2. 깃헙Github, 비트버킷Bitbucket과 요비Yobi 등
+
+최근 유행하는 협업개발플랫폼의 경우에는 마크다운을 변환하는 컨버터 기능을 기본탑재하고 있기 때문에 마크다운 문법으로 작성한 텍스트를 그대로 복사해서 붙여넣거나 업로드하는 것만으로 마크다운의 적용이 가능하다.
+
+## [](#33-ms워드-적용)3.3. MS워드 적용
+
+View 영역의 항목을 그대로 붙여넣거나 HTML 내보내기 등으로 생성한 파일을 불러오는 형태로 사용가능하다. 적용한 헤더를 워드가 읽어드리면서 목차에 적용하기 때문에 이를 활용하면 목차까지도 손쉽게 적용이 가능해진다.
+
+---
+
+# [](#4-정리)4\. 정리
+
+마크다운은 기본문법만 알고있다면 일반 텍스트편집기에서도 손쉽게 작성이 가능한 마크업언어다. 현재 다양한 도구와 플랫폼에서 지원하고 있기 때문에 더욱 손쉽게 스타일적용된 문서를 작성할 수 있어 점점 널리 사용되고 있다.
+
+> 마크다운을 이해하고 사용하면서 쉽고 빠르게 스타일문서를 작성해보세요.
+
+저는 Dropbox 프로를 구매해서 집-랩탑-스마트폰이 각각 연동을 시켜서 사용하고 있습니다. 드랍박스에 저장된 마크다운 문서는 Dropbox 웹서비스 상에서 제공하기 때문에 웹상에서 바로 열람할 수도 있어 링크를 걸어서 다른 사람과 공유하는 형식으로 사용하고 있다.
+
+-   링크 예: [Markdown 설명](https://www.dropbox.com/s/mzp9tq4qtfjdlif/20141021_markdown_use_tip.md?dl=0)
+
+---
+
+# [](#ps)P.S.
+
+최근에는 [Notion](https://www.notion.so/product) 을 조금씩 사용중이다. Notion 에서 작성한 문서는 Atom([https://atom.io/](https://atom.io/)), Visual Studio Code([https://code.visualstudio.com/](https://code.visualstudio.com/)), Notepad++([https://notepad-plus-plus.org/](https://notepad-plus-plus.org/))텍스트 편집기에 복붙(복사하고 붙여넣기)하면 마크다운문법으로 작성된 문장이 기입되고 이지윅 에디터를 제공하는 웹에디터에 붙여넣기 하면 거의 완벽한 형태로 복사된다. 그래서 애용중이다.
+
+## [](#-참고문서)○ 참고문서
+
+-   [78 Tools for writing and previewing Markdown](http://mashable.com/2013/06/24/markdown-tools/)
+-   [John gruber 마크다운 번역](http://nolboo.github.io/blog/2013/09/07/john-gruber-markdown/)
+-   [깃허브 취향의 마크다운 번역](http://nolboo.github.io/blog/2014/03/25/github-flavored-markdown/)
+-   [허니몬의 마크다운 작성법](http://www.slideshare.net/ihoneymon/ss-40575068)
+-   Notion.so([https://www.notion.so/product](https://www.notion.so/product))
+-   Atom([https://atom.io/](https://atom.io/))
+-   Visual Studio Code([https://code.visualstudio.com/](https://code.visualstudio.com/))
+-   Notepad++([https://notepad-plus-plus.org/](https://notepad-plus-plus.org/))
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="article_detail_15.html"></a>
+						</figure>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -302,14 +2551,310 @@
 		</figure>
 		<div class="content">
 			<div class="header">
-				<div class="header__box flex flex-dr-c" id="page5">
-					<a href="article_detail_29.html">
-						<div class="box__info flex">
-							<div class="subheading box__info_board">board > JSP dev. log</div>
-							<div class="subheading box__info_writer">D.K</div>
+				<div class="header__box flex flex-ai-c flex-dr-c" id="page5">
+					<div class="latest-list">
+						<div class="title-of-list">
+							<span>CodeUp 최신 게시물</span>
 						</div>
-						<h2 class="heading">💻JSP 개발일지(2):: 기본동작 구현 및 확인</h2>
-					</a>
+						<figure class="latest-list__box">
+							<span>21-01-20</span>
+							<img src="img/CodeUp.jpg" />
+							<figcaption>
+								<h3>java(자바)codeup(코드업)[1088 : [기초-종합] 3의 배수는 통과?(설명)]</h3>
+								<script type="text/x-template">
+1부터 입력한 정수까지 1씩 증가시켜 출력하는 프로그램을 작성하되,  
+3의 배수인 경우는 출력하지 않도록 만들어보자.  
+  
+예를 들면,  
+1 2 4 5 7 8 10 11 13 14 ...  
+와 같이 출력하는 것이다.  
+  
+  
+참고  
+반복문 안에서 continue;가 실행되면 그 아래의 내용을 건너뛰고, 다음 반복을 수행한다.  
+즉, 다음 반복으로 넘어가는 것이다.  
+  
+예시  
+for(i=1; i<=n; i++) //1부터 시작해 n까지 1씩 증가시키면서 반복한다.  
+{  
+  if(i%2==0)  
+    continue; //짝수라면? 아래 부분은 건너뛰고! 계속~  
+  printf("%d ", i); //결국 짝수가 아닐 때에만 출력된다.  
+}  
+  
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FyRYpw%2FbtqRt6VFO26%2FIUZwSZycPCCfwnlVUM0XY0%2Fimg.png)
+
+**입력**
+
+정수 1개를 입력받는다.  
+(1 ~ 100)  
+  
+  
+
+**출력**
+
+1부터 입력한 정수보다 작거나 같을 때까지 1씩 증가시켜 출력하되  
+3의 배수는 출력하지 않는다.  
+  
+  
+
+**입력 예시**   예시 복사
+
+10
+
+**출력 예시**
+
+1 2 4 5 7 8 10
+
+```java
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		int a = sc.nextInt();
+
+		for (int i = 1; i <= a; i++) {
+			if(i%3 == 0) {
+				continue;
+			}
+			System.out.print(i+" ");
+		}
+	}
+}
+```
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="article_detail_25.html"></a>
+						</figure>
+						<figure class="latest-list__box">
+							<span>21-01-20</span>
+							<img src="img/CodeUp.jpg" />
+							<figcaption>
+								<h3>java(자바)codeup(코드업)1087 : [기초-종합] 여기까지! 이제 그만~</h3>
+								<script type="text/x-template">
+1, 2, 3 ... 을 순서대로 계속 더해나갈 때,  
+그 합이 입력한 정수보다 작을 동안만 계속 더하는 프로그램을 작성해보자.  
+  
+즉, 1부터 n까지 정수를 계속 더한다고 할 때,  
+어디까지 더해야 입력한 수보다 같거나 커지는지 알아보고자 하는 문제이다.  
+  
+하지만, 이번에는 그 때의 합을 출력해야 한다.  
+  
+예를 들어 57을 입력하면  
+1+2+3+...+8+9+10=55에 다시 11을 더해 66이 될 때,  
+그 값 66이 출력되어야 한다.  
+  
+  
+참고  
+조건문이나 반복문의 코드블록 안에서 break;가 실행되면  
+가장 가까운 반복 코드블록 구역의 밖으로 빠져나간다.  
+  
+  
+예시  
+int n, i, s=0;  
+scanf("%d", &n);  
+for(i=1; ; i++) //for 반목문에서 가운데의 조건이 빠진 경우 무한 반복된다.  
+{  
+  s+=i;  
+  if(s>=n)  
+    break; //참이면, 가장 가까운 반복 코드블록의 밖으로 빠져나간다.  
+} //break; 가 실행되면 반복을 중단하고 여기로 빠져 나온다.  
+printf("%d", s);  
+  
+무한 반복이 되는 코드는  
+while(1) {...}, do {...}while(1); 등도 가능하다.  
+0이 아니면 모두 참(true)으로 인식되기 때문이다.  
+  
+
+![](https://blog.kakaocdn.net/dn/ozE95/btqRt6g3LWj/kkoqRQKmooH5IuJKXxlRu0/img.png)
+
+**입력**
+
+언제까지 합을 계산할 지, 정수 1개를 입력받는다.  
+단, 입력되는 자연수는 100,000,000이하이다.  
+  
+  
+
+**출력**
+
+1, 2, 3, 4, 5 ... 순서대로 계속 더해가다가, 그 합이 입력된 정수보다 커지거나 같아지는 경우,  
+그때까지의 합을 출력한다.  
+  
+  
+
+**입력 예시**   예시 복사
+
+57
+
+**출력 예시**
+
+66
+
+```java
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in); 
+		
+		int a = sc.nextInt();
+		int b = 0;
+		
+		for(int i = 1; i <= a; i++) {
+			b = b+i;
+			if (b >= a) {
+				break;
+			}
+		}
+		System.out.println(b);
+	}
+}
+```
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="article_detail_24.html"></a>
+						</figure>
+						<figure class="latest-list__box">
+							<span>21-01-20</span>
+							<img src="img/CodeUp.jpg" />
+							<figcaption>
+								<h3>java(자바):codeup(코드업)[1083 : [기초-종합] 3 6 9 게임의 왕이 되자!</h3>
+								<script type="text/x-template">
+3 6 9 게임을 하던 영일이는 3 6 9 게임에서 잦은 실수로 계속해서 벌칙을 받게 되었다.  
+3 6 9 게임의 왕이 되기 위한 마스터 프로그램을 작성해 보자.  
+  
+참고  
+중첩의 원리  
+반복 실행 구조 안에 선택 실행 구조를 자유롭게 중첩할 수 있다.  
+  
+예시  
+int i;  
+for(i=1; i<=100; i++) //1부터 100까지 반복  
+{  
+  if(i%3==0 || i%5==0) printf("%d ", i); //3또는 5의 배수인 경우 그 수 출력  
+}  
+  
+\*\* 3 6 9 게임은?  
+여러 사람이 순서를 정해 순서대로 수를 부르는 게임이다.  
+만약 3, 6, 9 가 들어간 수를 자신이 불러야 하는 상황이면, 대신 "박수" 를 쳐야 한다.  
+33까지 진행했다면? "짝짝"과 같이 박수를 두 번 치는 형태도 있다.  
+  
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F7VAyM%2FbtqRptRRGe8%2FFIkF9wkWO71W6F5Uh5HMfK%2Fimg.png)
+
+**입력**
+
+10 보다 작은 정수 1개가 입력된다.  
+(1 ~ 9)  
+  
+  
+
+**출력**
+
+1 부터 그 수까지 순서대로 공백을 두고 수를 출력하는데,  
+3 또는 6 또는 9인 경우 그 수 대신 영문 대문자 X 를 출력한다.  
+  
+  
+
+**입력 예시**   예시 복사
+
+9
+
+**출력 예시**
+
+1 2 X 4 5 X 7 8 X
+
+```java
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in); 
+		int a = sc.nextInt();
+		String b = "X";
+		for (int i = 1; i <=a; i++) {
+			
+			if (i == 3 ||i == 6 ||i == 9  ) {
+				System.out.print(b+" ");
+			}else {
+				System.out.print(i+" ");	
+			}
+		}
+	}
+}
+```
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="article_detail_23.html"></a>
+						</figure>
+						<figure class="latest-list__box">
+							<span>21-01-20</span>
+							<img src="img/CodeUp.jpg" />
+							<figcaption>
+								<h3>java(자바)codeup(코드업)1080 : [기초-종합] 언제까지 더해야 할까?</h3>
+								<script type="text/x-template">
+1, 2, 3 ... 을 계속 더해 나갈 때,  
+그 합이 입력한 정수(0 ~ 1000)보다 같거나 작을 때까지  
+계속 더하는 프로그램을 작성해보자.  
+  
+즉, 1부터 n까지 정수를 계속 더한다고 할 때,  
+어디까지 더해야 입력한 수보다 같거나 커지는지 알아보고자 하는 문제이다.  
+  
+
+![](https://blog.kakaocdn.net/dn/l7b8D/btqRrQlf8NR/CphMkX4qlgu7zhuDEDEoik/img.png)
+
+**입력**
+
+정수 1개가 입력된다.  
+  
+  
+
+**출력**
+
+1, 2, 3, 4, 5 ... 를 순서대로 계속 더해 합을 만들어가다가,  
+입력된 정수와 같거나 커졌을 때, 마지막에 더한 정수를 출력한다.  
+  
+  
+
+**입력 예시**   예시 복사
+
+55
+
+**출력 예시**
+
+10
+
+```java
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in); 
+		int a = sc.nextInt();
+		int b = 0;
+		int i = 0;
+		for (i= 1; i <= a; i++) {				
+			b = b +i;			
+			if(b >= a) {
+				break;
+			}			
+		}
+		System.out.println(i);
+	}
+}
+```
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="article_detail_22.html"></a>
+						</figure>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -321,76 +2866,850 @@
 		</figure>
 		<div class="content">
 			<div class="header">
-				<div class="header__box flex flex-dr-c" id="page6">
-					<a href="article_detail_28.html">
-						<div class="box__info flex">
-							<div class="subheading box__info_board">board > java</div>
-							<div class="subheading box__info_writer">D.K</div>
+				<div class="header__box flex flex-ai-c flex-dr-c" id="page6">
+					<div class="latest-list">
+						<div class="title-of-list">
+							<span>source code 최신 게시물</span>
 						</div>
-						<h2 class="heading">Google Analytics API 사용 (조회수 적용 및 오류 수정)</h2>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
+						<figure class="latest-list__box">
+							<span>20-12-21</span>
+							<img src="https://static.wixstatic.com/media/bb1bd6_e70f4c7201f94a258d92cbda381ddfb1~mv2.gif" />
+							<figcaption>
+								<h3>마우스 hover 효과 10가지</h3>
+								<script type="text/x-template">
+# 컨텐츠에 집중을 도와주는 마우스 오버효과들 총정리!
 
-	<section class="content-section" data-scroll>
-		<figure class="figure">
-			<img src="img/7.jpg" />
-		</figure>
-		<div class="content">
-			<div class="header">
-				<div class="header__box flex flex-dr-c">
-					<a href="article_detail_27.html">
-						<div class="box__info flex">
-							<div class="subheading box__info_board">board > JSP dev. log</div>
-							<div class="subheading box__info_writer">D.K</div>
-						</div>
-						<h2 class="heading">💻JSP 개발일지(1):: 기본동작 구현 및 확인</h2>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
+오늘은 이미지와 마우스 오버시 등장하는 컨텐츠의
 
-	<section class="content-section" data-scroll>
-		<figure class="figure">
-			<img src="img/8.jpg" />
-		</figure>
-		<div class="content">
-			<div class="header">
-				<div class="header__box flex flex-dr-c">
-					<a href="article_detail_26.html">
-						<div class="box__info flex">
-							<div class="subheading box__info_board">board > html&CSS</div>
-							<div class="subheading box__info_writer">D.K</div>
-						</div>
-						<h2 class="heading">[html, css] ::selection 마우스 드래그 배경색 변경</h2>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
+인터랙션에 대해서 여러가지 효과를 소개해드리려 합니다!!
 
-	<section class="content-section" data-scroll>
-		<figure class="figure">
-			<img src="img/9.jpg" />
-		</figure>
-		<div class="content">
-			<div class="header">
-				<div class="header__box flex flex-dr-c">
-					<a href="article_detail_25.html">
-						<div class="box__info flex">
-							<div class="subheading box__info_board">board > CodeUp</div>
-							<div class="subheading box__info_writer">D.K</div>
-						</div>
-						<h2 class="heading">java(자바)codeup(코드업)[1088 : [기초-종합] 3의 배수는 통과?(설명)]</h2>
-					</a>
+이번에도 코드펜을 활요해서 직접 확인, 수정하실 수 있어요~
+
+![:)](http://i1.wp.com/rwdb.kr/wp-includes/images/smilies/simple-smile.png?w=1140)
+
+## **01. Mosaic**
+```codepen
+https://codepen.io/littlesnippets/embed/XXxGNB?height=290&amp;theme-id=9116&amp;slug-hash=XXxGNB&amp;default-tab=result&amp;user=littlesnippets
+```
+## **02. Text Switching**
+```codepen
+https://codepen.io/littlesnippets/embed/EKVbro?height=290&amp;theme-id=9116&amp;slug-hash=EKVbro&amp;default-tab=result&amp;user=littlesnippets
+```
+## **03. Fade In/Out**
+```codepen
+https://codepen.io/littlesnippets/embed/wMQBNQ?height=290&amp;theme-id=9116&amp;slug-hash=wMQBNQ&amp;default-tab=result&amp;user=littlesnippets
+```
+## **03. Panel Up/Down**
+```codepen
+https://codepen.io/littlesnippets/embed/VeeNYP?height=290&amp;theme-id=9116&amp;slug-hash=VeeNYP&amp;default-tab=result&amp;user=littlesnippets
+```
+## **04. Easing Zoom**
+```codepen
+https://codepen.io/littlesnippets/embed/BodOdR?height=290&amp;theme-id=9116&amp;slug-hash=BodOdR&amp;default-tab=result&amp;user=littlesnippets
+```
+## **04. Panel Float**
+```codepen
+https://codepen.io/littlesnippets/embed/xVVVPo?height=290&amp;theme-id=9116&amp;slug-hash=xVVVPo&amp;default-tab=result&amp;user=littlesnippets
+```
+## **05. Area Extension**
+```codepen
+https://codepen.io/littlesnippets/embed/dYwobb?height=380&amp;theme-id=9116&amp;slug-hash=dYwobb&amp;default-tab=result&amp;user=littlesnippets
+```
+## **06. Grid Line Trough**
+```codepen
+https://codepen.io/littlesnippets/embed/PNGOrQ?height=290&amp;theme-id=9116&amp;slug-hash=PNGOrQ&amp;default-tab=result&amp;user=littlesnippets
+```
+## **07. Embossed Rectangle**
+```codepen
+https://codepen.io/littlesnippets/embed/LGpgGJ?height=290&amp;theme-id=9116&amp;slug-hash=LGpgGJ&amp;default-tab=result&amp;user=littlesnippets
+```
+## **08. Text Troughout**
+```codepen
+https://codepen.io/littlesnippets/embed/WQXQGq?height=373&amp;theme-id=9116&amp;slug-hash=WQXQGq&amp;default-tab=result&amp;user=littlesnippets
+```
+## **09\. Shutter Frame**
+```codepen
+https://codepen.io/littlesnippets/embed/eJKqOJ?height=290&amp;theme-id=9116&amp;slug-hash=eJKqOJ&amp;default-tab=result&amp;user=littlesnippets
+```
+## **10. Gradient Background**
+```codepen
+https://codepen.io/littlesnippets/embed/rxKBWq?height=290&amp;theme-id=9116&amp;slug-hash=rxKBWq&amp;default-tab=result&amp;user=littlesnippets
+```
+
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="article_detail_14.html"></a>
+						</figure>
+						<figure class="latest-list__box">
+							<span>20-12-20</span>
+							<img src="https://static.wixstatic.com/media/bb1bd6_e70f4c7201f94a258d92cbda381ddfb1~mv2.gif" />
+							<figcaption>
+								<h3>CSS: CSS 스크롤 화살표 표기</h3>
+								<script type="text/x-template">
+
+
+## 1\. 화살표
+
+![화살표](http://rwdb.kr/images/2019/190605_01.png)
+
+간단한 화살표 만의 패턴에서 흔히 볼 수있는 `border`지정한 요소를 `transform: rotate(-45deg);`이지 회전시킨 것입니다 CSS를 다음과 같이 설명합니다.
+
+`CSS`
+
+```css
+a {
+  padding-top: 60px;
+}
+a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+```
+
+## 2\. 화살표 × 서클
+
+![화살표 × 서클](http://rwdb.kr/images/2019/190605_02.png)
+
+이곳은 방금 화살표 서클을 추가 한 것으로, CSS를 다음과 같이 설명합니다.
+
+`CSS`
+
+```css
+a {
+  padding-top: 60px;
+}
+a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+```
+
+## 3\. 화살표 × 원 × 파문
+
+![화살표 × 원 × 파문](http://rwdb.kr/images/2019/190605_03.gif)
+
+방금 전의 “화살표 × 서클”조금 움직임을 붙인 것으로, 파문이 확산 효과를 붙인 것입니다.  
+구현은 CSS를 다음과 같이 설명합니다.
+
+`CSS`
+
+```css
+a {
+  padding-top: 60px;
+}
+a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+a span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-animation: sdb 3s infinite;
+  animation: sdb 3s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+```
+
+## 4\. 화살표 × 애니메이션 # 1
+
+![화살표 × 애니메이션 # 1](http://rwdb.kr/images/2019/190605_04.gif)
+
+화살표에 일정 간격으로 위치가 아래에 조금 어긋나는 애니메이션을 더한 CSS를 다음과 같이 설명합니다.
+
+`CSS`
+
+```css
+a {
+  padding-top: 60px;
+}
+a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(-45deg) translate(-10px, 10px);
+  }
+  40% {
+    transform: rotate(-45deg) translate(0, 0);
+  }
+}
+
+```
+
+## 5\. 화살표 × 애니메이션 # 2
+
+![화살표 × 애니메이션 # 2](http://rwdb.kr/images/2019/190605_05.gif)
+
+이곳은 위에서 아래로 화살표가 이동하면서 자연스럽게 사라질 것으로, CSS를 다음과 같이 설명합니다.
+
+`CSS`
+
+```css
+a {
+  padding-top: 70px;
+}
+a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 1.5s infinite;
+  animation: sdb 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+```css
+
+## 6\. 화살표 × 애니메이션 # 3
+
+![화살표 × 애니메이션 # 3](http://rwdb.kr/images/2019/190605_06.gif)
+
+이쪽도 앞서와 마찬가지로 화살표가 위에서 아래로 이동하면서 사라져가는 것입니다 만, 또한 빙글 빙글 회전하는 움직임을 붙인 것입니다.  
+구현은 CSS를 다음과 같이 설명합니다.
+
+`CSS`
+
+```css
+a {
+  padding-top: 70px;
+}
+a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+  -webkit-animation: sdb 1.5s infinite;
+  animation: sdb 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+```
+
+## 7\. 화살표 × 애니메이션 # 4
+
+![화살표 × 애니메이션 # 4](http://rwdb.kr/images/2019/190605_07.gif)
+
+이곳은 여러 화살표를 사용하여 패턴의 것으로하고있는 것은 단지 각각의 위치를 이동 배치 한 화살표 표시 · 비 표시하고있다뿐입니다 만, `animation-delay`에서 시간을 늦추는 것으로 이러한 모양이됩니다.  
+이 구현에 관한 HTML은 지금까지의 것과는 조금 달리 HTML과 CSS 각각을 다음과 같이 설명합니다.
+
+`HTML`
+
+```html
+<a href="#"><span></span><span></span><span></span>Scroll</a>
+
+```
+
+`CSS`
+
+```css
+a {
+  padding-top: 80px;
+}
+a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+a span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+a span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: .15s;
+  animation-delay: .15s;
+}
+a span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+@-webkit-keyframes sdb {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+```
+
+## 8\. 마우스
+
+![마우스](http://rwdb.kr/images/2019/190605_08.png)
+
+화살표 이외의 것이라고 스크롤 버튼으로 배치되어있는 것을 아래 보이는 경우가 많다 마우스를 구현하고 본 것으로 CSS를 다음과 같이 설명합니다.
+
+`CSS`
+
+```css
+a {
+  padding-top: 60px;
+}
+a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+
+```
+
+## 9\. 마우스 × 화살표
+
+![마우스 × 화살표](http://rwdb.kr/images/2019/190605_09.png)
+
+이곳은 방금 마우스 아래에 화살표를 추가 한 것으로, 구현은 CSS를 다음과 같이 설명합니다.
+
+`CSS`
+
+```css
+a {
+  padding-top: 80px;
+}
+a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+a span::after {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  content: '';
+  margin-left: -9px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+```
+
+## 10\. 마우스 × 애니메이션
+
+![마우스 × 애니메이션](http://rwdb.kr/images/2019/190605_10.gif)
+
+이곳은 마우스 스크롤을 격려하는 애니메이션을 더해 보면 한 것으로, 구현은 CSS를 다음과 같이 설명합니다.
+
+`CSS`
+
+```css
+a {
+  padding-top: 60px;
+}
+a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+```
+
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="article_detail_5.html"></a>
+						</figure>
+						<figure class="latest-list__box">
+							<span>20-12-20</span>
+							<img src="https://static.wixstatic.com/media/bb1bd6_e70f4c7201f94a258d92cbda381ddfb1~mv2.gif" />
+							<figcaption>
+								<h3>스크롤 화살표, 회전 배너효과</h3>
+								<script type="text/x-template">
+전체적으로 메인페이지를 만들 때는 내비게이션 바를 만들 때보다 더 쉬웠던 것 같다. 적용하기에 어려운 부분은 애니메이션처럼 움직이는 부분이었고 나머지는 할만했다. ✌🏻
+
+# Background Image 🖼
+
+배경 이미지에 적용하고 싶었던 효과는 크게 두 가지였다.
+
+☝🏻, 스크롤을 해도 고정되어 있을 것.  
+✌🏻, 화면에 표시되는 폰트보다 뒤에 있는 느낌으로 조금 어두울 것.
+
+![](https://media.vlpt.us/images/seob/post/451d1804-a681-4555-a09f-217a459e19c6/main.gif)
+
+# 회전하는 배너 효과 🌀
+
+![](https://media.vlpt.us/images/seob/post/abdc213c-a93d-4647-8bc1-22905d3c96a7/banner2.gif)
+
+ Html
+ 
+ ```html
+ <div class="describeMyself">
+   <ul class="descriptionList">
+     <li>n Ambitious</li>
+     <li>Promising</li>
+     <li>Creative</li>
+     <li>n Ambitious</li>
+   </ul>
+ </div>
+ ```
+ 
+ -   먼저 넣고자 하는 문구를 리스트로 만들어주었다.
+ -   첫 번째와 마지막 리스트가 같은 이유는 애니메이션의 연속성을 위해 넣어야 한다.
+ CSS
+ 
+ ```css
+ .describeMyself {
+   margin: 14px 3px;
+   display: inline-block;
+   vertical-align: top;
+   height: 1.5em;
+   overflow: hidden;
+   color:white;
+   z-index: 2;
+ }
+ ```
+ 
+ -   `height`로 리스트 중 한 가지만 보이도록 범위를 지정
+ -   `overflow: hidden;`를 이용해 범위를 벗어난 부분은 안 보이도록 해준다.
+ -   `z-index` 배경 이미지를 덮어주는 부분과 구분해주기 위해서 추가했다.
+ 
+ ```css
+ @keyframes rolling {
+   0% {
+     margin-top: : 0;
+   }
+   33%{
+       margin-top: -1.5em;
+   }
+   66%{
+       margin-top:-3em;
+   }
+   100%{
+       margin-top:-4.5em;
+   }
+ }
+ ```
+ 
+ -   구글링한 결과 `keyframs`를 사용하여 애니메이션 효과를 줄 수 있었다.
+ -   리스트 아이템이 4개이므로 4단계로 나누어서 %를 지정해주고, 해당 %마다 `margin-top`으로 움직일 방향과 움직일 범위를 지정해주었다.
+ 
+ ```css
+ .descriptionList {
+   padding-left: 0;
+   margin:0;
+   animation-name: rolling;
+   animation-duration: 6s;
+   animation-iteration-count: infinite;
+ }
+ .descriptionList li {
+   list-style: none;
+   line-height: 1.5em;
+   display: flex;
+   justify-content: center;
+   flex-wrap: nowrap;
+ }
+ ```
+ 
+ -   `animation-name`으로 `rolling`을 불러주고,
+ -   `animation-duration`으로 한 싸이클에 6초가 걸리도록 설정했다.
+ -   `animation-iteratin-count: infinite;` 무한히 반복하도록 설정한 부분.
+
+이 부분에서 아쉬웠던 점은 리스트 아이템의 텍스트 길이에 따라 유동적으로 앞과 뒤의 텍스트와 거리 조절을 해주고 싶었는데 그건 나중에 기회가 있으면 하기로 하고 넘겼다..😅
+
+# 움직이는 화살표 ⏬
+
+![](https://media.vlpt.us/images/seob/post/18175148-8339-4f40-a37f-b55f7f1103a8/arrows.gif)
+
+이걸 만들면서 신기했던 부분은 아이콘을 따로 불러올 필요 없이 CSS만으로 간단한 도형 정도는 만들 수 있다는 점이었다.
+
+애니메이션은 회전하는 배너 효과와 마찬가지로 `keyframes`를 사용하였다.
+
+ Html
+ 
+ ```html
+ <div class="arrow-down">
+   <a href="#about">
+     <span></span>
+     <span></span>
+     <span></span>
+   </a>
+ </div>
+ ```
+ 
+ -   넣을 화살표의 수 만큼 `span`을 추가해준다.
+ -   이 화살표를 클릭하면 바로 밑의 페이지로 이동시킬 것이므로 `a`태그 속에 `span`을 넣어준다.
+
+ CSS
+ 
+ ```css
+ .arrow-down span{
+   display: block;
+   width: 1.5em;
+   height: 1.5em;
+   border-bottom: 1px solid #fff;
+   border-right: 1px solid #fff;
+   transform: rotate(45deg);
+   margin: -10px;
+   animation: animate-arrows 2s infinite;
+ }
+ ```
+ 
+ -   투명한 정사각형 상자를 만들어서 테두리를 아래와 오른쪽에만 만들어준다.
+ -   `transfomr: rotate(45deg);` 시계방향으로 45도 틀어주면 아래를 향하는 화살표 모양이 된다!
+ 
+ ```css
+ @keyframes animate-arrows{
+   0%{
+     opacity: 0;
+     transform: rotate(45deg) translate(-1.5em, -1.5em);
+   }
+   50%{
+     opacity: 1;
+   }
+   100%{
+     opacity: 0;
+     transform: rotate(45deg) translate(1.5em, 1.5em);
+   }
+ }
+ ```
+ 
+ -   LED의 숨쉬기모드(?) 처럼 화살표가 번쩍번쩍하는 느낌을 주기 위해 투명도를 0과 1 사이에서 왔다 갔다 하게 설정
+ -   `translate`를 이용하여 화살표가 움직일 거리를 정해준다.
+ 
+ ```css
+ .arrow-down span:nth-child(1){
+   animation-delay: -0.2s;
+ }
+ .arrow-down span:nth-child(2){
+   animation-delay: -0.4s;
+ }
+ .arrow-down span:nth-child(3){
+   animation-delay: -0.6s;
+ }
+ ```
+ 
+ -   화살표가 한 번에 움직이지 않고 따로 움직이도록 딜레이를 따로 설정해주었다.
+
+간단한 코드 몇 줄로 이런 효과를 줄 수 있어서 노력 대비 결과가 너무나도 만족스러웠다.
+
+아무것도 참고하지 않고 혼자 만들 수는 없었을 것 같은데 다시 또 한 번 인터넷의 위대함을 느낀다..ㅋㅋ
+
+갓글,,갓튜브 고맙습니다,,🙇🏻‍♂️
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="article_detail_4.html"></a>
+						</figure>
+						<figure class="latest-list__box">
+							<span>${index__summary-regDate-source3}</span>
+							<img src="img/source.gif" />
+							<figcaption>
+								<h3>${index__summary-body-title-source3}</h3>
+								<script type="text/x-template">
+${index__summary-body-source3}
+			</script>
+								<p class="article-detail__body toast-ui-viewer"></p>
+							</figcaption>
+							<a href="${index__summary-link-source3}"></a>
+						</figure>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-</div></main>
+</div>
+<script src="toastUi.js"></script></main>
 <footer class="footer-bar flex">
 	<div class="con flex flex-ai-c flex-jc-c">
 		<img src="img/copyright.png" alt="">
